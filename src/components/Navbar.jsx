@@ -66,18 +66,18 @@ function Navbar() {
             </Link>
 
             <div className={styles.dropdown1}>
-              <Link to="/lips">Access Control </Link>
-              <Link to="/face">Biometic Attendance</Link>
-              <Link to="/eyes">Payroll-Software</Link>
-              <Link to="/lips">Visual ERP </Link>
-              <Link to="/face">Website Design</Link>
-              <Link to="/eyes">Cloud & Storage</Link>
-              <Link to="/lips">Dedicate Server </Link>
-              <Link to="/face">Email Solutions</Link>
-              <Link to="/eyes">Employee Monitoring</Link>
-              <Link to="/lips">Secure Socket Layer </Link>
-              <Link to="/face">Software Licencing</Link>
-              <Link to="/eyes">Web Hosting</Link>
+              <Link to="/software">Access Control </Link>
+              <Link to="/software">Biometic Attendance</Link>
+              <Link to="/software">Payroll-Software</Link>
+              <Link to="/software">Visual ERP </Link>
+              <Link to="/software">Website Design</Link>
+              <Link to="/software">Cloud & Storage</Link>
+              <Link to="/software">Dedicate Server </Link>
+              <Link to="/software">Email Solutions</Link>
+              <Link to="/software">Employee Monitoring</Link>
+              <Link to="/software">Secure Socket Layer </Link>
+              <Link to="/software">Software Licencing</Link>
+              <Link to="/software">Web Hosting</Link>
             </div>
           </div>
           <div className={styles.makeup}>
@@ -90,11 +90,11 @@ function Navbar() {
               Hardwares
             </Link>
             <div className={styles.dropdown1}>
-              <Link to="/lips">It Equipment</Link>
-              <Link to="/face">Network Security</Link>
-              <Link to="/eyes">Rental</Link>
-              <Link to="/eyes">Servers</Link>
-              <Link to="/eyes">Technical Support</Link>
+              <Link to="/hardware">It Equipment</Link>
+              <Link to="/hardware">Network Security</Link>
+              <Link to="/hardware">Rental</Link>
+              <Link to="/hardware">Servers</Link>
+              <Link to="/hardware">Technical Support</Link>
             </div>
           </div>
 

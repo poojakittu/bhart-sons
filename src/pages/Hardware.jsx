@@ -28,7 +28,7 @@ export default function Hardware() {
   return (
     <>
       <div className="speacer" style={{paddingTop:"100px"}} >
-        <img style={{height:"400px",width:"100%"}} src="https://i0.wp.com/itscurrie.com/wp-content/uploads/2016/10/time_management_software_full_14177545.jpg?fit=2739%2C1825&ssl=1" alt="" />
+        <img style={{height:"400px",width:"100%"}} src="https://rockwellautomation.scene7.com/is/image/rockwellautomation/16x9-ebook-micro-control-systems.768.jpg" alt="" />
       </div>
       <div className="directoryintro">
         <h1>	Software Solutions </h1>

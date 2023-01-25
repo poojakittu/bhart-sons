@@ -1,7 +1,7 @@
 import React from "react";
 import "./Directory.css";
 import axios from "axios";
-import { Box } from "@chakra-ui/react";
+
 import { Link, useParams } from "react-router-dom";
 
 export default function SingleDirectory() {

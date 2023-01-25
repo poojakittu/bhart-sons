@@ -40,17 +40,13 @@ function Footer() {
           <ListItem className="footerItems">Faq</ListItem>
           <ListItem className="footerItems">Contact Us</ListItem>
           <ListItem className="footerItems">About Us</ListItem>
-          
         </List>
-                      
 
         <List textAlign={["center", "left", "left", "left"]}>
           <ListItem className="footerItems firsti">Sofwares</ListItem>
           <ListItem className="footerItems">Access Control</ListItem>
           <ListItem className="footerItems">Biometic Attendance</ListItem>
-          <ListItem className="footerItems">
-          Payroll-Software
-          </ListItem>
+          <ListItem className="footerItems">Payroll-Software</ListItem>
           <ListItem className="footerItems">Visual ERP</ListItem>
           <ListItem className="footerItems">Website Design</ListItem>
           <ListItem className="footerItems">Cloud & Storage</ListItem>
@@ -61,7 +57,7 @@ function Footer() {
           <ListItem className="footerItems">Software Licencing</ListItem>
           <ListItem className="footerItems">Web Hosting</ListItem>
         </List>
-       
+
         <List textAlign={["center", "left", "left", "left"]}>
           <ListItem className="footerItems firsti">Hardwares</ListItem>
           <ListItem className="footerItems">Network Security</ListItem>
@@ -69,7 +65,6 @@ function Footer() {
           <ListItem className="footerItems">Servers</ListItem>
           <ListItem className="footerItems">Technical Support</ListItem>
           <ListItem className="footerItems">Asana</ListItem>
-          
         </List>
 
         <List textAlign={["center", "left", "left", "left"]}>
@@ -99,24 +94,11 @@ function Footer() {
         <Box w="79%" m="auto">
           <Flex justifyContent="space-between" alignItems="center" mb="20px">
             <Image
-             
               h="80px"
               mixBlendMode="multiply"
               src={require("../assets/logo.jpg")}
               alt="AT Logo"
             />
-            <Flex>
-              <Image
-                w="121px"
-                h="36px"
-                src="https://desktime.com/assets/design/dist/assets/Google-Play.svg"
-              ></Image>
-              <Image
-                w="121px"
-                h="36px"
-                src="https://desktime.com/assets/design/dist/assets/App-Store.svg"
-              ></Image>
-            </Flex>
           </Flex>
 
           <Flex
@@ -136,7 +118,6 @@ function Footer() {
               <GrSkype className="ficons" />
               <ImWhatsapp className="ficons" />
             </Flex>
-           
           </Flex>
         </Box>
       </Box>
@@ -147,8 +128,7 @@ function Footer() {
           justifyContent="space-between"
           alignItems="center"
         >
-          
-          <Image src="https://desktime.com/assets/design/dist/assets/dg-logo-group.svg" />
+          {/* <Image src="https://desktime.com/assets/design/dist/assets/dg-logo-group.svg" /> */}
         </Flex>
       </Box>
     </Box>

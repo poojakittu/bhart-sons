@@ -28,7 +28,7 @@ export const Faq = () => {
   return (
     <>
       <ChakraProvider>
-        <Navbar />
+      
         <Box pt="50px" w="100%" m="auto">
         <Box>
         <Box w={["100", "100%", "90%", "80%"]} m="auto" mt="80px" mb="80px">
@@ -590,7 +590,6 @@ export const Faq = () => {
         <Box>
           <Subscribe />
         </Box>
-        <Footer />
       </ChakraProvider>
     </>
   );

@@ -21,7 +21,7 @@ export default function Box1() {
   return (
     <ChakraProvider>
       <Box>
-        <Navbar />
+      
         <Box pt="90px">
           <Box
             backgroundImage={["none", "none", "none", bgImage]}
@@ -189,7 +189,7 @@ export default function Box1() {
           <Subscribe />
         </Box>
         <Box>
-          <Footer />
+          
         </Box>
       </Box>
     </ChakraProvider>

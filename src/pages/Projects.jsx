@@ -21,7 +21,7 @@ function Projects(){
              <Timer />
              <Projectdesc />
              <Project />
-             <Footer />
+           
 
              </Box>
              </Box>

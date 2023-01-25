@@ -39,7 +39,7 @@ function Home() {
   return (
     <ChakraProvider>
       <Box>
-        <Navbar />
+       
         <Box
           p="130px 0 40px 0"
           bgSize="cover"
@@ -474,7 +474,7 @@ function Home() {
             </Link>
           </Text>
         </Box>
-        <Footer />
+      
       </Box>
     </ChakraProvider>
   );

@@ -19,7 +19,7 @@ function DashboardPage(){
              <Box w='90%' m='auto'>
              <MyDesktime />
              <Productivity />
-             <Footer />
+          
 
              </Box>
              </Box>

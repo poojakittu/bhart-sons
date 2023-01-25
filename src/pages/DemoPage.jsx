@@ -17,7 +17,7 @@ function DemoPage(props) {
 
   return (
     <ChakraProvider>
-      <Navbar />
+     
       <Headersection />
       <Cards />
      
@@ -25,7 +25,7 @@ function DemoPage(props) {
       <BottomUp />
       <Carousel />
       <BottomMost />
-      <Footer />
+     
     </ChakraProvider>
   );
 }

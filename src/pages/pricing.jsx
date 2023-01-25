@@ -37,7 +37,7 @@ function Pricing() {
   });
   return (
     <ChakraProvider>
-      <Navbar />
+    
       <Box
         fontFamily="Source Sans Pro,sans-serif"
         w={["90%", "90%", "90%", "80%"]}
@@ -268,7 +268,7 @@ function Pricing() {
         </Box>
       </Box>
 
-      <Footer />
+   
     </ChakraProvider>
   );
 }

@@ -93,7 +93,7 @@ function Blog() {
   return (
     <ChakraProvider>
       <Box>
-        <Navbar />
+     
         <Box
           w={["90%", "90%", "90%", "80%"]}
           m="auto"
@@ -116,7 +116,7 @@ function Blog() {
           />
         </Box>
       </Box>
-      <Footer />
+     
     </ChakraProvider>
   );
 }

@@ -85,7 +85,7 @@ const [loading, setLoading] = useState(false);
 
   return (
     <>
-      <Navbar />
+     
       <VStack p="150px 25px 40px 25px" m="auto" w="400px">
         <Heading mb="24px" as="h1" fontSize="36px" color="#475056">
           Log in to DeskTime
@@ -175,7 +175,7 @@ const [loading, setLoading] = useState(false);
           </Flex>
         </Box>
       </VStack>
-      <Footer />
+    
     </>
   );
 };

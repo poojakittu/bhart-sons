@@ -4,11 +4,8 @@ import {
   Image,
   Text,
   Link,
-  Button,
   Heading,
   Stack,
-  HStack,
-  Input,
   Grid,
   Accordion,
   AccordionItem,
@@ -23,23 +20,23 @@ import {
   IoReceiptSharp,
 } from "react-icons/io5";
 import { VscGraph } from "react-icons/vsc";
-import { BsFillBellFill, BsPersonCircle } from "react-icons/bs";
+
 import { BiCalendarCheck } from "react-icons/bi";
 import { TbFlameOff } from "react-icons/tb";
-import Navbar from "../components/Navbar";
+
 import Carousel from "../components/Carousel";
-import Footer from "../components/Footer";
+
 import { ChakraProvider } from "@chakra-ui/react";
 import { useEffect } from "react";
+import BottomMost from "../components/Demo_Component/BottomMost";
 
 function Home() {
   useEffect(() => {
-    document.title = "Home | Activity Tracker";
+    document.title = "Home | Bharat & Sons";
   });
   return (
     <ChakraProvider>
       <Box>
-       
         <Box
           p="130px 0 40px 0"
           bgSize="cover"
@@ -72,7 +69,7 @@ function Home() {
                 handle configuration and installation of workstations and
                 operating systems of providers like Windows, Macintosh, etc
               </Text>
-           
+
               <Box color="#475056">
                 <Text>Try free for 14 days. No credit card required.</Text>
                 <Text>
@@ -140,12 +137,13 @@ function Home() {
             spacing="20px"
           >
             <Heading as="h1" fontSize="36px" color="#475056">
-              Use time tracking software to boost productivity by 30%
+              PAUCEK AND LAGE
             </Heading>
             <Text color="#475056" fontSize="18px">
-              There are numerous ways how DeskTime improves the day-to-day work
-              for managers and employees alike. Here are just a few reasons why
-              time tracking with DeskTime is a great choice for your team.
+              “The increasing use of digital service pushed us to look for
+              trusted network vendors that can provide reliable services with
+              friendly prices. After using the services of this company, we
+              definitely can recommend this company to help your needs.”
             </Text>
             <Grid templateColumns="repeat(2, 1fr)" fontSize="18px" gap="30px">
               <Box>
@@ -221,14 +219,19 @@ function Home() {
           <Box maxW="538px" borderRadius="3px">
             <Image
               borderRadius="3px"
-              src="https://desktime.com/static/web/new-homepage/seamless-workflow/seamless-workflow.webp"
+              src="https://www.shutterstock.com/image-photo/professional-financial-experts-collaborating-during-260nw-1389400298.jpg"
             />
           </Box>
           <Box w={["70%", "70%", "70%", "45%"]} textAlign="left">
             <Heading as="h1" fontSize="36px" color="#475056" pb="20px">
-              A seamless workflow and healthy work-life balance for every
-              employee
+              INGOUDE COMPANY
             </Heading>
+            <Text color="#475056" fontSize="18px">
+              “Before we used the services provided by this company, we’ve
+              always had problems in setting the network ourselves and keeping
+              them stable even for just a month. Now, after we cooperate with
+              this company, those problems seem so far away.”
+            </Text>
             <Stack spacing="20px">
               <Box>
                 <Flex alignItems="center" pb="10px" gap="5px">
@@ -238,40 +241,14 @@ function Home() {
                   </Text>
                 </Flex>
                 <Text color="#475056" fontSize="18px">
-                  Time tracking is proof-of-work and DeskTime's time tracker
-                  gives you just that – you can plan your schedule
-                  independently, while your manager can simply follow your
-                  progress no matter where you are and when you choose to work.
+                  Easy-to-Use, Robust, Flexible and Feature Rich HR, Payroll
+                  Software and Employee Self Service with Web / Online and
+                  Payroll Software Functionalities for the Indian. M-Tech can be
+                  used Globally with some customizations to meet country
+                  specific requirements.
                 </Text>
               </Box>
-              <Box>
-                <Flex alignItems="center" pb="10px" gap="5px">
-                  <BsFillBellFill className="homeicon" />
-                  <Text color="#475056" fontSize="18px" fontWeight="bold">
-                    Regular break reminders
-                  </Text>
-                </Flex>
-                <Text color="#475056" fontSize="18px">
-                  Our time tracker uses the Pomodoro timer that will keep a
-                  cautious eye on your workload and remind you to take regular
-                  breaks so you don't lose focus all the while maintaining
-                  healthy habits and mental well-being.
-                </Text>
-              </Box>
-              <Box>
-                <Flex alignItems="center" pb="10px" gap="5px">
-                  <BsPersonCircle className="homeicon" />
-                  <Text color="#475056" fontSize="18px" fontWeight="bold">
-                    Private time
-                  </Text>
-                </Flex>
-                <Text color="#475056" fontSize="18px">
-                  DeskTime's Private time feature disables the website and time
-                  tracker for when you have to take care of non-work-related
-                  tasks during office hours. Employees can feel safe knowing
-                  their privacy is protected.
-                </Text>
-              </Box>
+
               <Box>
                 <Flex alignItems="center" pb="10px" gap="5px">
                   <IoReceiptSharp className="homeicon" />
@@ -280,16 +257,15 @@ function Home() {
                   </Text>
                 </Flex>
                 <Text color="#475056" fontSize="18px">
-                  Employee time is pure gold when it comes to resource planning.
-                  DeskTime's time tracker even lets you add time spent offline
-                  like in meetings, brainstorms, or on work calls so no billable
-                  hours go unnoticed.
+                  VisualPay Payroll Software can be used by private sector
+                  companies in India as well as Internationally and by Indian
+                  Central Govt Organizations meeting VI Pay Commission
+                  requirements. M-Tech is committed to providing you with a
+                  World class Product, Well defined Implementation Methodology &
+                  Excellent Support System
                 </Text>
               </Box>
             </Stack>
-            <Text pt="30px">
-              All the features can be turned on and off to suit eveyone's needs
-            </Text>
           </Box>
         </Flex>
 
@@ -336,7 +312,6 @@ function Home() {
                     <AccordionIcon />
                   </AccordionButton>
                 </h2>
-               
               </AccordionItem>
             </Accordion>
 
@@ -423,58 +398,7 @@ function Home() {
           </Stack>
         </Box>
 
-        <Box p="60px 10px" bg="#4ea819" color="white">
-          <Heading
-            w={["70%", "70%", "70%", "50%"]}
-            m="auto"
-            as="h1"
-            fontSize="36px"
-            pb="20px"
-          >
-            Want to get the most out of your time? Try DeskTime for free!
-          </Heading>
-          <Flex
-            flexDirection={["column", "column", "row", "row"]}
-            m="auto"
-            gap="20px"
-            justifyContent="center"
-            alignItems="center"
-          >
-            <Input
-              w="300px"
-              bg="white"
-              borderRadius="2px"
-              outline="1px solid grey"
-              h="43px"
-              type="text"
-              placeholder="Your work email"
-            />
-            <Button
-              w={["300px", "300px", "auto", "auto"]}
-              p="21px"
-              borderRadius="3px"
-              bg="#4ea819"
-              color="white"
-              border="1px solid white"
-              size="md"
-              fontSize="18px"
-              _hover={{ bg: "white", color: "blackAlpha.700" }}
-            >
-              {" "}
-              START FREE TRIAL
-            </Button>
-          </Flex>
-          <Text m="auto" mt="25px">
-            Try free for 14 days. No credit card required.
-          </Text>
-          <Text>
-            By signing up, you agree to our{" "}
-            <Link textDecoration="underline" fontWeight="bold">
-              terms and privacy policy.
-            </Link>
-          </Text>
-        </Box>
-      
+        <BottomMost />
       </Box>
     </ChakraProvider>
   );

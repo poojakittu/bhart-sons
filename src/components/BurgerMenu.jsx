@@ -1,26 +1,21 @@
 import {
   Link,
   Box,
-  Button,
+ 
   useDisclosure,
-  Menu,
-  MenuButton,
-  MenuList,
+ 
   Drawer,
   DrawerOverlay,
   DrawerContent,
   DrawerCloseButton,
   Divider,
   Image,
-  HStack,
-  MenuItemOption,
-  MenuOptionGroup,
+  
   Flex,
 } from "@chakra-ui/react";
 
 import { GiHamburgerMenu } from "react-icons/gi";
-import { ChevronDownIcon, ChevronUpIcon } from "@chakra-ui/icons";
-import { IoEarth } from "react-icons/io5";
+
 import { Link as RouterLink } from "react-router-dom";
 
 import { useRef } from "react";

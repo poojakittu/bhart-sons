@@ -7,7 +7,7 @@ export const loginAPI = (data) => async (dispatch) => {
     try {
         let res = await axios.post(`${host}/user/login`, data);
         dispatch({ type: AUTH_SIGNIN_SUCCESS, token: res.data});
-        localStorage.setItem('ACTIVITYTRACKER',JSON.stringify(res.data));
+        localStorage.setItem('Bharat & Sons',JSON.stringify(res.data));
 
         return res.data;
     }

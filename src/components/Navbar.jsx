@@ -1,22 +1,12 @@
-import {
-  Flex,
-  Box,
-  Link,
-  
-  Image,
-  
-} from "@chakra-ui/react";
+import { Flex, Box, Link, Image } from "@chakra-ui/react";
 
-import styles from './Header.module.css'
+import styles from "./Header.module.css";
 
 import { Link as RouterLink } from "react-router-dom";
 import BurgerMenu from "./BurgerMenu";
 import { useSelector } from "react-redux";
 
-
 function Navbar() {
-  const {isAuth} = useSelector((store) => store.auth);
-
   return (
     <Box
       position="fixed"
@@ -35,7 +25,7 @@ function Navbar() {
         zIndex="100"
       >
         <Link as={RouterLink} to="/" _hover={{ textDecoration: "none" }}>
-          <Image  h="80px" src={require("../assets/logo.jpg")} />
+          <Image h="80px" src={require("../assets/logo.jpg")} />
         </Link>
 
         <BurgerMenu />
@@ -47,17 +37,16 @@ function Navbar() {
           zIndex="100"
           display={["none", "none", "flex", "flex"]}
         >
-                  <Link
-                    as={RouterLink}
-                    to="/demo"
-                    className="un"
-                    _hover={{ textDecoration: "none" }}
-                  >
-                    Demo
-                  </Link>
+          <Link
+            as={RouterLink}
+            to="/demo"
+            className="un"
+            _hover={{ textDecoration: "none" }}
+          >
+            Demo
+          </Link>
 
-         
-           <Link
+          <Link
             className="un"
             _hover={{ textDecoration: "none" }}
             as={RouterLink}
@@ -66,50 +55,48 @@ function Navbar() {
             Cloud Pricing
           </Link>
 
-          <div className={styles.makeup} >
-          <Link
-            className="un"
-            _hover={{ textDecoration: "none" }}
-            as={RouterLink}
-            to="/software"
-          >
-           Sofware
-          </Link>
-         
-          
-          <div className={styles.dropdown1} >
-                        <Link to="/lips">Access Control </Link>
-                        <Link to="/face">Biometic Attendance</Link>
-                        <Link to="/eyes">Payroll-Software</Link>
-                        <Link to="/lips">Visual ERP </Link>
-                        <Link to="/face">Website Design</Link>
-                        <Link to="/eyes">Cloud & Storage</Link>
-                        <Link to="/lips">Dedicate Server </Link>
-                        <Link to="/face">Email Solutions</Link>
-                        <Link to="/eyes">Employee Monitoring</Link>
-                        <Link to="/lips">Secure Socket Layer </Link>
-                        <Link to="/face">Software Licencing</Link>
-                        <Link to="/eyes">Web Hosting</Link>
+          <div className={styles.makeup}>
+            <Link
+              className="un"
+              _hover={{ textDecoration: "none" }}
+              as={RouterLink}
+              to="/software"
+            >
+              Sofwares
+            </Link>
+
+            <div className={styles.dropdown1}>
+              <Link to="/lips">Access Control </Link>
+              <Link to="/face">Biometic Attendance</Link>
+              <Link to="/eyes">Payroll-Software</Link>
+              <Link to="/lips">Visual ERP </Link>
+              <Link to="/face">Website Design</Link>
+              <Link to="/eyes">Cloud & Storage</Link>
+              <Link to="/lips">Dedicate Server </Link>
+              <Link to="/face">Email Solutions</Link>
+              <Link to="/eyes">Employee Monitoring</Link>
+              <Link to="/lips">Secure Socket Layer </Link>
+              <Link to="/face">Software Licencing</Link>
+              <Link to="/eyes">Web Hosting</Link>
+            </div>
           </div>
+          <div className={styles.makeup}>
+            <Link
+              className="un"
+              _hover={{ textDecoration: "none" }}
+              as={RouterLink}
+              to="/pricing"
+            >
+              Hardwares
+            </Link>
+            <div className={styles.dropdown1}>
+              <Link to="/lips">It Equipment</Link>
+              <Link to="/face">Network Security</Link>
+              <Link to="/eyes">Rental</Link>
+              <Link to="/eyes">Servers</Link>
+              <Link to="/eyes">Technical Support</Link>
+            </div>
           </div>
-          <div className={styles.makeup} >
-          <Link
-            className="un"
-            _hover={{ textDecoration: "none" }}
-            as={RouterLink}
-            to="/pricing"
-          >
-            Hardware
-          </Link>
-          <div className={styles.dropdown1} >
-                        <Link to="/lips">It Equipment</Link>
-                        <Link to="/face">Network Security</Link>
-                        <Link to="/eyes">Rental</Link>
-                        <Link to="/eyes">Servers</Link>
-                        <Link to="/eyes">Technical Support</Link>
-          </div>
-          </div>
-         
 
           <Link
             as={RouterLink}
@@ -117,10 +104,9 @@ function Navbar() {
             className="un"
             _hover={{ textDecoration: "none" }}
           >
-            FAQ
+            FAQ's
           </Link>
 
-          
           <Link
             as={RouterLink}
             to="/aboutus"
@@ -131,13 +117,12 @@ function Navbar() {
           </Link>
           <Link
             as={RouterLink}
-            to="/aboutus"
+            to="/contact"
             className="un"
             _hover={{ textDecoration: "none" }}
           >
             Contact us
           </Link>
-
         </Flex>
       </Flex>
     </Box>

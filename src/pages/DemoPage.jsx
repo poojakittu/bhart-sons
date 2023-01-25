@@ -6,13 +6,13 @@ import Reviews from "../components/Demo_Component/Reviews";
 
 import BottomMost from "../components/Demo_Component/BottomMost";
 import { ChakraProvider } from "@chakra-ui/react";
-import Navbar from "../components/Navbar";
+
 import Carousel from "../components/Carousel";
-import Footer from "../components/Footer";
+
 
 function DemoPage(props) {
   useEffect(() => {
-    document.title = "Demo | Activity Tracker";
+    document.title = "Demo | Bharat";
   });
 
   return (
@@ -20,7 +20,7 @@ function DemoPage(props) {
      
       <Headersection />
       <Cards />
-     
+  
       <Reviews />
       <BottomUp />
       <Carousel />

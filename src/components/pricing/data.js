@@ -104,7 +104,7 @@ export const images = [
   "https://desktime.com/static/web/_common/awards/30daymoneyback-award.png",
 ];
 
-export const faq = [
+export const faqData = [
   {
     qus:"hello",
     ans:"welcome"

@@ -1,16 +1,6 @@
-import { Box, Heading, Button, SimpleGrid } from "@chakra-ui/react";
-import PlanSingleDiv from "./planSingleDiv";
-import { Link } from "react-router-dom";
-
-let data = [
-  "Automatic time tracking",
-  "URL and app tracking",
-  "Integrated web timer",
-  "Mobile app",
-];
+import { Box } from "@chakra-ui/react";
 
 function PriceSign() {
-    
   return (
     <Box
       w={["100%", "100%", "90%", "90%"]}
@@ -20,9 +10,7 @@ function PriceSign() {
       borderRadius="10px"
       mt="70px"
       mb="70px"
-    >
-      
-    </Box>
+    ></Box>
   );
 }
 

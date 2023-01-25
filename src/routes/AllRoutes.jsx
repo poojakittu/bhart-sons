@@ -10,6 +10,10 @@ import Login from "../pages/Login";
 import Signup from "../pages/Signup";
 import Projects from "../pages/Projects";
 import DashboardPage from "../pages/DasboardPage";
+import Software from "../pages/Software";
+
+import Contact from "../pages/Contact";
+import SingleDirectory from "../pages/SingleDirectory";
 
 function AllRoutes() {
   return (
@@ -24,6 +28,10 @@ function AllRoutes() {
       <Route path="/signup" element={<Signup />}></Route>
       <Route path="/dashboard/my" element={<DashboardPage />}></Route>
       <Route path="/dashboard/project" element={<Projects />}></Route>
+      <Route path="/software" element={<Software />}></Route>
+      
+      <Route path="/contact" element={<Contact/>}></Route>
+      <Route path="/dir/:_id" element={<SingleDirectory/>}></Route>
     </Routes>
   );
 }

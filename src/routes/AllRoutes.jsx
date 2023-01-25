@@ -5,8 +5,13 @@ import AboutDeskTime from "../pages/About";
 import { Faq } from "../pages/Faq";
 import Pricing from "../pages/pricing";
 import Software from "../pages/Software";
+
+
+
 import Contact from "../pages/Contact";
 import SingleDirectory from "../pages/SingleDirectory";
+import Hardware from "../pages/Hardware";
+
 
 function AllRoutes() {
   return (
@@ -16,9 +21,11 @@ function AllRoutes() {
       <Route path="/pricing" element={<Pricing />}></Route>
       <Route path="/aboutus" element={<AboutDeskTime />}></Route>
       <Route path="/faq" element={<Faq />}></Route>    
-      <Route path="/software" element={<Software />}></Route>
+      <Route path="/software" element={<Software/>}></Route>
       <Route path="/contact" element={<Contact />}></Route>
       <Route path="/dir/:_id" element={<SingleDirectory />}></Route>
+      <Route path="/hardware" element={<Hardware/>}></Route>
+      
     </Routes>
   );
 }

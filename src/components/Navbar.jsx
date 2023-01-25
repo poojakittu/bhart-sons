@@ -85,7 +85,7 @@ function Navbar() {
               className="un"
               _hover={{ textDecoration: "none" }}
               as={RouterLink}
-              to="/pricing"
+              to="/hardware"
             >
               Hardwares
             </Link>

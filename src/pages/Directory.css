@@ -159,6 +159,25 @@
   font-weight: 500;
 }
 
+.contactbtn{
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.demobtn2{
+  border: 0.5px solid grey;
+  background-color: rgb(51, 51, 163);
+  padding: 15px;
+  color: white;
+  border-radius: 7px;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
 .directorycontainer img {
   margin: 10px 0px;
   width: 100%;
@@ -186,6 +205,8 @@
   font-size: 16px;
   font-weight: 500;
 }
+
+
 
 .directorycontainer > div {
   box-shadow: 0px 0px 11px -5px rgba(0, 0, 0, 0.75);
@@ -329,11 +350,17 @@
     /* border: 1px solid blue; */
     box-shadow: 0px -5px 19px -14px rgba(0, 0, 0, 0.75);
     display: flex;
+    flex-direction: column;
+
     height: auto;
     width: 85%;
     margin: auto;
     padding-bottom: 20px;
     margin-top: 50px;
+    text-align: left;
+    font-size: 20px;
+    padding: 20px;
+    line-height: 40px;
 }
 
 .discriptiondirectory img {
@@ -347,9 +374,11 @@
 }
 
 .discriptiondirectorysecond {
-    display: grid;
-    grid-template-columns: 30% 70%;
-    font-size: 17px;
+   display: flex;
+   flex-direction: column;
+   text-align: left;
+    font-size: 20px;
+    padding: 20px;
     line-height: 40px;
 }
 
@@ -411,6 +440,10 @@
   margin: auto;
   /* border: 1px solid red; */
   margin-top: 50px;
+  padding: 20px;
+  margin-bottom: 50px;
+  text-align: left;
+  font-size: 20px;
 }
 
 .bottombanner img {

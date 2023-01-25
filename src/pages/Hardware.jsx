@@ -6,7 +6,7 @@ import axios from "axios";
 
 import { Link } from 'react-router-dom'
 
-export default function Software() {
+export default function Hardware() {
   const [page, setPage] = useState(1);
   const [arr, setArr] = useState([]);
   const [text, setText] = useState("");
@@ -15,7 +15,7 @@ export default function Software() {
   useEffect(() => {
     axios
       .get(
-        `http://localhost:8080/Software`
+        `http://localhost:8080/Hardware`
       )
       .then((res) => setArr(res.data));
   }, [page, que]);
@@ -75,7 +75,7 @@ export default function Software() {
         {arr &&
           arr.map((ele) => (
             <div className="directorycontainer2" key={ele._id}>
-              <Link to={`/dir/${ele._id}`}>
+             
               <img
                 src={ele.image}
                 alt={ele.title}
@@ -83,10 +83,10 @@ export default function Software() {
               <h1>{ele.title}</h1>
               
               <p className="directoryheading">Price :</p>
-              <p>Rs {ele.price}</p>
+              
               
              
-                 </Link>
+               
                 
                <Link to={"/contact"}> <button className="demobtn">Shedule a Demo</button> </Link>
               

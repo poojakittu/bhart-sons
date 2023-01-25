@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Flex, Button } from "@chakra-ui/react";
-
+import { Link } from "react-router-dom";
 function BottomUp() {
   return (
     <Flex my={70}>
@@ -14,9 +14,12 @@ function BottomUp() {
           justify={"center"}
           alignItems={"center"}
         >
-          <img src="https://desktime.com/static/web/demo/notebook.png" alt="" />
+          <img
+            src="https://i.tribune.com.pk/media/images/2243998-image-1592318762/2243998-image-1592318762.jpg"
+            alt=""
+          />
         </Flex>
-        <Flex width={["100%", "100%", "100%", "50%"]} alignItems={"center"}>
+        <Flex width={["100%", "100%", "100%", "50%"]} alignItems={"center"} padding={"20px"}>
           <Flex flexDirection={"column"}>
             <Container
               fontSize={["26px", "30px", "33px", "36px"]}
@@ -46,19 +49,21 @@ function BottomUp() {
               DeskTime has to offer.
             </Container>
             <Flex>
-              <Button
-                fontSize={["15px", "16px", "16px", "18px"]}
-                border="0.8PX SOLID GREY"
-                borderRadius={5}
-                bg={"#4ea819"}
-                color={"#fff"}
-                marginLeft={"10px"}
-                padding={["12px 18px", "14px 20px", "14px 20px", "16px 22px"]}
-                fontWeight={"600"}
-              >
-                {" "}
-                DEMO ACCOUNT
-              </Button>
+              <Link to="/contact">
+                <Button
+                  fontSize={["15px", "16px", "16px", "18px"]}
+                  border="0.8PX SOLID GREY"
+                  borderRadius={5}
+                  bg={"#4ea819"}
+                  color={"#fff"}
+                  marginLeft={"10px"}
+                  padding={["12px 18px", "14px 20px", "14px 20px", "16px 22px"]}
+                  fontWeight={"600"}
+                >
+                  {" "}
+                  FOR DEMO
+                </Button>
+              </Link>
             </Flex>
           </Flex>
         </Flex>

@@ -71,16 +71,25 @@ function Navbar() {
             className="un"
             _hover={{ textDecoration: "none" }}
             as={RouterLink}
-            to="/pricing"
+            to="/software"
           >
            Sofware
           </Link>
          
           
           <div className={styles.dropdown1} >
-                        <Link to="/lips">LIPS</Link>
-                        <Link to="/face">FACE</Link>
-                        <Link to="/eyes">EYES</Link>
+                        <Link to="/lips">Access Control </Link>
+                        <Link to="/face">Biometic Attendance</Link>
+                        <Link to="/eyes">Payroll-Software</Link>
+                        <Link to="/lips">Visual ERP </Link>
+                        <Link to="/face">Website Design</Link>
+                        <Link to="/eyes">Cloud & Storage</Link>
+                        <Link to="/lips">Dedicate Server </Link>
+                        <Link to="/face">Email Solutions</Link>
+                        <Link to="/eyes">Employee Monitoring</Link>
+                        <Link to="/lips">Secure Socket Layer </Link>
+                        <Link to="/face">Software Licencing</Link>
+                        <Link to="/eyes">Web Hosting</Link>
           </div>
           </div>
           <div className={styles.makeup} >
@@ -93,9 +102,11 @@ function Navbar() {
             Hardware
           </Link>
           <div className={styles.dropdown1} >
-                        <Link to="/lips">LIPS</Link>
-                        <Link to="/face">FACE</Link>
-                        <Link to="/eyes">EYES</Link>
+                        <Link to="/lips">It Equipment</Link>
+                        <Link to="/face">Network Security</Link>
+                        <Link to="/eyes">Rental</Link>
+                        <Link to="/eyes">Servers</Link>
+                        <Link to="/eyes">Technical Support</Link>
           </div>
           </div>
          
@@ -109,14 +120,7 @@ function Navbar() {
             FAQ
           </Link>
 
-          <Link
-            as={RouterLink}
-            to="/blog"
-            className="un"
-            _hover={{ textDecoration: "none" }}
-          >
-            Blog
-          </Link>
+          
           <Link
             as={RouterLink}
             to="/aboutus"

@@ -71,22 +71,7 @@ function Headersection() {
                 {" "}
                 BOOK A DEMO
               </Button>
-              <Button
-                fontWeight={"600"}
-                fontSize={["0.8rem", "0.8rem", "1.115rem", "1.115rem"]}
-                border="0.5px solid grey"
-                borderRadius={5}
-                bg={"white"}
-                color={"#475056"}
-                padding={[
-                  "0.5125rem  1.4rem",
-                  "0.5125rem 1.4rem",
-                  "0.8125rem 1.8rem",
-                  "1.5rem 2rem",
-                ]}
-              >
-                START A FREE TRIAL
-              </Button>
+             
             </Flex>
           </Flex>
         </Flex>

@@ -11,11 +11,11 @@ function BottomMost() {
           fontWeight={"700"}
           color="#fff"
         >
-          Don't miss our blog, full of productivity resources with tips, trends,
-          statistics, and more!
+          Don't miss our Products, full of productivity resources with tips, trends,
+          statistics, and Support!
         </Text>
         <Flex mt="20px" justify={"center"} gap={"20px"}>
-          <Link to="/blog">
+          <Link to="/contact">
             <Button
               fontSize={"1.115rem"}
               border="1px solid white"
@@ -30,7 +30,7 @@ function BottomMost() {
               }}
             >
               {" "}
-              GO TO BLOG
+              Contact Us
             </Button>
           </Link>
         </Flex>

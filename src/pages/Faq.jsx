@@ -5,13 +5,18 @@ import Subscribe from "../components/Blog/Subscribe";
 import {
   Box,
   Text,
-  Input,
   Button,
   Link,
   ChakraProvider,
-  Flex,
   SimpleGrid,
   Heading,
+  Stack,
+  Accordion,
+  AccordionIcon,
+  AccordionItem,
+  AccordionButton,
+  AccordionPanel,
+  
 } from "@chakra-ui/react";
 import { useState } from "react";
 export const Faq = () => {
@@ -24,55 +29,138 @@ export const Faq = () => {
     <>
       <ChakraProvider>
         <Navbar />
-        <Box pt="200px" w="100%" m="auto">
-          <Box w={["100%", "100%", "100%", "40%"]} m="auto" textAlign="center">
-            <Heading
-              fontSize={["17px", "22px", "35px"]}
-              lineHeight="2rem"
-              mb="20px"
-              color="#333c43"
-            >
-              Frequently Asked Questions
-            </Heading>
-            <Text mb="20px" color="#333c43">
-              Here you can find all the questions you need answered
-            </Text>
-            <Flex
-              m="auto"
-              alignItems="center"
-              flexDirection={["column", "column", "row", "row"]}
-              justifyContent="center"
-              gap="15px"
-              mb="50px"
-            >
-              <Box>
-                <Input
-                  border="1px solid #ced4da"
-                  placeholder="What are you looking for ?"
-                  p="0.8875rem 1.875rem"
-                  value={value}
-                  onChange={(e) => setValue(e.target.value)}
-                  borderRadius="3px"
-                />
-              </Box>
-              <Box>
-                <Button
-                  bg="#4ea819"
-                  fontSize="17px"
-                  fontWeight="400"
-                  lineHeight="1"
-                  textTransform="uppercase"
-                  color="#fff"
-                  border="1px solid gray"
-                  p="0.8875rem 1.875rem"
-                  borderRadius="3px"
-                  _hover={{ bg: "#4ea819" }}
+        <Box pt="50px" w="100%" m="auto">
+        <Box>
+        <Box w={["100", "100%", "90%", "80%"]} m="auto" mt="80px" mb="80px">
+          <Box mt="70px">
+            <Box>
+              <Heading fontSize={["20px", "20px", "25px", "30px"]} mb="50px">
+                Frequently asked questions
+              </Heading>
+            </Box>
+
+            <Stack w="80%" m="auto" spacing="20px" mb="100px">
+              <Accordion allowToggle>
+                <AccordionItem
+                  border="1px solid #dee2e6"
+                  borderRadius="5px"
+                  p="10px"
+                  backgroundColor={"#4ea819"}
                 >
-                  Search
-                </Button>
-              </Box>
-            </Flex>
+                  <h2>
+                    <AccordionButton>
+                      <Box
+                        flex="1"
+                        fontWeight="bold"
+                        color="white"
+                        textAlign="left"
+                        bgColor={"#4ea819"}
+                      >
+                        How much does DeskTime cost?
+                      </Box>
+                      <AccordionIcon />
+                    </AccordionButton>
+                  </h2>
+                  <AccordionPanel textAlign="left" pb={4} backgroundColor="white">
+                    DeskTime is free to try for 14 days and will always stay
+                    free for individual use with the LITE plan. Pricing plans
+                    start at $7/user and can go as low as $5.50/user for larger
+                    teams, if paid annually. Find out more here.
+                  </AccordionPanel>
+                </AccordionItem>
+              </Accordion>
+
+              <Accordion allowToggle>
+                <AccordionItem
+                  border="1px solid #dee2e6"
+                  borderRadius="5px"
+                  p="10px"
+                >
+                  <h2>
+                    <AccordionButton>
+                      <Box
+                        flex="1"
+                        fontWeight="bold"
+                        color="#475056"
+                        textAlign="left"
+                      >
+                        How can I subscribe?
+                      </Box>
+                      <AccordionIcon />
+                    </AccordionButton>
+                  </h2>
+                  <AccordionPanel textAlign="left" pb={4}>
+                    In order to start using DeskTime Pro, click on ‘Add payment
+                    method’, choose the payment type - Credit card or PayPal,
+                    enter billing details and click ‘Save payment method’. The
+                    selected payment method will be automatically charged each
+                    billing cycle. Read more here.
+                  </AccordionPanel>
+                </AccordionItem>
+              </Accordion>
+
+              <Accordion allowToggle>
+                <AccordionItem
+                  border="1px solid #dee2e6"
+                  borderRadius="5px"
+                  p="10px"
+                >
+                  <h2>
+                    <AccordionButton>
+                      <Box
+                        flex="1"
+                        fontWeight="bold"
+                        color="#475056"
+                        textAlign="left"
+                      >
+                        What is the difference between monthly and annual
+                        billing?
+                      </Box>
+                      <AccordionIcon />
+                    </AccordionButton>
+                  </h2>
+                  <AccordionPanel textAlign="left" pb={4}>
+                    The monthly billing plan charges your payment method on the
+                    first day of every month. The annual payment method charges
+                    once a year on the date when the plan was started, and
+                    offers a free month of subscription compared to the monthly
+                    plan. Find out more here.
+                  </AccordionPanel>
+                </AccordionItem>
+              </Accordion>
+
+              <Accordion allowToggle>
+                <AccordionItem
+                  border="1px solid #dee2e6"
+                  borderRadius="5px"
+                  p="10px"
+                >
+                  <h2>
+                    <AccordionButton>
+                      <Box
+                        flex="1"
+                        fontWeight="bold"
+                        color="#475056"
+                        textAlign="left"
+                      >
+                        How can I add or remove users from my plan?
+                      </Box>
+                      <AccordionIcon />
+                    </AccordionButton>
+                  </h2>
+                  <AccordionPanel textAlign="left" pb={4}>
+                    To change the amount of users in your plan, click on the
+                    “Manage members“ option under “Team members count“. From
+                    there you can select the new amount of employees you need
+                    using the slider and clicking “Update“. For a more detailed
+                    guide, read this article.
+                  </AccordionPanel>
+                </AccordionItem>
+              </Accordion>
+            </Stack>
           </Box>
+        </Box>
+      </Box>
           <SimpleGrid
             w={["90%", "90%", "90%", "80%"]}
             m="auto"

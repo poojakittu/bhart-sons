@@ -103,3 +103,19 @@ export const images = [
   "https://desktime.com/static/web/_common/awards/softwareadvice-badge-2022.png",
   "https://desktime.com/static/web/_common/awards/30daymoneyback-award.png",
 ];
+
+export const faq = [
+  {
+    qus:"hello",
+    ans:"welcome"
+  },
+  {
+    qus:"hello1",
+    ans:"welcome1"
+  },
+  {
+    qus:"hello2",
+    ans:"welcome2"
+  },
+
+]

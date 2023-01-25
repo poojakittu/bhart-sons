@@ -1,5 +1,6 @@
 import React from "react";
 import { Heading, Flex, Button, Text } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 
 function SingleCard(props) {
   const { img, heading, text, buttonText } = props;
@@ -32,6 +33,7 @@ function SingleCard(props) {
         {text}
       </Text>
       <Flex mt={"10px"} justify={"center"}>
+      <Link to="/contact">
         <Button
           padding={"1px 10px"}
           borderRadius={6}
@@ -42,6 +44,7 @@ function SingleCard(props) {
         >
           {buttonText}
         </Button>
+        </Link>
       </Flex>
     </Flex>
   );

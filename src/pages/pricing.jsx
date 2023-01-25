@@ -14,6 +14,7 @@ import {
   AccordionPanel,
   
 } from "@chakra-ui/react";
+
 import { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
 import PriceBox from "../components/pricing/priceBox";
@@ -23,6 +24,7 @@ import Rated from "../components/pricing/Rated";
 // import TablePrice from "../components/pricing/Table";
 import Carousel from "../components/Carousel";
 import Footer from "../components/Footer";
+import BottomMost from "../components/Demo_Component/BottomMost";
 let rupee = ["₹513.33", "₹733.33", "₹1466.67"];
 function Pricing() {
   const [filter, setFilter] = useState("Monthly");
@@ -133,6 +135,7 @@ function Pricing() {
       </Box>
       <Box mt="120px">
         <Carousel />
+        <BottomMost />
       </Box>
 
       <Box>

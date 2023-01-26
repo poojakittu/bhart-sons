@@ -48,48 +48,64 @@ const Carousel = () => {
   const Cards = [
     {
       name: "Access Control",
-      img: {AccessControl},
-     
+      img: "/AccessControl.jpg",
     },
     {
-      name: "Abhilash Subhash",
-      img: "https://desktime.com/static/web/testimonial-images/abhilash-subhash.png",
-     
+      name: "Bio metic",
+      img: "/Biometric.jpg",
     },
     {
       name: "Visual ERP",
-      img: {VisualERP}
+      img: "/VisualERP.jpg",
+    },
+    {
+      name: "Payroll Software",
+      img: "/Payroll-Software.jpg",
      
     },
     {
-      name: "Pascale Tschaler",
-      role: "Founder & Director",
-      company: "TOA Agency",
-      img: "https://desktime.com/static/web/testimonial-images/pascale-tschaler.jpg",
-      desc: "DeskTime is a great solution to increase and control the productivity of our business. As we are an outsourcing company and work remotely alot, DeskTime is the perfect solution to keep track.",
-    },
-    {
-      name: "Jessica de Wilde",
-      role: "Head of people and culture at Building Stack",
-      company: "Gotham Management Inc",
-      img: "https://desktime.com/static/web/testimonial-images/gotham-management-inc.png",
-      desc: "DeskTime has really helped us get a real-time snapshot of how and where our team spends their time. It’s helped us invest in better tools, boost productivity and improve our efficiency. It has also helped us identify some key employees who were previously flying under the radar – they've now quickly become great assets and given more freedom to work on complex projects outside their scope.",
+      name: "Website Design",
+      img: "/WebsiteDesgin.jpeg",
     },
 
     {
-      name: "Zack Thompson",
-      role: "CEO",
-      company: "Thompson Law",
-      img: "https://desktime.com/static/web/testimonial-images/thompson-law.png",
-      desc: "DeskTime has helped us see where our staff can more efficiently tend to our personal injury cases and the injured clients who need us. Whether working from home or at the office, it has improved overall productivity, efficiency, and most importantly has shown our diligence to be there for our personal injury clients in Dallas-Fort Worth and beyond when it matters most.",
+      name: "Cloud & Storage",
+      img: "/cloud&storage.jpg"
+      
+    },
+    {
+      name: "Email-Solutions",
+      img: "/Email-Solutions.png"
+      
+    },
+    {
+      name: "Secure Socket Layer",
+      img: "/SecureSocketLayer.png"
+      
+    },
+    {
+      name: "Employee-Monitoring",
+      img: "/Employee-Monitoring.png"
+      
+    },
+    {
+      name: "Web-Hosting",
+      img: "/web-hosting.jpg"
+      
     },
   ];
 
   return (
     <div className="content">
       <div className="controls">
-        <AiFillLeftSquare onClick={sliderRef?.slickPrev} className="ctrbtn leftar" />
-        <AiFillRightSquare onClick={sliderRef?.slickNext} className="ctrbtn rightar" />
+        <AiFillLeftSquare
+          onClick={sliderRef?.slickPrev}
+          className="ctrbtn leftar"
+        />
+        <AiFillRightSquare
+          onClick={sliderRef?.slickNext}
+          className="ctrbtn rightar"
+        />
       </div>
       <Slider className="slidercomp" ref={setSliderRef} {...sliderSettings}>
         {Cards.map((el) => (

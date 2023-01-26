@@ -77,13 +77,16 @@ const Contact = () => {
             Easy-to-Use, Robust, Flexible and Feature Rich HR, Payroll Software
             and Employee Self Service with Web / Online and Payroll Software
             Functionalities for the Indian. M-Tech can be used Globally with
-            some customizations to meet country specific requirements. 
+            some customizations to meet country specific requirements.
           </Text>
         </Box>
 
         <Box>
           <SimpleGrid columns={[1, 1, 1, 2]} spacing="50px">
             <Box>
+            <Box><b>Technical Support:</b><p>support@bharatsonssystemssolutions.com</p></Box>
+            <Box><b>Sales Support:</b><p>sales@bharatsonssystemssolutions.com</p></Box>
+            <Box><b>Contact No:</b><p>+91-981864846</p></Box>
               <Box className="contact_image" pt={["0px", "", "80px"]}>
                 <Img
                   src="https://mohit-portfolio.vercel.app/assets/contact.f495edec.svg"
@@ -94,10 +97,12 @@ const Contact = () => {
             <Box>
               <Box width="80%" margin="auto">
                 <Box className="contact_icon">
+               
                   <SimpleGrid columns={[1, 2, 2, 2]} spacing="20px">
+                   
                     <Box className="icon_box">
                       <a
-                        href="https://www.linkedin.com/in/suraj-jadhav-b99446233/"
+                        href="https://www.linkedin.com/in/bharat-singh-001829258"
                         rel="noopener norefferer"
                         target="_blank"
                       >
@@ -106,20 +111,10 @@ const Contact = () => {
                         </Box>
                       </a>
                     </Box>
+
                     <Box className="icon_box">
                       <a
-                        href="https://github.com/SCjadhav21"
-                        rel="noopener norefferer"
-                        target="_blank"
-                      >
-                        <Box className="icon" id="icon2">
-                          <h3>GitHub</h3>
-                        </Box>
-                      </a>
-                    </Box>
-                    <Box className="icon_box">
-                      <a
-                        href="mailto:jadhavsuraj4567@gmail.com"
+                        href="mailto:poojayadav.yadav173@gmail.com"
                         rel="noopener norefferer"
                         target="_blank"
                       >
@@ -130,19 +125,19 @@ const Contact = () => {
                     </Box>
                     <Box className="icon_box">
                       <a
-                        href="https://wa.me/8830637124"
+                        href="https://wa.me/981864846"
                         rel="noopener norefferer"
                         target="_blank"
                       >
-                        <Box className="icon" id="icon5">
+                        <Box className="icon" id="icon1">
                           <h3>WhatsApp</h3>
                         </Box>
                       </a>
                     </Box>
                     <Box className="icon_box">
-                      <a href="" rel="noopener norefferer" target="_blank">
+                      <a href="tel:+91-981864846" rel="noopener norefferer" target="_blank">
                         <Box className="icon" id="icon4">
-                          <h3>8830637124</h3>
+                          <h3>+91-981864846</h3>
                         </Box>
                       </a>
                     </Box>
@@ -209,9 +204,9 @@ const Contact = () => {
                       <Button
                         onClick={handleSubmit}
                         type="submit"
-                        height="45px"
-                        width="90%"
-                        backgroundColor="#e4002b"
+                        height="65px"
+                        width="30%"
+                        backgroundColor="#4ea819"
                         margin-top="20px"
                         color="#fff"
                         fontSize="18px"

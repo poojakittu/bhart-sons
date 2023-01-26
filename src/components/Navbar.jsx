@@ -66,18 +66,18 @@ function Navbar() {
             </Link>
 
             <div className={styles.dropdown1}>
-              <Link to="/software">Access Control </Link>
-              <Link to="/software">Biometic Attendance</Link>
-              <Link to="/software">Payroll-Software</Link>
-              <Link to="/software">Visual ERP </Link>
-              <Link to="/software">Website Design</Link>
-              <Link to="/software">Cloud & Storage</Link>
-              <Link to="/software">Dedicate Server </Link>
-              <Link to="/software">Email Solutions</Link>
-              <Link to="/software">Employee Monitoring</Link>
-              <Link to="/software">Secure Socket Layer </Link>
-              <Link to="/software">Software Licencing</Link>
-              <Link to="/software">Web Hosting</Link>
+              <Link to="/software"  as={RouterLink}>Access Control </Link>
+              <Link to="/software" as={RouterLink}>Biometic Attendance</Link>
+              <Link to="/software" as={RouterLink}>Payroll-Software</Link>
+              <Link to="/software" as={RouterLink}>Visual ERP </Link>
+              <Link to="/software" as={RouterLink}>Website Design</Link>
+              <Link to="/software" as={RouterLink}>Cloud & Storage</Link>
+              <Link to="/software" as={RouterLink}>Dedicate Server </Link>
+              <Link to="/software" as={RouterLink}>Email Solutions</Link>
+              <Link to="/software" as={RouterLink}>Employee Monitoring</Link>
+              <Link to="/software" as={RouterLink}>Secure Socket Layer </Link>
+              <Link to="/software" as={RouterLink}>Software Licencing</Link>
+              <Link to="/software" as={RouterLink}>Web Hosting</Link>
             </div>
           </div>
           <div className={styles.makeup}>
@@ -90,11 +90,11 @@ function Navbar() {
               Hardwares
             </Link>
             <div className={styles.dropdown1}>
-              <Link to="/hardware">It Equipment</Link>
-              <Link to="/hardware">Network Security</Link>
-              <Link to="/hardware">Rental</Link>
-              <Link to="/hardware">Servers</Link>
-              <Link to="/hardware">Technical Support</Link>
+              <Link to="/hardware" as={RouterLink}>It Equipment</Link>
+              <Link to="/hardware" as={RouterLink}>Network Security</Link>
+              <Link to="/hardware" as={RouterLink}>Rental</Link>
+              <Link to="/hardware" as={RouterLink}>Servers</Link>
+              <Link to="/hardware" as={RouterLink}>Technical Support</Link>
             </div>
           </div>
 

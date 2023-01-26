@@ -1,12 +1,8 @@
 import {
   Flex,
   Box,
-  Image,
-  Text,
   List,
   ListItem,
-  Input,
-  Button,
   Grid,
 } from "@chakra-ui/react";
 import {
@@ -14,7 +10,6 @@ import {
   GrLinkedin,
   GrSkype,
   GrTwitter,
-  GrYoutube,
 } from "react-icons/gr";
 import { ImWhatsapp } from "react-icons/im";
 
@@ -85,22 +80,13 @@ function Footer() {
           </ListItem>
           <ListItem className="footerItems">Open chat</ListItem>
           <ListItem className="footerItems firsti">Phone support</ListItem>
-          <ListItem className="footerItems">+1 (315) 6365354</ListItem>
+          <ListItem className="footerItems">+91-981864846</ListItem>
           <ListItem className="footerItems">MON-FRI 9:00-22:00 EET</ListItem>
         </List>
       </Grid>
 
       <Box mt="40px" bg="#EBECEC" p="20px 0">
         <Box w="79%" m="auto">
-          <Flex justifyContent="space-between" alignItems="center" mb="20px">
-            <Image
-              h="80px"
-              mixBlendMode="multiply"
-              src={require("../assets/logo.jpg")}
-              alt="AT Logo"
-            />
-          </Flex>
-
           <Flex
             gap={["20px", "20px", "20px", "10px"]}
             justifyContent="space-between"
@@ -113,23 +99,27 @@ function Footer() {
             >
               <GrFacebook className="ficons" />
               <GrTwitter className="ficons" />
-              <GrYoutube className="ficons" />
+            
+              <a
+                        href="https://www.linkedin.com/in/bharat-singh-001829258"
+                        rel="noopener norefferer"
+                        target="_blank"
+                      >
               <GrLinkedin className="ficons" />
+              </a>
               <GrSkype className="ficons" />
-              <ImWhatsapp className="ficons" />
+              <a
+                        href="https://wa.me/9871418798"
+                        rel="noopener norefferer"
+                        target="_blank"
+                      > <ImWhatsapp className="ficons" />
+              </a>
             </Flex>
           </Flex>
         </Box>
       </Box>
-      <Box bg="#D6D8D9" p="20px 0">
-        <Flex
-          w="79%"
-          m="auto"
-          justifyContent="space-between"
-          alignItems="center"
-        >
-          {/* <Image src="https://desktime.com/assets/design/dist/assets/dg-logo-group.svg" /> */}
-        </Flex>
+      <Box bg="black" p="10px 0" color={"white"}>
+        Legal Disclaimer © copyright Bharat & Sons
       </Box>
     </Box>
   );

@@ -11,6 +11,7 @@ import Software from "../pages/Software";
 import Contact from "../pages/Contact";
 import SingleDirectory from "../pages/SingleDirectory";
 import Hardware from "../pages/Hardware";
+import Vps from "../pages/Vps";
 
 
 function AllRoutes() {
@@ -25,6 +26,7 @@ function AllRoutes() {
       <Route path="/contact" element={<Contact />}></Route>
       <Route path="/dir/:_id" element={<SingleDirectory />}></Route>
       <Route path="/hardware" element={<Hardware/>}></Route>
+      <Route path="/vps" element={<Vps/>}></Route>
       
     </Routes>
   );

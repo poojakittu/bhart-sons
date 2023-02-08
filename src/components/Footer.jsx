@@ -1,24 +1,13 @@
-import {
-  Flex,
-  Box,
-  List,
-  ListItem,
-  Grid,
-} from "@chakra-ui/react";
-import {
-  GrFacebook,
-  GrLinkedin,
-  GrSkype,
-  GrTwitter,
-} from "react-icons/gr";
+import { Flex, Box, List, ListItem, Grid } from "@chakra-ui/react";
+import { GrFacebook, GrLinkedin, GrSkype, GrTwitter } from "react-icons/gr";
 import { ImWhatsapp } from "react-icons/im";
 
 function Footer() {
   return (
     <Box pt="40px" boxShadow="rgba(0, 0, 0, 0.24) 0px 3px 8px">
       <Grid
-        p="10px 50px"
-        rowGap="20px"
+        p={["10px 150px"]}
+        rowGap="10px"
         templateColumns={[
           "repeat(1, auto)",
           "repeat(2, 1fr)",
@@ -59,7 +48,6 @@ function Footer() {
           <ListItem className="footerItems">Rental</ListItem>
           <ListItem className="footerItems">Servers</ListItem>
           <ListItem className="footerItems">Technical Support</ListItem>
-          <ListItem className="footerItems">Asana</ListItem>
         </List>
 
         <List textAlign={["center", "left", "left", "left"]}>
@@ -80,7 +68,7 @@ function Footer() {
           </ListItem>
           <ListItem className="footerItems">Open chat</ListItem>
           <ListItem className="footerItems firsti">Phone support</ListItem>
-          <ListItem className="footerItems">+91-981864846</ListItem>
+          <ListItem className="footerItems">+91-9818648486</ListItem>
           <ListItem className="footerItems">MON-FRI 9:00-22:00 EET</ListItem>
         </List>
       </Grid>
@@ -99,20 +87,22 @@ function Footer() {
             >
               <GrFacebook className="ficons" />
               <GrTwitter className="ficons" />
-            
+
               <a
-                        href="https://www.linkedin.com/in/bharat-singh-001829258"
-                        rel="noopener norefferer"
-                        target="_blank"
-                      >
-              <GrLinkedin className="ficons" />
+                href="https://www.linkedin.com/in/bharat-singh-001829258"
+                rel="noopener norefferer"
+                target="_blank"
+              >
+                <GrLinkedin className="ficons" />
               </a>
               <GrSkype className="ficons" />
               <a
-                        href="https://wa.me/9871418798"
-                        rel="noopener norefferer"
-                        target="_blank"
-                      > <ImWhatsapp className="ficons" />
+                href="https://wa.me/9871418798"
+                rel="noopener norefferer"
+                target="_blank"
+              >
+                {" "}
+                <ImWhatsapp className="ficons" />
               </a>
             </Flex>
           </Flex>

@@ -86,7 +86,7 @@ const Contact = () => {
             <Box>
             <Box><b>Technical Support:</b><p>support@bharatsonssystemssolutions.com</p></Box>
             <Box><b>Sales Support:</b><p>sales@bharatsonssystemssolutions.com</p></Box>
-            <Box><b>Contact No:</b><p>+91-981864846</p></Box>
+            <Box><b>Contact No:</b><p>+91-9818648486</p></Box>
               <Box className="contact_image" pt={["0px", "", "80px"]}>
                 <Img
                   src="https://mohit-portfolio.vercel.app/assets/contact.f495edec.svg"
@@ -114,7 +114,7 @@ const Contact = () => {
 
                     <Box className="icon_box">
                       <a
-                        href="mailto:poojayadav.yadav173@gmail.com"
+                        href="mailto:bharatsonsystemssolutions@gmail.com"
                         rel="noopener norefferer"
                         target="_blank"
                       >

@@ -9,7 +9,7 @@ export default function SingleDirectory() {
   const {_id}=useParams()
   React.useEffect(() => {
     axios
-      .get(`http://localhost:8080/Software/${_id}`)
+      .get(`https://sparkling-blue-drill.cyclic.app/Software/${_id}`)
       .then((res) => setObj(res.data));
   }, []);
 

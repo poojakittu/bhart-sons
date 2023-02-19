@@ -8,53 +8,62 @@ import {
   Text,
   Textarea,
 } from "@chakra-ui/react";
+import { useToast } from '@chakra-ui/react'
 
 import React, { useRef } from "react";
 import { useState } from "react";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const Contact = () => {
-  const [massage, setMassage] = useState({
+  const [formData, setFormData] = useState({
+    name: "",
     email: "",
-    fullName: "",
-    massage: "",
-    mobile: "",
-
-    id: Date.now(),
+    phone:"",
+    query: "",
+  
+      date: Date.now()
   });
-  const form = useRef();
+  const toast = useToast()
+  const navigate = useNavigate()
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    
+    axios.post('https://sparkling-blue-drill.cyclic.app/Contact/add', formData)
+      .then(response => {
+        console.log(response);
+        toast({
+          title: 'Message Sent',
+          description: "Your Query Has Been Recorded Succesfully",
+          status: 'success',
+          duration: 4000,
+          isClosable: true,
+        })
+        setTimeout(()=>{
+          navigate("/")
 
-  const sendEmail = (e) => {
-    e.preventDefault();
-    e.target.reset();
-  };
-  const handelChange = (e) => {
-    let { name, value } = e.target;
-    console.log(name, value);
-    setMassage({ ...massage, [name]: value });
-    console.log(massage);
-  };
-  const handleSubmit = async () => {
-    console.log(massage);
-    const response = await fetch(
-      "https://mock-server-app-pzg9.onrender.com/message",
-      {
-        method: "POST", // *GET, POST, PUT, DELETE, etc.
-        data: JSON.stringify(massage),
-        headers: {
-          "Content-Type": "application/json",
-          // 'Content-Type': 'application/x-www-form-urlencoded',
-        },
-      }
-    );
-    setMassage({
-      email: "",
-      fullName: "",
-      massage: "",
-      mobile: "",
+        },2000)
+      })
+      .catch(error => {
+        console.log(error);
+        toast({
+          title: 'Something Went Wrong',
+          description: "Error",
+          status: 'Error',
+          duration: 4000,
+          isClosable: true,
+        })
+      });
+      
+      setTimeout(() => {
+        event.target.reset();
+      }, 3000);
+  }
 
-      id: Date.now(),
-    });
-  };
+  const handleChange = (event) => {
+    setFormData({...formData, [event.target.name]: event.target.value });
+  }
+    
 
   return (
     <Box
@@ -145,14 +154,15 @@ const Contact = () => {
                 </Box>
 
                 <Box textAlign="center">
-                  <form ref={form} onSubmit={sendEmail}>
+                  <form  name="contact"
+            onSubmit={handleSubmit}>
                     <Box>
                       <Input
-                        onChange={handelChange}
-                        value={massage.fullName}
-                        color="#fff"
+                       
+                       name="name" value={formData.name} onChange={handleChange}
+                        color="black"
                         required={true}
-                        name="fullName"
+                       
                         className="input_tag"
                         type="text"
                         placeholder="Full Name"
@@ -160,11 +170,11 @@ const Contact = () => {
                     </Box>
                     <Box>
                       <Input
-                        onChange={handelChange}
-                        value={massage.email}
-                        color="#fff"
+                       name="email" value={formData.email} onChange={handleChange}
+                        
+                        color="black"
                         required={true}
-                        name="email"
+                        
                         className="input_tag"
                         type="email"
                         placeholder="Email"
@@ -172,10 +182,10 @@ const Contact = () => {
                     </Box>
                     <Box>
                       <Input
-                        onChange={handelChange}
-                        value={massage.mobile}
-                        color="#fff"
-                        name="mobile"
+                       
+                       name="phone" value={formData.phone} onChange={handleChange}
+                        color="black"
+                        
                         required={true}
                         className="input_tag"
                         type="number"
@@ -184,12 +194,12 @@ const Contact = () => {
                     </Box>
                     <Box className="input_message">
                       <Textarea
-                        onChange={handelChange}
-                        value={massage.massage}
-                        color="#fff"
+                       
+                       name="query" value={formData.query} onChange={handleChange}
+                        color="black"
                         mb="15px"
                         required={true}
-                        name="massage"
+                       
                         height=" 150px"
                         marginTop="20px"
                         borderRadius="10px"
@@ -202,13 +212,14 @@ const Contact = () => {
                     </Box>
                     <Box>
                       <Button
-                        onClick={handleSubmit}
+                       
                         type="submit"
                         height="65px"
-                        width="30%"
+                        width="50%"
+                        padding="0px 20px"
                         backgroundColor="#4ea819"
                         margin-top="20px"
-                        color="#fff"
+                        color="black"
                         fontSize="18px"
                         fontWeight="600"
                         borderRadius="20px"

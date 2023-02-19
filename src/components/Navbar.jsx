@@ -37,23 +37,43 @@ function Navbar() {
           zIndex="100"
           display={["none", "none", "flex", "flex"]}
         >
-          <Link
-            as={RouterLink}
-            to="/demo"
-            className="un"
-            _hover={{ textDecoration: "none" }}
-          >
-            Demo
-          </Link>
+           <div className={styles.makeup}>
+            <Link
+              className="un"
+              _hover={{ textDecoration: "none" }}
+              as={RouterLink}
+              to=""
+            >
+              Cloud Solutions
+            </Link>
+            <div className={styles.dropdown1}>
+              <Link to="/vps" as={RouterLink}>
+                Cloud VPS
+              </Link>
+              <Link to="/dedicate" as={RouterLink}>
+                Dedicate Server
+              </Link>
+              <Link to="/gpu" as={RouterLink}>
+                GPU Server
+              </Link>
+              <Link to="/hardware" as={RouterLink}>
+                Backup And Storage
+              </Link>
+              <Link to="/hardware" as={RouterLink}>
+                Premium Email Hosting
+              </Link>
+            </div>
+          </div>
+         
 
-          <Link
+          {/* <Link
             className="un"
             _hover={{ textDecoration: "none" }}
             as={RouterLink}
             to="/pricing"
           >
             Cloud Pricing
-          </Link>
+          </Link> */}
 
           <div className={styles.makeup}>
             <Link
@@ -66,18 +86,42 @@ function Navbar() {
             </Link>
 
             <div className={styles.dropdown1}>
-              <Link to="/software"  as={RouterLink}>Access Control </Link>
-              <Link to="/software" as={RouterLink}>Biometic Attendance</Link>
-              <Link to="/software" as={RouterLink}>Payroll-Software</Link>
-              <Link to="/software" as={RouterLink}>Visual ERP </Link>
-              <Link to="/software" as={RouterLink}>Website Design</Link>
-              <Link to="/software" as={RouterLink}>Cloud & Storage</Link>
-              <Link to="/software" as={RouterLink}>Dedicate Server </Link>
-              <Link to="/software" as={RouterLink}>Email Solutions</Link>
-              <Link to="/software" as={RouterLink}>Employee Monitoring</Link>
-              <Link to="/software" as={RouterLink}>Secure Socket Layer </Link>
-              <Link to="/software" as={RouterLink}>Software Licencing</Link>
-              <Link to="/software" as={RouterLink}>Web Hosting</Link>
+              <Link to="/software" as={RouterLink}>
+                Access Control{" "}
+              </Link>
+              <Link to="/software" as={RouterLink}>
+                Biometic Attendance
+              </Link>
+              <Link to="/software" as={RouterLink}>
+                Payroll-Software
+              </Link>
+              <Link to="/software" as={RouterLink}>
+                Visual ERP{" "}
+              </Link>
+              <Link to="/software" as={RouterLink}>
+                Website Design
+              </Link>
+              {/* <Link to="/software" as={RouterLink}>
+                Cloud & Storage
+              </Link> */}
+              {/* <Link to="/software" as={RouterLink}>
+                Dedicate Server{" "}
+              </Link> */}
+              {/* <Link to="/software" as={RouterLink}>
+                Email Solutions
+              </Link> */}
+              <Link to="/software" as={RouterLink}>
+                Employee Monitoring
+              </Link>
+              <Link to="/software" as={RouterLink}>
+                Secure Socket Layer{" "}
+              </Link>
+              <Link to="/software" as={RouterLink}>
+                Software Licencing
+              </Link>
+              <Link to="/software" as={RouterLink}>
+                Web Hosting
+              </Link>
             </div>
           </div>
           <div className={styles.makeup}>
@@ -90,22 +134,25 @@ function Navbar() {
               Hardwares
             </Link>
             <div className={styles.dropdown1}>
-              <Link to="/hardware" as={RouterLink}>It Equipment</Link>
-              <Link to="/hardware" as={RouterLink}>Network Security</Link>
-              <Link to="/hardware" as={RouterLink}>Rental</Link>
-              <Link to="/hardware" as={RouterLink}>Servers</Link>
-              <Link to="/hardware" as={RouterLink}>Technical Support</Link>
+              <Link to="/sub" as={RouterLink}>
+                It Equipment
+              </Link>
+              <Link to="/hardware" as={RouterLink}>
+                Network Security
+              </Link>
+              <Link to="/hardware" as={RouterLink}>
+                Rental
+              </Link>
+              {/* <Link to="/hardware" as={RouterLink}>
+                Servers
+              </Link>
+              <Link to="/hardware" as={RouterLink}>
+                Technical Support
+              </Link> */}
             </div>
           </div>
 
-          <Link
-            as={RouterLink}
-            to="/faq"
-            className="un"
-            _hover={{ textDecoration: "none" }}
-          >
-            FAQ's
-          </Link>
+         
 
           <Link
             as={RouterLink}
@@ -122,6 +169,14 @@ function Navbar() {
             _hover={{ textDecoration: "none" }}
           >
             Contact us
+          </Link>
+          <Link
+            as={RouterLink}
+            to="/demo"
+            className="un"
+            _hover={{ textDecoration: "none" }}
+          >
+           Book a Demo
           </Link>
         </Flex>
       </Flex>

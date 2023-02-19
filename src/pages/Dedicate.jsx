@@ -9,7 +9,7 @@ import { gridData } from "../components/vps/dummyData";
 const firstImg =
   "https://img.freepik.com/premium-photo/cloud-server-storing-personal-business-data-isolated-white-background-3d-render_188237-1086.jpg";
 
-const Vps = () => {
+const Dedicate = () => {
   const { smallScreen, midBr } = useMedia();
 
   const lgStyle = {
@@ -44,7 +44,7 @@ const Vps = () => {
                 fontWeight="bold"
                 color="black "
               >
-                Cloud VPS
+                Dedicated Cloud Server
               </Text>
               <Text
                 mt="3"
@@ -56,10 +56,11 @@ const Vps = () => {
                 Cloud servers are stable, fast and secure.{" "}
               </Text>
               <Text mt="7" color="black">
-                They avoid the hardware issues seen with physical servers, and
-                they are likely to be the most stable option for businesses
-                wanting to keep their IT budget down. Cloud servers provide a
-                faster service for your money.
+                A dedicated cloud is a single-tenant cloud infrastructure, which
+                essentially acts as an isolated, single-tenant public cloud.
+                Dedicated clouds are set as an infrastructure as a service
+                (IaaS) and are made to reduce an organizations downtime and cost
+                while promoting flexibility and performance.
               </Text>
               <Box mt="20px"></Box>
               <Button
@@ -84,19 +85,17 @@ const Vps = () => {
       {/* second */}
       <Box bgColor={"#f5f8fd"} p="50px 10%" textAlign={"center"}>
         <Text color={"#4ea819"} fontSize={"4xl"} fontWeight="bold">
-          Benifit of Cloud Server
+          Benifits Of Dedicated Server
         </Text>
         <Text
           fontSize={
             !smallScreen ? "md" : !midBr ? "xl" : "2xl"
           } /* color="blue" */
         >
-          A simple way to cut costs, take advantage of economies of scale, and
-          focus on your core business? By upgrading to a server in the cloud,
-          your organisation avoids excessive infrastructure spending as it
-          brings enhanced reliability in a high-availability environment.
+          Server resources are not shared. When you choose a dedicated hosting
+          provider, you get the full resources & full control of single server.
         </Text>
-        <GridTopicBox data={gridData.gridData1} />
+        <GridTopicBox data={gridData.gridData3} />
       </Box>
       {/* third */}
       <Box p="50px 10%" textAlign={"center"}>
@@ -138,7 +137,7 @@ const Vps = () => {
               p="15px 10px"
               textAlign={"left"}
             >
-              Custome option for CPU, RAM, Storage & Bandwidth etc.
+              Server resources are not shared. When you choose a dedicated hosting
             </Text>
             <Text
               bgColor="#09ab78"
@@ -153,7 +152,7 @@ const Vps = () => {
               p="15px 10px"
               /* border="1px solid red" */ textAlign={"right"}
             >
-              Admin & root acess
+             Reliable Security and Disaster Recovery
             </Text>
             {/* sec */}
             <Text
@@ -168,7 +167,7 @@ const Vps = () => {
               p="15px 10px"
               textAlign={"left"}
             >
-              Choose operating system sutable for business
+             Increased Flexibility, Reduced Costs
             </Text>
             <Text
               bgColor="#09ab78"
@@ -183,7 +182,7 @@ const Vps = () => {
               p="15px 10px"
               /* border="1px solid red" */ textAlign={"right"}
             >
-              1 Public Ip
+             Enhanced performance and security
             </Text>
           </Box>
         </Flex>
@@ -203,4 +202,4 @@ const Vps = () => {
   );
 };
 
-export default Vps;
+export default Dedicate;

@@ -2,6 +2,7 @@ import { Box, SimpleGrid } from '@chakra-ui/react'
 import { useMedia } from '../../MediaQuery/UseMedia'
 import SingleBox from './SingleBox'
 
+
 const GridTopicBox = ({data,column,padding}) => {
   const {smallScreen} = useMedia()
   return (

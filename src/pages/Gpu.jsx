@@ -9,7 +9,7 @@ import { gridData } from "../components/vps/dummyData";
 const firstImg =
   "https://img.freepik.com/premium-photo/cloud-server-storing-personal-business-data-isolated-white-background-3d-render_188237-1086.jpg";
 
-const Vps = () => {
+const Gpu = () => {
   const { smallScreen, midBr } = useMedia();
 
   const lgStyle = {
@@ -203,4 +203,4 @@ const Vps = () => {
   );
 };
 
-export default Vps;
+export default Gpu;

@@ -12,6 +12,9 @@ import Contact from "../pages/Contact";
 import SingleDirectory from "../pages/SingleDirectory";
 import Hardware from "../pages/Hardware";
 import Vps from "../pages/Vps";
+import Subcomponent from "../pages/Subcomponent";
+import Dedicate from "../pages/Dedicate";
+import Gpu from "../pages/Gpu";
 
 
 function AllRoutes() {
@@ -21,12 +24,17 @@ function AllRoutes() {
       <Route path="/demo" element={<DemoPage />}></Route>
       <Route path="/pricing" element={<Pricing />}></Route>
       <Route path="/aboutus" element={<AboutDeskTime />}></Route>
-      <Route path="/faq" element={<Faq />}></Route>    
+      <Route path="/vps" element={<Vps />}></Route>    
       <Route path="/software" element={<Software/>}></Route>
       <Route path="/contact" element={<Contact />}></Route>
       <Route path="/dir/:_id" element={<SingleDirectory />}></Route>
       <Route path="/hardware" element={<Hardware/>}></Route>
       <Route path="/vps" element={<Vps/>}></Route>
+      <Route path="/dedicate" element={<Dedicate/>}></Route>
+      <Route path="/gpu" element={<Gpu/>}></Route>
+      
+
+    
       
     </Routes>
   );

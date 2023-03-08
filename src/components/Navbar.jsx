@@ -94,7 +94,7 @@ function Navbar() {
               as={RouterLink}
               to="/software"
             >
-              Sofwares
+              Softwares
             </Link>
 
             <div className={styles.dropdown1}>
@@ -135,13 +135,13 @@ function Navbar() {
               Hardwares
             </Link>
             <div className={styles.dropdown1}>
-              <Link to="/sub" as={RouterLink}>
+              <Link to="/hardware" as={RouterLink}>
                 It Equipment
               </Link>
-              <Link to="/hardware" as={RouterLink}>
+              <Link to="/network" as={RouterLink}>
                 Network Security
               </Link>
-              <Link to="/hardware" as={RouterLink}>
+              <Link to="/rental" as={RouterLink}>
                 Rental
               </Link>
               {/* <Link to="/hardware" as={RouterLink}>

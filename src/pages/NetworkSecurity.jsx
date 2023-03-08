@@ -6,39 +6,34 @@ import axios from "axios";
 
 import { Link } from 'react-router-dom'
 
-export default function Hardware() {
+export default function NetworkSecurity() {
   const [page, setPage] = useState(1);
-  const [arr, setArr] = useState([]);
+ 
   const [text, setText] = useState("");
   const [que, setQue] = useState(text);
 
-  useEffect(() => {
-    axios
-      .get(
-        `https://sparkling-blue-drill.cyclic.app/Hardware`
-      )
-      .then((res) => setArr(res.data));
-  }, [page, que]);
-
-  const searchDirectory = () => {
-    setQue(text);
-    console.log(arr);
-  };
+  const arr = [
+    {
+        title:"Switch / Router",
+        img:"https://www.networkbulls.com/ask/public/uploads/images/426bc4189d4f67d8026833274e9bcf0d.jpg"
+    },
+    {
+        title:"Firewall",
+        img:"https://www.networkbulls.com/ask/public/uploads/images/5f76132d82e6dfa59e2a742bc6f51696.jpg"
+    }
+  ]
 
   return (
     <>
       <div className="speacer" style={{paddingTop:"100px"}} >
-        <img style={{height:"400px",width:"100%"}} src="https://rockwellautomation.scene7.com/is/image/rockwellautomation/16x9-ebook-micro-control-systems.768.jpg" alt="" />
+        <img style={{height:"400px",width:"100%"}} src="https://www.bn-its.de/assets/images/3/Firewall-49374825.webp" alt="" />
       </div>
       <div className="directoryintro">
-        <h1 style={{fontWeight:"600"}}>	Hardware Solutions </h1>
+        <h1 style={{fontWeight:"600"}}>	Network Security </h1>
         <p>
-        We are providing total IT solutions, computer networking solutions, network design consultancy 
-        helping our clients to develop short-term and long-term goals and dovetail it with their 
-        business objectives to act as a catalyst and lend direction. We operate in an industry which is 
-        pushing the boundaries of knowledge and redefining the way we live. We adopt newer and more effective
-         ways of managing ourselves provide an effective and harmonious working
-         atmosphere where individual aspirations are concomitant with organizational objectives.
+        Network security is a set of technologies that protects the usability and integrity 
+        of a company's infrastructure by preventing 
+        the entry or proliferation within a network of a wide variety of potential threats.
 
         </p>
         <p>
@@ -51,7 +46,7 @@ export default function Hardware() {
       
       
      
-        <h1 style={{textAlign:"center",fontSize:"24px",fontWeight:"600"}}>We are Dealing with all kind of Hardware equipment</h1>
+        <h1 style={{textAlign:"center",fontSize:"24px",fontWeight:"600"}}>We are Dealing with all kind of Network Security</h1>
       <div className="directorycontainer">
         {arr &&
           arr.map((ele) => (
@@ -59,7 +54,7 @@ export default function Hardware() {
              
               <img
                style={{height:"300px",width:"400px"}}
-                src={ele.image}
+                src={ele.img}
                 alt={ele.title}
               />
               <h1>{ele.title}</h1>

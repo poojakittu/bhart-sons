@@ -12,7 +12,7 @@ const CCard = ({name,img}) => {
       }
       borderRadius="7px"
       w="90%"
-      h="456px"
+      h="356px"
       padding="16px"
       m="20px auto"
     >
@@ -21,7 +21,7 @@ const CCard = ({name,img}) => {
           {name}
         </Heading>
         <Box margin={"auto"}>
-          <Img src={img} alt="name" width={"500px"} height={"400px"} padding="10px" />
+          <Img src={img} alt="name" width={"500px"} height={"300px"} padding="10px" />
         </Box>
       </Box>
     </Box>

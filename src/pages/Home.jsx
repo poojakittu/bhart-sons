@@ -52,7 +52,7 @@ function Home() {
           >
             <Stack w={["80%", "80%", "80%", "43%"]} spacing="20px">
               <Heading as="h1" fontSize="42px" color="#475056">
-                IT SOLUTIONS
+                IT & CLOUD SOLUTIONS
               </Heading>
               <Text color="#475056" fontSize="18px">
                 The Hardware and Networking Professionals are responsible for

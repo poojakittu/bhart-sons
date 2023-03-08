@@ -68,7 +68,7 @@ const Vps = () => {
               <Box mt="20px"></Box>
 
               <Button
-                background={"#4ea819"}
+                background={"#e8c615"}
                 borderRadius={"50px 0px 50px 50px"}
               >
                 <a href="/demo" target="_blank">
@@ -79,7 +79,7 @@ const Vps = () => {
               {!smallScreen && <br />}
               <Button
                 ml={smallScreen ? "30px" : "0px"}
-                background={"#4ea819"}
+                background={"#e8c615"}
                 borderRadius={"50px 0px 50px 50px"}
               >
                 <a
@@ -96,7 +96,7 @@ const Vps = () => {
       </Box>
       {/* second */}
       <Box bgColor={"#f5f8fd"} p="50px 10%" textAlign={"center"}>
-        <Text color={"#4ea819"} fontSize={"4xl"} fontWeight="bold">
+        <Text color={"#e8c615"} fontSize={"4xl"} fontWeight="bold">
           Benifits of Cloud Server
         </Text>
         <Text
@@ -113,7 +113,7 @@ const Vps = () => {
       </Box>
       {/* third */}
       <Box p="50px 10%" textAlign={"center"}>
-        <Text color={"#4ea819"} fontSize={"4xl"} fontWeight="bold">
+        <Text color={"#e8c615"} fontSize={"4xl"} fontWeight="bold">
           Features
         </Text>
 
@@ -143,7 +143,7 @@ const Vps = () => {
               bgColor="#09ab78"
               _hover={{
                 textAlign: "right",
-                background: "#4ea819",
+                background: "#e8c615",
                 color: "white",
               }}
               mt="15px"
@@ -158,7 +158,7 @@ const Vps = () => {
               boxShadow={`rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset`}
               _hover={{
                 textAlign: "left",
-                background: "#4ea819",
+                background: "#e8c615",
                 color: "white",
               }}
               mt="15px"
@@ -166,14 +166,14 @@ const Vps = () => {
               p="15px 10px"
               /* border="1px solid red" */ textAlign={"right"}
             >
-              Admin & root acess
+              Admin & root access
             </Text>
             {/* sec */}
             <Text
               bgColor="#09ab78"
               _hover={{
                 textAlign: "right",
-                background: "#4ea819",
+                background: "#e8c615",
                 color: "white",
               }}
               mt="15px"
@@ -188,7 +188,7 @@ const Vps = () => {
               boxShadow={`rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset`}
               _hover={{
                 textAlign: "left",
-                background: "#4ea819",
+                background: "#e8c615",
                 color: "white",
               }}
               mt="15px"
@@ -202,7 +202,7 @@ const Vps = () => {
         </Flex>
       </Box>
       <Box p="50px 10%" textAlign={"center"}>
-        <Text color={"#4ea819"} fontSize={"4xl"} fontWeight="bold">
+        <Text color={"#e8c615"} fontSize={"4xl"} fontWeight="bold">
           Cloud VPS Prices
         </Text>
         <SimpleGrid
@@ -230,7 +230,7 @@ const Vps = () => {
 
       {/* fourth */}
       <Box p="50px 10%" textAlign={"center"}>
-        <Text color={"#4ea819"} fontSize={"4xl"} fontWeight="bold">
+        <Text color={"#e8c615"} fontSize={"4xl"} fontWeight="bold">
           Advantage
         </Text>
         <Text fontSize={"2xl"} /* color="blue" */>

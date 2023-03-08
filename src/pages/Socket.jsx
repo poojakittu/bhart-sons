@@ -1,10 +1,12 @@
-import { Box, Button, Flex, Image, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, Image, SimpleGrid, Text } from "@chakra-ui/react";
 import React from "react";
 import GridTopicBox from "../components/vps/GridTopicBox";
 import { useMedia } from "../MediaQuery/UseMedia";
 
 /* dummy Data */
 import { gridData } from "../components/vps/dummyData";
+import { pfData5 } from "../components/pricing/data";
+import PriceBox from "../components/pricing/priceBox";
 /* img */
 const firstImg =
   "https://uploads-ssl.webflow.com/5f1b4085f4118a504729a0ea/5f1b427a40cb57eaceb0b01c_Rocket.svg";
@@ -49,30 +51,34 @@ const Socket = () => {
               >
                 Secure Socket Layer
               </Text>
-              
+
               <Text mt="7" color="black" fontSize={"sm"}>
-              Websites need SSL certificates to keep user data secure, verify ownership of the website, prevent attackers from creating a fake version of the site, and convey trust to users
+                Websites need SSL certificates to keep user data secure, verify
+                ownership of the website, prevent attackers from creating a fake
+                version of the site, and convey trust to users
               </Text>
               <Box mt="20px"></Box>
               <Button
-                background={"#4ea819"}
+                background={"#e8c615"}
                 borderRadius={"50px 0px 50px 50px"}
               >
-                <a href="/demo" target="_blank">Get Started</a>  
+                <a href="/demo" target="_blank">
+                  Get Started
+                </a>
               </Button>
               {!smallScreen && <br />}
               {!smallScreen && <br />}
               <Button
                 ml={smallScreen ? "30px" : "0px"}
-                background={"#4ea819"}
+                background={"#e8c615"}
                 borderRadius={"50px 0px 50px 50px"}
               >
                 <a
-          href="https://wa.me/9871418798"
-          rel="noopener norefferer"
-          target="_blank"
-        >
-                Talk to an Expert
+                  href="https://wa.me/9871418798"
+                  rel="noopener norefferer"
+                  target="_blank"
+                >
+                  Talk to an Expert
                 </a>
               </Button>
             </Box>
@@ -81,26 +87,29 @@ const Socket = () => {
       </Box>
       {/* second */}
       <Box bgColor={"#f5f8fd"} p="50px 10%" textAlign={"center"}>
-        <Text color={"#4ea819"} fontSize={"4xl"} fontWeight="bold">
-        Benifits of SSL
+        <Text color={"#e8c615"} fontSize={"4xl"} fontWeight="bold">
+          Benifits of SSL
         </Text>
         <Text
           fontSize={
             !smallScreen ? "sm" : !midBr ? "sm" : "sm"
           } /* color="blue" */
         >
-          SSL Certificate secures the data which is in transit between server and browser. In simple words, it keeps the information private and secure.
+          SSL Certificate secures the data which is in transit between server
+          and browser. In simple words, it keeps the information private and
+          secure.
         </Text>
         <GridTopicBox data={gridData.gridDataSSL} />
       </Box>
       {/* third */}
       <Box p="50px 10%" textAlign={"center"}>
-        <Text color={"#4ea819"} fontSize={"4xl"} fontWeight="bold">
-        Feature of SSL Cerificate
+        <Text color={"#e8c615"} fontSize={"4xl"} fontWeight="bold">
+          Feature of SSL Cerificate
         </Text>
 
         <Text textAlign={"center"} color="black" fontSize={"sm"}>
-        SSL security is common for Business Process Portal modules accessible through the Web, such as Home, Management, and Administration
+          SSL security is common for Business Process Portal modules accessible
+          through the Web, such as Home, Management, and Administration
         </Text>
         <Flex
           flexDirection={!midBr ? "column" : "row"}
@@ -119,7 +128,7 @@ const Socket = () => {
               bgColor="#09ab78"
               _hover={{
                 textAlign: "right",
-                background: "#4ea819",
+                background: "#e8c615",
                 color: "white",
               }}
               mt="15px"
@@ -134,7 +143,7 @@ const Socket = () => {
               boxShadow={`rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset`}
               _hover={{
                 textAlign: "left",
-                background: "#4ea819",
+                background: "#e8c615",
                 color: "white",
               }}
               mt="15px"
@@ -149,7 +158,7 @@ const Socket = () => {
               bgColor="#09ab78"
               _hover={{
                 textAlign: "right",
-                background: "#4ea819",
+                background: "#e8c615",
                 color: "white",
               }}
               mt="15px"
@@ -157,14 +166,14 @@ const Socket = () => {
               p="15px 10px"
               textAlign={"left"}
             >
-            Secure Payments to Experience Safe Shopping
+              Secure Payments to Experience Safe Shopping
             </Text>
             <Text
               bgColor="#09ab78"
               boxShadow={`rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset`}
               _hover={{
                 textAlign: "left",
-                background: "#4ea819",
+                background: "#e8c615",
                 color: "white",
               }}
               mt="15px"
@@ -172,19 +181,45 @@ const Socket = () => {
               p="15px 10px"
               /* border="1px solid red" */ textAlign={"right"}
             >
-             SSL Increase Customer Trust & Revenue
+              SSL Increase Customer Trust & Revenue
             </Text>
           </Box>
         </Flex>
       </Box>
+      <Box p="50px 10%" textAlign={"center"}>
+        <Text color={"#e8c615"} fontSize={"4xl"} fontWeight="bold">
+          Prices
+        </Text>
+        <SimpleGrid
+          alignItems="center"
+          w={["100", "100%", "90%", "85%"]}
+          m="auto"
+          mt="80px"
+          columns={["1", "1", "2", "3"]}
+          spacing="30px"
+        >
+          {pfData5.map((ele, index) => {
+            return (
+              <PriceBox
+                key={ele.type}
+                type={ele.type}
+                rs={ele.rs}
+                tx={ele.tx}
+                data={ele.ft}
+                server={ele.server}
+              />
+            );
+          })}
+        </SimpleGrid>
+      </Box>
 
       {/* fourth */}
       <Box p="50px 10%" textAlign={"center"}>
-        <Text color={"#4ea819"} fontSize={"4xl"} fontWeight="bold">
+        <Text color={"#e8c615"} fontSize={"4xl"} fontWeight="bold">
           Advantage
         </Text>
         <Text fontSize={"sm"} /* color="blue" */>
-        Why choose your Solutions
+          Why choose your Solutions
         </Text>
         <GridTopicBox data={gridData.gridData3} column={4} margin="auto" />
       </Box>

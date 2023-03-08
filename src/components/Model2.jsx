@@ -23,7 +23,7 @@ function Model2({ project, handlesetProject, handleUpdate, el }) {
       <BiEdit onClick={onOpen} />
       <Modal isOpen={isOpen} onClose={onClose}>
         <ModalContent>
-          <ModalHeader fontSize="22px" color="#fff" background="#4ea819">
+          <ModalHeader fontSize="22px" color="#fff" background="#e8c615">
             Update a Project
           </ModalHeader>
           <ModalCloseButton />
@@ -63,11 +63,11 @@ function Model2({ project, handlesetProject, handleUpdate, el }) {
             </Button>
             <Button
               _hover={{
-                bg: "#4ea819",
+                bg: "#e8c615",
               }}
               onClick={() => handleUpdate(el._id, el.projectDate)}
               color="white"
-              background="#4ea819"
+              background="#e8c615"
             >
               UPDATE
             </Button>

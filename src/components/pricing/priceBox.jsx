@@ -5,13 +5,13 @@ function PriceBox({ type, state, handleState, rs, tx, data }) {
   return (
     <Box
       onClick={() => handleState(type)}
-      border={type === state ? "2px solid #4ea819" : "none"}
+      border={type === state ? "2px solid #e8c615" : "none"}
       boxShadow="rgba(0, 0, 0, 0.35) 0px 5px 15px"
       borderRadius="10px"
       key={Date.now()}
     >
       {type === "Cloud VPS Premium" ? (
-        <Box w="100%" borderRadius="7px 7px 0px 0px" mb="20px" bg="#4ea819">
+        <Box w="100%" borderRadius="7px 7px 0px 0px" mb="20px" bg="#e8c615">
           <Heading fontSize="17px" p="10px" color="#fff">
             Best value
           </Heading>

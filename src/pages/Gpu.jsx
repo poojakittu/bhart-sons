@@ -69,7 +69,7 @@ const Gpu = () => {
               </Text>
               <Box mt="20px"></Box>
               <Button
-                background={"#4ea819"}
+                background={"#e8c615"}
                 borderRadius={"50px 0px 50px 50px"}
               >
                 <a href="/demo" target="_blank">
@@ -80,7 +80,7 @@ const Gpu = () => {
               {!smallScreen && <br />}
               <Button
                 ml={smallScreen ? "30px" : "0px"}
-                background={"#4ea819"}
+                background={"#e8c615"}
                 borderRadius={"50px 0px 50px 50px"}
               >
                 <a
@@ -97,7 +97,7 @@ const Gpu = () => {
       </Box>
       {/* second */}
       <Box bgColor={"#f5f8fd"} p="50px 10%" textAlign={"center"}>
-        <Text color={"#4ea819"} fontSize={"4xl"} fontWeight="bold">
+        <Text color={"#e8c615"} fontSize={"4xl"} fontWeight="bold">
           Benifit of GPU Server
         </Text>
         <Text
@@ -112,7 +112,7 @@ const Gpu = () => {
       </Box>
       {/* third */}
       <Box p="50px 10%" textAlign={"center"}>
-        <Text color={"#4ea819"} fontSize={"4xl"} fontWeight="bold">
+        <Text color={"#e8c615"} fontSize={"4xl"} fontWeight="bold">
           Feature of GPU Server
         </Text>
 
@@ -140,7 +140,7 @@ const Gpu = () => {
               bgColor="#09ab78"
               _hover={{
                 textAlign: "right",
-                background: "#4ea819",
+                background: "#e8c615",
                 color: "white",
               }}
               mt="15px"
@@ -156,7 +156,7 @@ const Gpu = () => {
               boxShadow={`rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset`}
               _hover={{
                 textAlign: "left",
-                background: "#4ea819",
+                background: "#e8c615",
                 color: "white",
               }}
               mt="15px"
@@ -171,7 +171,7 @@ const Gpu = () => {
               bgColor="#09ab78"
               _hover={{
                 textAlign: "right",
-                background: "#4ea819",
+                background: "#e8c615",
                 color: "white",
               }}
               mt="15px"
@@ -186,7 +186,7 @@ const Gpu = () => {
               boxShadow={`rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset`}
               _hover={{
                 textAlign: "left",
-                background: "#4ea819",
+                background: "#e8c615",
                 color: "white",
               }}
               mt="15px"
@@ -201,7 +201,7 @@ const Gpu = () => {
       </Box>
 
       <Box p="50px 10%" textAlign={"center"}>
-        <Text color={"#4ea819"} fontSize={"4xl"} fontWeight="bold">
+        <Text color={"#e8c615"} fontSize={"4xl"} fontWeight="bold">
           GPU Prices
         </Text>
         <SimpleGrid
@@ -229,7 +229,7 @@ const Gpu = () => {
 
       {/* fourth */}
       <Box p="50px 10%" textAlign={"center"}>
-        <Text color={"#4ea819"} fontSize={"4xl"} fontWeight="bold">
+        <Text color={"#e8c615"} fontSize={"4xl"} fontWeight="bold">
           Advantage
         </Text>
         <Text fontSize={"sm"} /* color="blue" */>

@@ -28,20 +28,20 @@
   }
   
   #icon1 {
-    background-color: #4ea819;
+    background-color: #e8c615;
   }
   #icon2 {
     background-color: rgb(39, 36, 36);
   }
   
   #icon3 {
-    background-color: #4ea819;
+    background-color: #e8c615;
   }
   #icon4 {
-    background-color: #4ea819;
+    background-color: #e8c615;
   }
   #icon5 {
-    background-color: #4ea819;
+    background-color: #e8c615;
   }
   
   .input_tag {
@@ -56,6 +56,6 @@
   
   .input_btn:hover {
     cursor: pointer;
-    background-color: #4ea819;
+    background-color: #e8c615;
     transition: 0.6s ease;
   }

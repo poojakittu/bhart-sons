@@ -68,7 +68,7 @@ const Employee = () => {
               </Text>
               <Box mt="20px"></Box>
               <Button
-                background={"#4ea819"}
+                background={"#e8c615"}
                 borderRadius={"50px 0px 50px 50px"}
               >
                 <a href="/demo" target="_blank">Get Started</a>  
@@ -77,7 +77,7 @@ const Employee = () => {
               {!smallScreen && <br />}
               <Button
                 ml={smallScreen ? "30px" : "0px"}
-                background={"#4ea819"}
+                background={"#e8c615"}
                 borderRadius={"50px 0px 50px 50px"}
               >
                 <a
@@ -94,7 +94,7 @@ const Employee = () => {
       </Box>
       {/* second */}
       <Box bgColor={"#f5f8fd"} p="50px 10%" textAlign={"center"}>
-        <Text color={"#4ea819"} fontSize={"4xl"} fontWeight="bold">
+        <Text color={"#e8c615"} fontSize={"4xl"} fontWeight="bold">
           Benifits of Employee Monitoring Tool
         </Text>
         <Text
@@ -112,7 +112,7 @@ const Employee = () => {
       </Box>
       {/* third */}
       <Box p="50px 10%" textAlign={"center"}>
-        <Text color={"#4ea819"} fontSize={"4xl"} fontWeight="bold">
+        <Text color={"#e8c615"} fontSize={"4xl"} fontWeight="bold">
           Feature of Employee Monitoring Tools
         </Text>
 
@@ -156,7 +156,7 @@ const Employee = () => {
               bgColor="#09ab78"
               _hover={{
                 textAlign: "right",
-                background: "#4ea819",
+                background: "#e8c615",
                 color: "white",
               }}
               mt="15px"
@@ -171,7 +171,7 @@ const Employee = () => {
               boxShadow={`rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset`}
               _hover={{
                 textAlign: "left",
-                background: "#4ea819",
+                background: "#e8c615",
                 color: "white",
               }}
               mt="15px"
@@ -186,7 +186,7 @@ const Employee = () => {
               bgColor="#09ab78"
               _hover={{
                 textAlign: "right",
-                background: "#4ea819",
+                background: "#e8c615",
                 color: "white",
               }}
               mt="15px"
@@ -201,7 +201,7 @@ const Employee = () => {
               boxShadow={`rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset`}
               _hover={{
                 textAlign: "left",
-                background: "#4ea819",
+                background: "#e8c615",
                 color: "white",
               }}
               mt="15px"
@@ -216,7 +216,7 @@ const Employee = () => {
               boxShadow={`rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset`}
               _hover={{
                 textAlign: "left",
-                background: "#4ea819",
+                background: "#e8c615",
                 color: "white",
               }}
               mt="15px"
@@ -231,7 +231,7 @@ const Employee = () => {
               boxShadow={`rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset`}
               _hover={{
                 textAlign: "left",
-                background: "#4ea819",
+                background: "#e8c615",
                 color: "white",
               }}
               mt="15px"
@@ -245,7 +245,7 @@ const Employee = () => {
               bgColor="#09ab78"
               _hover={{
                 textAlign: "right",
-                background: "#4ea819",
+                background: "#e8c615",
                 color: "white",
               }}
               mt="15px"
@@ -259,7 +259,7 @@ const Employee = () => {
               bgColor="#09ab78"
               _hover={{
                 textAlign: "right",
-                background: "#4ea819",
+                background: "#e8c615",
                 color: "white",
               }}
               mt="15px"
@@ -273,7 +273,7 @@ const Employee = () => {
               bgColor="#09ab78"
               _hover={{
                 textAlign: "right",
-                background: "#4ea819",
+                background: "#e8c615",
                 color: "white",
               }}
               mt="15px"
@@ -287,7 +287,7 @@ const Employee = () => {
               bgColor="#09ab78"
               _hover={{
                 textAlign: "right",
-                background: "#4ea819",
+                background: "#e8c615",
                 color: "white",
               }}
               mt="15px"
@@ -301,7 +301,7 @@ const Employee = () => {
               bgColor="#09ab78"
               _hover={{
                 textAlign: "right",
-                background: "#4ea819",
+                background: "#e8c615",
                 color: "white",
               }}
               mt="15px"
@@ -315,7 +315,7 @@ const Employee = () => {
               bgColor="#09ab78"
               _hover={{
                 textAlign: "right",
-                background: "#4ea819",
+                background: "#e8c615",
                 color: "white",
               }}
               mt="15px"
@@ -329,7 +329,7 @@ const Employee = () => {
               bgColor="#09ab78"
               _hover={{
                 textAlign: "right",
-                background: "#4ea819",
+                background: "#e8c615",
                 color: "white",
               }}
               mt="15px"
@@ -343,7 +343,7 @@ const Employee = () => {
               bgColor="#09ab78"
               _hover={{
                 textAlign: "right",
-                background: "#4ea819",
+                background: "#e8c615",
                 color: "white",
               }}
               mt="15px"
@@ -357,7 +357,7 @@ const Employee = () => {
               bgColor="#09ab78"
               _hover={{
                 textAlign: "right",
-                background: "#4ea819",
+                background: "#e8c615",
                 color: "white",
               }}
               mt="15px"
@@ -374,21 +374,21 @@ const Employee = () => {
       {/* fourth */}
 
       <Box p="50px 10%" textAlign={"center"}>
-        <Text color={"#4ea819"} fontSize={"4xl"} fontWeight="bold">
+        <Text color={"#e8c615"} fontSize={"4xl"} fontWeight="bold">
           Operating System Support
         </Text>
         <Text fontSize={"sm"} /* color="blue" */>Mac , Windows & Linux</Text>
       </Box>
 
       <Box p="50px 10%" textAlign={"center"}>
-        <Text color={"#4ea819"} fontSize={"4xl"} fontWeight="bold">
+        <Text color={"#e8c615"} fontSize={"4xl"} fontWeight="bold">
           What is Employee Montioring Tools ?
         </Text>
         <Text fontSize={"sm"} >Employee Monitoring helps to monitor all employee activity in one centralized location.</Text>
       </Box>
 
       <Box p="50px 10%" textAlign={"center"}>
-        <Text color={"#4ea819"} fontSize={"4xl"} fontWeight="bold">
+        <Text color={"#e8c615"} fontSize={"4xl"} fontWeight="bold">
         Why Employee Monitoring tool Impoetant for our bussniess ?
         </Text>
         <Text fontSize={"sm"} >Its help to scale up your busniess & improve employee productivity.</Text>
@@ -396,7 +396,7 @@ const Employee = () => {
 
 
       <Box p="50px 10%" textAlign={"center"}>
-        <Text color={"#4ea819"} fontSize={"4xl"} fontWeight="bold">
+        <Text color={"#e8c615"} fontSize={"4xl"} fontWeight="bold">
           Advantage
         </Text>
         <Text fontSize={"sm"} /* color="blue" */>

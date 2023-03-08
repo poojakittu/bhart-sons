@@ -10,7 +10,7 @@ function Navbar() {
   return (
     <Box
       position="fixed"
-      borderTop="4px solid #4ea819"
+      borderTop="4px solid #e8c615"
       boxShadow="0 0 12px rgb(0 0 0 / 12%)"
       w="100%"
       zIndex="10"

@@ -20,7 +20,7 @@ const SingleBox = ({ des, link, img }) => {
       textAlign={"center"}
       minW={"100%"}
       minH={"100%"}
-      border={"0.5px solid #44d62c"}
+      border={"0.5px solid #e8c615"}
     >
       <CardBody>
         <Box p="10px 10px">

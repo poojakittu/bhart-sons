@@ -25,7 +25,9 @@ function App() {
           target="_blank"
         >
           {" "} */}
-          <FloatingWhatsApp phoneNumber="9871418798" accountName="Mr. Sushil Kumar"/>
+        
+          
+        <FloatingWhatsApp phoneNumber="9871418798" accountName="Welcome Bharat & Son's"/>
         {/* </a> */}
       </Box>
       <AllRoutes />

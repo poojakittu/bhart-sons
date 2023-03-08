@@ -34,13 +34,13 @@ export default function SingleDirectory() {
           
           {/* <h1> <h1 style={{fontWeight:"600"}}>Price :-</h1>  Rs {obj.price}</h1> */}
 
-          <h1><h1 style={{fontWeight:"600"}}>Features :-</h1>  {obj.feature}</h1>
+          <h1><h1 style={{fontWeight:"600"}}>Features</h1>  {obj.feature}</h1>
        
       </div>
       
       
       <div className="bottombanner">
-      <p> <h1 style={{fontWeight:"600"}}>Description :-</h1>  <br /> {obj.description}</p>
+      <p> <h1 style={{fontWeight:"600"}}>Description</h1>  <br /> {obj.description}</p>
       </div>
 
       <div className="contactbtn">

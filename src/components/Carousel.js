@@ -10,6 +10,27 @@ import "slick-carousel/slick/slick-theme.css";
 // React slick carousel
 const Carousel = () => {
   const [sliderRef, setSliderRef] = useState(null);
+  function SampleNextArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{ ...style, backgroundColor:"darkgrey",borderRadius:"50%" }}
+        onClick={onClick}
+      />
+    );
+  }
+  function SamplePrevArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{ ...style, backgroundColor:"darkgrey",borderRadius:"50%"}}
+        onClick={onClick}
+      />
+    );
+  }
+
 
   const sliderSettings = {
     slidesToShow: 3,
@@ -17,6 +38,11 @@ const Carousel = () => {
     infinite: true,
     dots: true,
     initialSlide: 0,
+    speed: 1000,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
     responsive: [
       {
         breakpoint: 1024,
@@ -24,6 +50,9 @@ const Carousel = () => {
           slidesToShow: 2,
           slidesToScroll: 1,
           initialSlide: 0,
+          speed: 1000,
+    autoplay: true,
+    autoplaySpeed: 4000,
           infinite: true,
           dots: true,
         },
@@ -34,6 +63,9 @@ const Carousel = () => {
           slidesToShow: 1,
           slidesToScroll: 1,
           initialSlide: 1,
+          speed: 1000,
+          autoplay: true,
+          autoplaySpeed: 4000,
         },
       },
       {
@@ -41,6 +73,9 @@ const Carousel = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          speed: 1000,
+          autoplay: true,
+          autoplaySpeed: 4000,
         },
       },
     ],
@@ -98,14 +133,14 @@ const Carousel = () => {
   return (
     <div className="content">
       <div className="controls">
-        <AiFillLeftSquare
+        {/* <AiFillLeftSquare
           onClick={sliderRef?.slickPrev}
           className="ctrbtn leftar"
         />
         <AiFillRightSquare
           onClick={sliderRef?.slickNext}
           className="ctrbtn rightar"
-        />
+        /> */}
       </div>
       <Slider className="slidercomp" ref={setSliderRef} {...sliderSettings}>
         {Cards.map((el) => (

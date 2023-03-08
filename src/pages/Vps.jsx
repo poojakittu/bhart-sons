@@ -24,7 +24,7 @@ const Vps = () => {
   };
 
   return (
-    <Box paddingTop="80px">
+    <Box paddingTop="60px" m="auto">
       {/* first */}
       <Box>
         <Box h={1}></Box>
@@ -35,13 +35,13 @@ const Vps = () => {
         >
           <Box
             m="auto"
-            pt="85px"
+            pt="65px"
             w={["96%", "96%", "80%", "50%", "40%"]}
             textAlign={"left"}
-            margin="left"
-            marginLeft={"90px"}
+           
+           
           >
-            <Box ml={["0px", "1%", "3%", "5%", "8%"]}>
+            <Box ml={["0px", "1%", "1%", "1%", "1%"]}>
               <Text
                 mt={["10px", "10px", "140px", "140px", "140px"]}
                 fontSize={"4xl"}
@@ -54,7 +54,7 @@ const Vps = () => {
                 mt="3"
                 lineHeight={"40px"}
                 color="black"
-                maxW={["100%", "90%", "85%", "75%", "70%"]}
+                maxW={["100%", "90%", "85%", "75%", "60%"]}
                 fontSize={"4xl"}
               >
                 Cloud servers are stable, fast and secure.{" "}

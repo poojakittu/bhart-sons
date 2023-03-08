@@ -1,17 +1,17 @@
 import { Box, Heading, Text } from "@chakra-ui/react";
 import PlanSingleDiv from "./planSingleDiv";
 
-function PriceBox({ type, state, handleState, rs, tx, data, server }) {
+function PriceBox({ type, state, handleState, rs, tx, data }) {
   return (
     <Box
       onClick={() => handleState(type)}
-      border={type === state ? "2px solid #4ea819" : "none"}
+      border={type === state ? "2px solid #e8c615" : "none"}
       boxShadow="rgba(0, 0, 0, 0.35) 0px 5px 15px"
       borderRadius="10px"
       key={Date.now()}
     >
-      {type === "Premium" ? (
-        <Box w="100%" borderRadius="7px 7px 0px 0px" mb="20px" bg="#4ea819">
+      {type === "Cloud VPS Premium" ? (
+        <Box w="100%" borderRadius="7px 7px 0px 0px" mb="20px" bg="#e8c615">
           <Heading fontSize="17px" p="10px" color="#fff">
             Best value
           </Heading>
@@ -19,38 +19,17 @@ function PriceBox({ type, state, handleState, rs, tx, data, server }) {
       ) : null}
       <Box p="15px">
         <Box>
-          <Heading
-            fontSize="20px"
-            mt="20px"
-            bgColor={"red"}
-            color="white"
-            padding={"5px"}
-            
-
-          >
-            {server}
-          </Heading>
-          <Heading fontSize="20px" mt="20px">
+          <Heading fontSize="20px" mt="2px">
             {type}
           </Heading>
-          <Heading mt="13px">{rs}</Heading>
-          <Text mt="13px">user / month</Text>
-
-          <Text
-            color={"#475056"}
-            fontWeight={"400"}
-            textAlign={"center"}
-            mt="20px"
-            fontSize="14px"
-          >
-            No credit card required.
-          </Text>
+          <Heading mt="1px">{rs}</Heading>
+          <Text mt="1px">user / month</Text>
         </Box>
-        <Box mt="50px">
-          <Text color={"#475056"} fontWeight={"400"} textAlign={"left"}>
+        <Box mt="5px" fontSize={"14px"}>
+          <Text color={"#475056"} fontWeight={"900"} textAlign={"left"}>
             {tx}
           </Text>
-          <Box>
+          <Box fontSize={"14px"}>
             {data.map((ele) => {
               return <PlanSingleDiv ele={ele} />;
             })}

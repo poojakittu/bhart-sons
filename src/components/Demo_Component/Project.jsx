@@ -131,9 +131,9 @@ function Project() {
             padding="10px 18px"
             fontSize="12px"
             color={"#fff"}
-            background={"#4ea819"}
+            background={"#e8c615"}
             _hover={{
-              background: "#4ea819",
+              background: "#e8c615",
             }}
           >
             NEW PROJECT
@@ -142,7 +142,7 @@ function Project() {
           <Modal isOpen={isOpen} onClose={onClose}>
             <ModalOverlay />
             <ModalContent>
-              <ModalHeader fontSize="22px" color="#fff" background="#4ea819">
+              <ModalHeader fontSize="22px" color="#fff" background="#e8c615">
                 Create a Project
               </ModalHeader>
               <ModalCloseButton />
@@ -182,11 +182,11 @@ function Project() {
                 </Button>
                 <Button
                   _hover={{
-                    bg: "#4ea819",
+                    bg: "#e8c615",
                   }}
                   onClick={handleCreate}
                   color="white"
-                  background="#4ea819"
+                  background="#e8c615"
                 >
                   CREATE
                 </Button>
@@ -215,7 +215,7 @@ function Project() {
                 fontWeight="500"
                 textAlign={"left"}
                 fontSize={"26px"}
-                color={"#4ea819"}
+                color={"#e8c615"}
               >
                 {data?.length}
               </Text>
@@ -241,7 +241,7 @@ function Project() {
                 fontWeight="500"
                 textAlign={"left"}
                 fontSize={"26px"}
-                color={"#4ea819"}
+                color={"#e8c615"}
               >
                 {data?.length}
               </Text>
@@ -267,7 +267,7 @@ function Project() {
                 fontWeight="500"
                 textAlign={"left"}
                 fontSize={"26px"}
-                color={"#4ea819"}
+                color={"#e8c615"}
               >
                 {data?.length}
               </Text>

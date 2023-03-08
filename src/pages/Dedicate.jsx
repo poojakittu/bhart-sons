@@ -1,13 +1,15 @@
-import { Box, Button, Flex, Image, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, Image, SimpleGrid, Text } from "@chakra-ui/react";
 import React from "react";
 import GridTopicBox from "../components/vps/GridTopicBox";
 import { useMedia } from "../MediaQuery/UseMedia";
 
 /* dummy Data */
 import { gridData } from "../components/vps/dummyData";
+import { pfData2 } from "../components/pricing/data";
+import PriceBox from "../components/pricing/priceBox";
 /* img */
 const firstImg =
-  "https://img.freepik.com/premium-photo/cloud-server-storing-personal-business-data-isolated-white-background-3d-render_188237-1086.jpg";
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8oh7mxxrKamQ87tYx3DZiMAUEm5JvnszeBg&usqp=CAU";
 
 const Dedicate = () => {
   const { smallScreen, midBr } = useMedia();
@@ -36,10 +38,12 @@ const Dedicate = () => {
             pt="85px"
             w={["96%", "96%", "80%", "50%", "40%"]}
             textAlign={"left"}
+            margin="left"
+            marginLeft={"90px"}
           >
             <Box ml={["0px", "1%", "3%", "5%", "8%"]}>
               <Text
-                mt={["10px", "160px", "140px", "140px", "140px"]}
+                mt={["10px", "10px", "140px", "140px", "140px"]}
                 fontSize={"4xl"}
                 fontWeight="bold"
                 color="black "
@@ -51,7 +55,7 @@ const Dedicate = () => {
                 lineHeight={"40px"}
                 color="black"
                 maxW={["100%", "90%", "85%", "75%", "70%"]}
-                fontSize={"4xl"}
+                fontSize={"3xl"}
               >
                 Cloud servers are stable, fast and secure.{" "}
               </Text>
@@ -64,19 +68,27 @@ const Dedicate = () => {
               </Text>
               <Box mt="20px"></Box>
               <Button
-                background={"#4ea819"}
+                background={"#e8c615"}
                 borderRadius={"50px 0px 50px 50px"}
               >
-                Get Started
+                <a href="/demo" target="_blank">
+                  Get Started
+                </a>
               </Button>
               {!smallScreen && <br />}
               {!smallScreen && <br />}
               <Button
                 ml={smallScreen ? "30px" : "0px"}
-                background={"#4ea819"}
+                background={"#e8c615"}
                 borderRadius={"50px 0px 50px 50px"}
               >
-                Talk to an Expert
+                <a
+                  href="https://wa.me/9871418798"
+                  rel="noopener norefferer"
+                  target="_blank"
+                >
+                  Talk to an Expert
+                </a>
               </Button>
             </Box>
           </Box>
@@ -84,12 +96,12 @@ const Dedicate = () => {
       </Box>
       {/* second */}
       <Box bgColor={"#f5f8fd"} p="50px 10%" textAlign={"center"}>
-        <Text color={"#4ea819"} fontSize={"4xl"} fontWeight="bold">
+        <Text color={"#e8c615"} fontSize={"4xl"} fontWeight="bold">
           Benifits Of Dedicated Server
         </Text>
         <Text
           fontSize={
-            !smallScreen ? "md" : !midBr ? "xl" : "2xl"
+            !smallScreen ? "sm" : !midBr ? "sm" : "sm"
           } /* color="blue" */
         >
           Server resources are not shared. When you choose a dedicated hosting
@@ -99,7 +111,7 @@ const Dedicate = () => {
       </Box>
       {/* third */}
       <Box p="50px 10%" textAlign={"center"}>
-        <Text color={"#4ea819"} fontSize={"4xl"} fontWeight="bold">
+        <Text color={"#e8c615"} fontSize={"4xl"} fontWeight="bold">
           Features
         </Text>
 
@@ -115,7 +127,10 @@ const Dedicate = () => {
           justifyContent={"space-between"}
         >
           <Box w={midBr ? "47%" : "100%"}>
-            <Image src="https://img.freepik.com/free-vector/cloud-server-banner-laptop-with-cloud-icon_39422-371.jpg"></Image>
+            <Image
+              src="https://thumbs.dreamstime.com/b/web-hosting-vector-banner-isometric-cloud-computing-media-server-d-futuristic-abstract-datacenter-network-system-224815462.jpg"
+              height={"350px"}
+            ></Image>
           </Box>
           <Box p="1%" w={midBr ? "47%" : "100%"}>
             {/*  <Text textAlign={"left"}>
@@ -129,7 +144,7 @@ const Dedicate = () => {
               bgColor="#09ab78"
               _hover={{
                 textAlign: "right",
-                background: "#4ea819",
+                background: "#e8c615",
                 color: "white",
               }}
               mt="15px"
@@ -137,14 +152,15 @@ const Dedicate = () => {
               p="15px 10px"
               textAlign={"left"}
             >
-              Server resources are not shared. When you choose a dedicated hosting
+              Server resources are not shared. When you choose a dedicated
+              hosting
             </Text>
             <Text
               bgColor="#09ab78"
               boxShadow={`rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset`}
               _hover={{
                 textAlign: "left",
-                background: "#4ea819",
+                background: "#e8c615",
                 color: "white",
               }}
               mt="15px"
@@ -152,14 +168,14 @@ const Dedicate = () => {
               p="15px 10px"
               /* border="1px solid red" */ textAlign={"right"}
             >
-             Reliable Security and Disaster Recovery
+              Reliable Security and Disaster Recovery
             </Text>
             {/* sec */}
             <Text
               bgColor="#09ab78"
               _hover={{
                 textAlign: "right",
-                background: "#4ea819",
+                background: "#e8c615",
                 color: "white",
               }}
               mt="15px"
@@ -167,14 +183,14 @@ const Dedicate = () => {
               p="15px 10px"
               textAlign={"left"}
             >
-             Increased Flexibility, Reduced Costs
+              Increased Flexibility, Reduced Costs
             </Text>
             <Text
               bgColor="#09ab78"
               boxShadow={`rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset`}
               _hover={{
                 textAlign: "left",
-                background: "#4ea819",
+                background: "#e8c615",
                 color: "white",
               }}
               mt="15px"
@@ -182,21 +198,48 @@ const Dedicate = () => {
               p="15px 10px"
               /* border="1px solid red" */ textAlign={"right"}
             >
-             Enhanced performance and security
+              Enhanced performance and security
             </Text>
           </Box>
         </Flex>
       </Box>
 
+      <Box p="50px 10%" textAlign={"center"}>
+        <Text color={"#e8c615"} fontSize={"4xl"} fontWeight="bold">
+          Prices of Dedicate Server
+        </Text>
+        <SimpleGrid
+          alignItems="center"
+          w={["100", "100%", "90%", "85%"]}
+          m="auto"
+          mt="80px"
+          columns={["1", "1", "2", "3"]}
+          spacing="30px"
+        >
+          {pfData2.map((ele, index) => {
+            return (
+              <PriceBox
+                key={ele.type}
+                type={ele.type}
+                rs={ele.rs}
+                tx={ele.tx}
+                data={ele.ft}
+                server={ele.server}
+              />
+            );
+          })}
+        </SimpleGrid>
+      </Box>
+
       {/* fourth */}
       <Box p="50px 10%" textAlign={"center"}>
-        <Text color={"#4ea819"} fontSize={"4xl"} fontWeight="bold">
+        <Text color={"#e8c615"} fontSize={"4xl"} fontWeight="bold">
           Advantage
         </Text>
-        <Text fontSize={"2xl"} /* color="blue" */>
+        <Text fontSize={"sm"} /* color="blue" */>
           Why choose your Solutions
         </Text>
-        <GridTopicBox data={gridData.gridData2} column={3} />
+        <GridTopicBox data={gridData.gridData2} column={4} />
       </Box>
     </Box>
   );

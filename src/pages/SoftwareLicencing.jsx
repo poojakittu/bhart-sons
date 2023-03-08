@@ -1,17 +1,16 @@
-import { Box, Button, Flex, Image, SimpleGrid, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, Image, Text, SimpleGrid } from "@chakra-ui/react";
 import React from "react";
 import GridTopicBox from "../components/vps/GridTopicBox";
 import { useMedia } from "../MediaQuery/UseMedia";
-
+import { pfData6, pfData7 } from "../components/pricing/data1";
 /* dummy Data */
 import { gridData } from "../components/vps/dummyData";
-import { pfData } from "../components/pricing/data";
 import PriceBox from "../components/pricing/priceBox";
 /* img */
 const firstImg =
-  "https://img.freepik.com/premium-photo/cloud-server-storing-personal-business-data-isolated-white-background-3d-render_188237-1086.jpg";
+  "https://uploads-ssl.webflow.com/5f1b4085f4118a504729a0ea/5f1b427a40cb57eaceb0b01c_Rocket.svg";
 
-const Vps = () => {
+const SoftwareLicence = () => {
   const { smallScreen, midBr } = useMedia();
 
   const lgStyle = {
@@ -38,35 +37,26 @@ const Vps = () => {
             pt="85px"
             w={["96%", "96%", "80%", "50%", "40%"]}
             textAlign={"left"}
-            margin="left"
-            marginLeft={"90px"}
+            margin="right"
+            marginLeft={["20px", "20px", "80px", "400"]}
+            padding="5px"
           >
             <Box ml={["0px", "1%", "3%", "5%", "8%"]}>
               <Text
-                mt={["10px", "10px", "140px", "140px", "140px"]}
+                mt={["10px", "10px", "40px", "40px", "40px"]}
                 fontSize={"4xl"}
                 fontWeight="bold"
                 color="black "
               >
-                Cloud VPS
+                Software Licensing
               </Text>
-              <Text
-                mt="3"
-                lineHeight={"40px"}
-                color="black"
-                maxW={["100%", "90%", "85%", "75%", "70%"]}
-                fontSize={"4xl"}
-              >
-                Cloud servers are stable, fast and secure.{" "}
-              </Text>
-              <Text mt="7" color="black">
-                They avoid the hardware issues seen with physical servers, and
-                they are likely to be the most stable option for businesses
-                wanting to keep their IT budget down. Cloud servers provide a
-                faster service for your money.
+
+              <Text mt="7" color="black" fontSize={"sm"}>
+                We are dealing with all kind of MicrosftWe are dealing with all
+                kinds of Microsoft license. Which help to make easy work,
+                reliable & Secure work.{" "}
               </Text>
               <Box mt="20px"></Box>
-
               <Button
                 background={"#e8c615"}
                 borderRadius={"50px 0px 50px 50px"}
@@ -97,31 +87,29 @@ const Vps = () => {
       {/* second */}
       <Box bgColor={"#f5f8fd"} p="50px 10%" textAlign={"center"}>
         <Text color={"#e8c615"} fontSize={"4xl"} fontWeight="bold">
-          Benifits of Cloud Server
+          Benifit Software Licensing
         </Text>
         <Text
           fontSize={
-            !smallScreen ? "md" : !midBr ? "sm" : "sm"
+            !smallScreen ? "sm" : !midBr ? "sm" : "sm"
           } /* color="blue" */
         >
-          A simple way to cut costs, take advantage of economies of scale, and
-          focus on your core business? By upgrading to a server in the cloud,
-          your organisation avoids excessive infrastructure spending as it
-          brings enhanced reliability in a high-availability environment.
+          Software licensing is profitability. Software licensing offers
+          multiple ways to increase profitability including managing licenses
+          while at the same time protecting against privacy
         </Text>
-        <GridTopicBox data={gridData.gridData1} />
+        <GridTopicBox data={gridData.gridDataLicence} />
       </Box>
       {/* third */}
       <Box p="50px 10%" textAlign={"center"}>
         <Text color={"#e8c615"} fontSize={"4xl"} fontWeight="bold">
-          Features
+          Advantages of Software Licensing
         </Text>
 
-        <Text textAlign={"center"} color="black">
-          Cloud Servers provide all the advanced features you need to build your
-          application or website. Manage everything from within an intuitive
-          control panel, making adjustments in real time as your requirements
-          change, and matching resources precisely to your requirements.
+        <Text textAlign={"center"} color="black" fontSize={"sm"}>
+          Software licensing offers portability, piracy, profitability, and at
+          the same time protecting against privacy by creating legal software
+          agreements.{" "}
         </Text>
         <Flex
           flexDirection={!midBr ? "column" : "row"}
@@ -129,16 +117,13 @@ const Vps = () => {
           justifyContent={"space-between"}
         >
           <Box w={midBr ? "47%" : "100%"}>
-            <Image src="https://go4hosting.in/blog/wp-content/uploads/2018/11/dedicated-to-cloud-hosting.jpg"></Image>
+            <Image
+              src="https://www.jrebel.com/sites/default/files/image/2019-11/image-blog-legal-basics-of-software-licensing.jpg"
+              width="100%"
+              height={"350px"}
+            ></Image>
           </Box>
           <Box p="1%" w={midBr ? "47%" : "100%"}>
-            {/*  <Text textAlign={"left"}>
-              Cloud Servers provide all the advanced features you need to build
-              your application or website. Manage everything from within an
-              intuitive control panel, making adjustments in real time as your
-              requirements change, and matching resources precisely to your
-              requirements.
-            </Text> */}
             <Text
               bgColor="#09ab78"
               _hover={{
@@ -151,7 +136,7 @@ const Vps = () => {
               p="15px 10px"
               textAlign={"left"}
             >
-              Custome option for CPU, RAM, Storage & Bandwidth etc.
+              Microsoft
             </Text>
             <Text
               bgColor="#09ab78"
@@ -166,7 +151,7 @@ const Vps = () => {
               p="15px 10px"
               /* border="1px solid red" */ textAlign={"right"}
             >
-              Admin & root access
+              Ts Plus
             </Text>
             {/* sec */}
             <Text
@@ -181,7 +166,7 @@ const Vps = () => {
               p="15px 10px"
               textAlign={"left"}
             >
-              Choose operating system sutable for business
+              Adobe
             </Text>
             <Text
               bgColor="#09ab78"
@@ -196,14 +181,47 @@ const Vps = () => {
               p="15px 10px"
               /* border="1px solid red" */ textAlign={"right"}
             >
-              1 Public Ip
+              Corel Draw
+            </Text>
+
+            <Text
+              bgColor="#09ab78"
+              boxShadow={`rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset`}
+              _hover={{
+                textAlign: "left",
+                background: "#e8c615",
+                color: "white",
+              }}
+              mt="15px"
+              borderRadius={"50px 0px 50px 50px"}
+              p="15px 10px"
+              /* border="1px solid red" */ textAlign={"right"}
+            >
+              Catia 3D
+            </Text>
+
+            <Text
+              bgColor="#09ab78"
+              boxShadow={`rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset`}
+              _hover={{
+                textAlign: "left",
+                background: "#e8c615",
+                color: "white",
+              }}
+              mt="15px"
+              borderRadius={"50px 0px 50px 50px"}
+              p="15px 10px"
+              /* border="1px solid red" */ textAlign={"right"}
+            >
+              Autocad
             </Text>
           </Box>
         </Flex>
       </Box>
+
       <Box p="50px 10%" textAlign={"center"}>
         <Text color={"#e8c615"} fontSize={"4xl"} fontWeight="bold">
-          Cloud VPS Prices
+          Prices
         </Text>
         <SimpleGrid
           alignItems="center"
@@ -213,7 +231,7 @@ const Vps = () => {
           columns={["1", "1", "2", "3"]}
           spacing="30px"
         >
-          {pfData.map((ele, index) => {
+          {pfData6.map((ele, index) => {
             return (
               <PriceBox
                 key={ele.type}
@@ -233,13 +251,13 @@ const Vps = () => {
         <Text color={"#e8c615"} fontSize={"4xl"} fontWeight="bold">
           Advantage
         </Text>
-        <Text fontSize={"2xl"} /* color="blue" */>
+        <Text fontSize={"md"} /* color="blue" */>
           Why choose your Solutions
         </Text>
-        <GridTopicBox data={gridData.gridData2} column={4} />
+        <GridTopicBox data={gridData.gridDataLicence} column={4} />
       </Box>
     </Box>
   );
 };
 
-export default Vps;
+export default SoftwareLicence;

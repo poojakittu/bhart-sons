@@ -43,7 +43,7 @@ export const Faq = () => {
                           border="1px solid #dee2e6"
                           borderRadius="5px"
                           p="10px"
-                          backgroundColor={"#4ea819"}
+                          backgroundColor={"#e8c615"}
                         >
                           <h2>
                             <AccordionButton>
@@ -52,7 +52,7 @@ export const Faq = () => {
                                 fontWeight="bold"
                                 color="white"
                                 textAlign="left"
-                                bgColor={"#4ea819"}
+                                bgColor={"#e8c615"}
                               >
                                 {ele.qus}
                               </Box>

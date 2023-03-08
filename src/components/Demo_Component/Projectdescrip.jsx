@@ -76,7 +76,7 @@ function Projectdesc() {
               fontWeight={"500"}
               borderRadius="5px"
               color={"white"}
-              background={"#4ea819"}
+              background={"#e8c615"}
             >
               GOT IT{" "}
             </Button>

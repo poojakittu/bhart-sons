@@ -5,13 +5,13 @@ import { useMedia } from "../MediaQuery/UseMedia";
 
 /* dummy Data */
 import { gridData } from "../components/vps/dummyData";
-import { pfData } from "../components/pricing/data";
+import { pfData5 } from "../components/pricing/data";
 import PriceBox from "../components/pricing/priceBox";
 /* img */
 const firstImg =
-  "https://img.freepik.com/premium-photo/cloud-server-storing-personal-business-data-isolated-white-background-3d-render_188237-1086.jpg";
+  "https://uploads-ssl.webflow.com/5f1b4085f4118a504729a0ea/5f1b427a40cb57eaceb0b01c_Rocket.svg";
 
-const Vps = () => {
+const Socket = () => {
   const { smallScreen, midBr } = useMedia();
 
   const lgStyle = {
@@ -38,35 +38,26 @@ const Vps = () => {
             pt="85px"
             w={["96%", "96%", "80%", "50%", "40%"]}
             textAlign={"left"}
-            margin="left"
-            marginLeft={"90px"}
+            margin="right"
+            marginLeft={["20px", "20px", "80px", "400"]}
+            padding="5px"
           >
             <Box ml={["0px", "1%", "3%", "5%", "8%"]}>
               <Text
-                mt={["10px", "10px", "140px", "140px", "140px"]}
+                mt={["10px", "10px", "40px", "40px", "40px"]}
                 fontSize={"4xl"}
                 fontWeight="bold"
                 color="black "
               >
-                Cloud VPS
+                Secure Socket Layer
               </Text>
-              <Text
-                mt="3"
-                lineHeight={"40px"}
-                color="black"
-                maxW={["100%", "90%", "85%", "75%", "70%"]}
-                fontSize={"4xl"}
-              >
-                Cloud servers are stable, fast and secure.{" "}
-              </Text>
-              <Text mt="7" color="black">
-                They avoid the hardware issues seen with physical servers, and
-                they are likely to be the most stable option for businesses
-                wanting to keep their IT budget down. Cloud servers provide a
-                faster service for your money.
+
+              <Text mt="7" color="black" fontSize={"sm"}>
+                Websites need SSL certificates to keep user data secure, verify
+                ownership of the website, prevent attackers from creating a fake
+                version of the site, and convey trust to users
               </Text>
               <Box mt="20px"></Box>
-
               <Button
                 background={"#e8c615"}
                 borderRadius={"50px 0px 50px 50px"}
@@ -97,31 +88,28 @@ const Vps = () => {
       {/* second */}
       <Box bgColor={"#f5f8fd"} p="50px 10%" textAlign={"center"}>
         <Text color={"#e8c615"} fontSize={"4xl"} fontWeight="bold">
-          Benifits of Cloud Server
+          Benifits of SSL
         </Text>
         <Text
           fontSize={
-            !smallScreen ? "md" : !midBr ? "sm" : "sm"
+            !smallScreen ? "sm" : !midBr ? "sm" : "sm"
           } /* color="blue" */
         >
-          A simple way to cut costs, take advantage of economies of scale, and
-          focus on your core business? By upgrading to a server in the cloud,
-          your organisation avoids excessive infrastructure spending as it
-          brings enhanced reliability in a high-availability environment.
+          SSL Certificate secures the data which is in transit between server
+          and browser. In simple words, it keeps the information private and
+          secure.
         </Text>
-        <GridTopicBox data={gridData.gridData1} />
+        <GridTopicBox data={gridData.gridDataSSL} />
       </Box>
       {/* third */}
       <Box p="50px 10%" textAlign={"center"}>
         <Text color={"#e8c615"} fontSize={"4xl"} fontWeight="bold">
-          Features
+          Feature of SSL Cerificate
         </Text>
 
-        <Text textAlign={"center"} color="black">
-          Cloud Servers provide all the advanced features you need to build your
-          application or website. Manage everything from within an intuitive
-          control panel, making adjustments in real time as your requirements
-          change, and matching resources precisely to your requirements.
+        <Text textAlign={"center"} color="black" fontSize={"sm"}>
+          SSL security is common for Business Process Portal modules accessible
+          through the Web, such as Home, Management, and Administration
         </Text>
         <Flex
           flexDirection={!midBr ? "column" : "row"}
@@ -129,16 +117,13 @@ const Vps = () => {
           justifyContent={"space-between"}
         >
           <Box w={midBr ? "47%" : "100%"}>
-            <Image src="https://go4hosting.in/blog/wp-content/uploads/2018/11/dedicated-to-cloud-hosting.jpg"></Image>
+            <Image
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX4uMW8XKiQvvepi8Ihp6RgSwoUeIQUE86wwMpoDsCjp8eVTN9Jbr0gwEp4wXR2OL8k_I&usqp=CAU"
+              width="100%"
+              height={"350px"}
+            ></Image>
           </Box>
           <Box p="1%" w={midBr ? "47%" : "100%"}>
-            {/*  <Text textAlign={"left"}>
-              Cloud Servers provide all the advanced features you need to build
-              your application or website. Manage everything from within an
-              intuitive control panel, making adjustments in real time as your
-              requirements change, and matching resources precisely to your
-              requirements.
-            </Text> */}
             <Text
               bgColor="#09ab78"
               _hover={{
@@ -151,7 +136,7 @@ const Vps = () => {
               p="15px 10px"
               textAlign={"left"}
             >
-              Custome option for CPU, RAM, Storage & Bandwidth etc.
+              Encryption 256 Bit
             </Text>
             <Text
               bgColor="#09ab78"
@@ -166,7 +151,7 @@ const Vps = () => {
               p="15px 10px"
               /* border="1px solid red" */ textAlign={"right"}
             >
-              Admin & root access
+              SSL Boost Website SEO Rankings
             </Text>
             {/* sec */}
             <Text
@@ -181,7 +166,7 @@ const Vps = () => {
               p="15px 10px"
               textAlign={"left"}
             >
-              Choose operating system sutable for business
+              Secure Payments to Experience Safe Shopping
             </Text>
             <Text
               bgColor="#09ab78"
@@ -196,14 +181,14 @@ const Vps = () => {
               p="15px 10px"
               /* border="1px solid red" */ textAlign={"right"}
             >
-              1 Public Ip
+              SSL Increase Customer Trust & Revenue
             </Text>
           </Box>
         </Flex>
       </Box>
       <Box p="50px 10%" textAlign={"center"}>
         <Text color={"#e8c615"} fontSize={"4xl"} fontWeight="bold">
-          Cloud VPS Prices
+          Prices
         </Text>
         <SimpleGrid
           alignItems="center"
@@ -213,7 +198,7 @@ const Vps = () => {
           columns={["1", "1", "2", "3"]}
           spacing="30px"
         >
-          {pfData.map((ele, index) => {
+          {pfData5.map((ele, index) => {
             return (
               <PriceBox
                 key={ele.type}
@@ -233,13 +218,13 @@ const Vps = () => {
         <Text color={"#e8c615"} fontSize={"4xl"} fontWeight="bold">
           Advantage
         </Text>
-        <Text fontSize={"2xl"} /* color="blue" */>
+        <Text fontSize={"sm"} /* color="blue" */>
           Why choose your Solutions
         </Text>
-        <GridTopicBox data={gridData.gridData2} column={4} />
+        <GridTopicBox data={gridData.gridData3} column={4} margin="auto" />
       </Box>
     </Box>
   );
 };
 
-export default Vps;
+export default Socket;

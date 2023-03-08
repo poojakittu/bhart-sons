@@ -4,7 +4,7 @@ import styles from "./Header.module.css";
 
 import { Link as RouterLink } from "react-router-dom";
 import BurgerMenu from "./BurgerMenu";
-import { useSelector } from "react-redux";
+
 
 function Navbar() {
   return (

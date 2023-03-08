@@ -58,7 +58,7 @@ const Gpu = () => {
                 maxW={["100%", "90%", "85%", "75%", "70%"]}
                 fontSize={"4xl"}
               >
-                Cloud Gpu are stable, fast and secure.{" "}
+                 Gpu Cloud are stable, fast and secure.{" "}
               </Text>
               <Text mt="7" color="black" fontSize={"sm"}>
                 GPU-accelerated computing is beneficial in data-intensive

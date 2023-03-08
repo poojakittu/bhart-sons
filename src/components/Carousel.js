@@ -2,7 +2,7 @@ import Slider from "react-slick";
 import CCard from "./CarouselCard";
 import { useState } from "react";
 import { AiFillRightSquare, AiFillLeftSquare } from "react-icons/ai";
-import { AccessControl, VisualERP } from "../assets/images";
+
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

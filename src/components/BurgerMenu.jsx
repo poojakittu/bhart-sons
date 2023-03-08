@@ -1,16 +1,13 @@
 import {
   Link,
   Box,
- 
   useDisclosure,
- 
   Drawer,
   DrawerOverlay,
   DrawerContent,
   DrawerCloseButton,
   Divider,
   Image,
-  
   Flex,
 } from "@chakra-ui/react";
 
@@ -24,8 +21,6 @@ import { useSelector } from "react-redux";
 const BurgerMenu = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = useRef();
-  const {isAuth} = useSelector((store) => store.auth);
-  
 
   return (
     <Box display={["flex", "flex", "none", "none"]}>
@@ -92,11 +87,8 @@ const BurgerMenu = () => {
               FAQ
             </Link>
             <Divider orientation="horizontal" />
-           
-            <Divider orientation="horizontal" />
 
-          
-           
+            <Divider orientation="horizontal" />
           </Flex>
         </DrawerContent>
       </Drawer>

@@ -2,7 +2,7 @@ import { Box, Button, Flex, Image, Text, SimpleGrid } from "@chakra-ui/react";
 import React from "react";
 import GridTopicBox from "../components/vps/GridTopicBox";
 import { useMedia } from "../MediaQuery/UseMedia";
-import { pfData6, pfData7 } from "../components/pricing/data1";
+import { pfData6 } from "../components/pricing/data1";
 /* dummy Data */
 import { gridData } from "../components/vps/dummyData";
 import PriceBox from "../components/pricing/priceBox";

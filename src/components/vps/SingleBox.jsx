@@ -1,13 +1,4 @@
-import {
-  Box,
-  Card,
-  CardBody,
-  CardFooter,
-  Flex,
-  Image,
-  Spacer,
-  Text,
-} from "@chakra-ui/react";
+import { Box, Card, CardBody, CardFooter, Image, Text } from "@chakra-ui/react";
 import { Link, useNavigate } from "react-router-dom";
 
 const SingleBox = ({ des, link, img }) => {

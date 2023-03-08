@@ -8,7 +8,7 @@ import Contact from "../pages/Contact";
 import SingleDirectory from "../pages/SingleDirectory";
 import Hardware from "../pages/Hardware";
 import Vps from "../pages/Vps";
-import Subcomponent from "../pages/Subcomponent";
+
 import Dedicate from "../pages/Dedicate";
 import Gpu from "../pages/Gpu";
 import Backup from "../pages/Backup";

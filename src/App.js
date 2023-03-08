@@ -1,10 +1,10 @@
 import { Box } from "@chakra-ui/react";
-import { ImWhatsapp } from "react-icons/im";
+
 import "./App.css";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import AllRoutes from "./routes/AllRoutes";
-import { FloatingWhatsApp } from 'react-floating-whatsapp'
+import { FloatingWhatsApp } from "react-floating-whatsapp";
 
 function App() {
   return (
@@ -25,9 +25,11 @@ function App() {
           target="_blank"
         >
           {" "} */}
-        
-          
-        <FloatingWhatsApp phoneNumber="9871418798" accountName="Welcome Bharat & Son's"/>
+
+        <FloatingWhatsApp
+          phoneNumber="9871418798"
+          accountName="Welcome Bharat & Son's"
+        />
         {/* </a> */}
       </Box>
       <AllRoutes />

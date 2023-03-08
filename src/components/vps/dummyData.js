@@ -1,4 +1,4 @@
-import { relible, enhance, easy, ip, secure } from "../../assets/images";
+import { relible, enhance, easy,  secure } from "../../assets/images";
 
 export const gridData = {
   gridData1: [

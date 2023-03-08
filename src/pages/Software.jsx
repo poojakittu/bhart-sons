@@ -56,13 +56,13 @@ export default function Software() {
             <div className="directorycontainer2" key={ele._id}>
               <Link to={`/dir/${ele._id}`}>
               <img
+              style={{height:"300px",width:"400px"}}
                 src={ele.image}
                 alt={ele.title}
               />
               <h1>{ele.title}</h1>
               
-              <p className="directoryheading">Price :</p>
-              <p>Rs {ele.price}</p>
+              
               
              
                  </Link>

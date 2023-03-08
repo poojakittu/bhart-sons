@@ -123,7 +123,7 @@ const Contact = () => {
 
                     <Box className="icon_box">
                       <a
-                        href="mailto:bharatsonsystemssolutions@gmail.com"
+                        href="mailto:sales@bharatsonssystemssolutions.com"
                         rel="noopener norefferer"
                         target="_blank"
                       >

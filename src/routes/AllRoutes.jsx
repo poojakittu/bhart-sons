@@ -15,6 +15,7 @@ import Vps from "../pages/Vps";
 import Subcomponent from "../pages/Subcomponent";
 import Dedicate from "../pages/Dedicate";
 import Gpu from "../pages/Gpu";
+import NetworkSecurity from "../pages/NetworkSecurity";
 
 
 function AllRoutes() {
@@ -32,6 +33,7 @@ function AllRoutes() {
       <Route path="/vps" element={<Vps/>}></Route>
       <Route path="/dedicate" element={<Dedicate/>}></Route>
       <Route path="/gpu" element={<Gpu/>}></Route>
+      <Route path="/network" element={<NetworkSecurity/>}></Route>
       
 
     

@@ -6,7 +6,7 @@ import axios from "axios";
 
 import { Link } from 'react-router-dom'
 
-export default function Hardware() {
+export default function NetworkSecurity() {
   const [page, setPage] = useState(1);
   const [arr, setArr] = useState([]);
   const [text, setText] = useState("");

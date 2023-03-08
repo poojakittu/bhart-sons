@@ -32,7 +32,7 @@ export default function SingleDirectory() {
         
           <h1 style={{width:"100%",margin:"auto",textAlign:"center",fontSize:"23px",fontWeight:"700"}} >{obj.title}</h1>
           
-          <h1> <h1 style={{fontWeight:"600"}}>Price :-</h1>  Rs {obj.price}</h1>
+          {/* <h1> <h1 style={{fontWeight:"600"}}>Price :-</h1>  Rs {obj.price}</h1> */}
 
           <h1><h1 style={{fontWeight:"600"}}>Features :-</h1>  {obj.feature}</h1>
        

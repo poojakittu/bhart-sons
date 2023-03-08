@@ -15,7 +15,7 @@ export default function Hardware() {
   useEffect(() => {
     axios
       .get(
-        `http://localhost:8080/Hardware`
+        `https://sparkling-blue-drill.cyclic.app/Hardware`
       )
       .then((res) => setArr(res.data));
   }, [page, que]);
@@ -31,7 +31,7 @@ export default function Hardware() {
         <img style={{height:"400px",width:"100%"}} src="https://rockwellautomation.scene7.com/is/image/rockwellautomation/16x9-ebook-micro-control-systems.768.jpg" alt="" />
       </div>
       <div className="directoryintro">
-        <h1>	Software Solutions </h1>
+        <h1>	Hardware Solutions </h1>
         <p>
         which has earned an excellent reputation for its quality Products, services,
          ethics, professionalism and credibility in the field of Software Development,
@@ -47,28 +47,7 @@ export default function Hardware() {
 
         </p>
       </div>
-      <div className="searchdirectory">
-        <input
-          type="text"
-          placeholder="Search Software"
-          onChange={(e) => setText(e.target.value)}
-        />
-        <select name="" id="" onChange={(e) => setText(e.target.value)}>
-          <option value="">All Softwares</option>
-          <option value="Selangor">Selangor</option>
-          <option value="KualaLumpur">Kuala Lumpur</option>
-          <option value="Johor">Johor</option>
-          <option value="Penang">Penang</option>
-          <option value="Kedah">Kedah</option>
-          <option value="Melaka">Melaka</option>
-          <option value="NegeriSembilan">Negeri Sembilan</option>
-          <option value="Pahang">Pahang</option>
-          <option value="Perak">Perak</option>
-          <option value="Terengganu">Terengganu</option>
-        </select>
-        <button onClick={searchDirectory}>Search Software</button>
-        
-      </div>
+      
       
      
       <div className="directorycontainer">

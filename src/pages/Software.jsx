@@ -15,7 +15,7 @@ export default function Software() {
   useEffect(() => {
     axios
       .get(
-        `http://localhost:8080/Software`
+        `https://sparkling-blue-drill.cyclic.app/Software`
       )
       .then((res) => setArr(res.data));
   }, [page, que]);
@@ -47,28 +47,7 @@ export default function Software() {
 
         </p>
       </div>
-      <div className="searchdirectory">
-        <input
-          type="text"
-          placeholder="Search Software"
-          onChange={(e) => setText(e.target.value)}
-        />
-        <select name="" id="" onChange={(e) => setText(e.target.value)}>
-          <option value="">All Softwares</option>
-          <option value="Selangor">Selangor</option>
-          <option value="KualaLumpur">Kuala Lumpur</option>
-          <option value="Johor">Johor</option>
-          <option value="Penang">Penang</option>
-          <option value="Kedah">Kedah</option>
-          <option value="Melaka">Melaka</option>
-          <option value="NegeriSembilan">Negeri Sembilan</option>
-          <option value="Pahang">Pahang</option>
-          <option value="Perak">Perak</option>
-          <option value="Terengganu">Terengganu</option>
-        </select>
-        <button onClick={searchDirectory}>Search Software</button>
-        
-      </div>
+     
       
      
       <div className="directorycontainer">

@@ -9,7 +9,7 @@ import {
   Textarea,
 } from "@chakra-ui/react";
 import { useToast } from '@chakra-ui/react'
-
+import emailjs from 'emailjs-com';
 import React, { useRef } from "react";
 import { useState } from "react";
 import axios from "axios";
@@ -28,7 +28,16 @@ const Contact = () => {
   const navigate = useNavigate()
   const handleSubmit = (event) => {
     event.preventDefault();
-    
+    emailjs.sendForm('service_nfaguyy', 'template_v1u5czp', event.target, 'q_Hj2qb4KkIpVEebd')
+    .then((result) => {
+     
+      console.log(result)
+     
+        
+    }, (error) => {
+        console.log(error.text);
+    });
+   
     axios.post('https://sparkling-blue-drill.cyclic.app/Contact/add', formData)
       .then(response => {
         console.log(response);

@@ -17,6 +17,8 @@ import Email from "../pages/Email";
 import Socket from "../pages/Socket";
 import Hosting from "../pages/Hosting";
 import SoftwareLicence from "../pages/SoftwareLicencing";
+import NetworkSecurity from "../pages/NetworkSecurity";
+import Rental from "../pages/Rental";
 
 function AllRoutes() {
   return (
@@ -39,6 +41,9 @@ function AllRoutes() {
       <Route path="/socket" element={<Socket />}></Route>
       <Route path="/hosting" element={<Hosting />}></Route>
       <Route path="/licence" element={<SoftwareLicence />}></Route>
+      <Route path="/network" element={<NetworkSecurity/>}></Route>
+      <Route path="/rental" element={<Rental/>}></Route>
+
     </Routes>
   );
 }

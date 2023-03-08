@@ -6,7 +6,7 @@ import axios from "axios";
 
 import { Link } from 'react-router-dom'
 
-export default function NetworkSecurity() {
+export default function Rental() {
   const [page, setPage] = useState(1);
  
   const [text, setText] = useState("");
@@ -14,26 +14,28 @@ export default function NetworkSecurity() {
 
   const arr = [
     {
-        title:"Switch / Router",
-        img:"https://www.networkbulls.com/ask/public/uploads/images/426bc4189d4f67d8026833274e9bcf0d.jpg"
+        title:"Laptop / Desktop",
+        img:"https://onsitego.com/blog/wp-content/uploads/2021/04/Laptop-Desk-Setup.jpg"
     },
     {
-        title:"Firewall",
-        img:"https://www.networkbulls.com/ask/public/uploads/images/5f76132d82e6dfa59e2a742bc6f51696.jpg"
+        title:"Printer / Other Accessories",
+        img:"https://m.media-amazon.com/images/I/711yJipUQVL._SX569_.jpg"
     }
   ]
 
   return (
     <>
       <div className="speacer" style={{paddingTop:"100px"}} >
-        <img style={{height:"400px",width:"100%"}} src="https://www.bn-its.de/assets/images/3/Firewall-49374825.webp" alt="" />
+        <img style={{height:"400px",width:"100%"}} src="https://www.sfleblanc.ca/wp-content/uploads/2018/11/equipement-informatique-large.jpg" alt="" />
       </div>
       <div className="directoryintro">
-        <h1 style={{fontWeight:"600"}}>	Network Security </h1>
+        <h1 style={{fontWeight:"600"}}>Rental</h1>
         <p>
-        Network security is a set of technologies that protects the usability and integrity 
-        of a company's infrastructure by preventing 
-        the entry or proliferation within a network of a wide variety of potential threats.
+        we are rental services provider in India. We’re also one of the leading players in the 
+        field of examination support services nationally. Being pioneers in our field and widely 
+        recognized by all the leading industries for renting the latest and viable enterprise IT 
+        rental services for offices, events, conferences,
+         and examinations. BSSS is striving hard to work beyond the expectation of our clients.
 
         </p>
         <p>
@@ -46,7 +48,7 @@ export default function NetworkSecurity() {
       
       
      
-        <h1 style={{textAlign:"center",fontSize:"24px",fontWeight:"600"}}>We are Dealing with all kind of Network Security</h1>
+        <h1 style={{textAlign:"center",fontSize:"24px",fontWeight:"600"}}>We are Dealing with all kind of Rental Services</h1>
       <div className="directorycontainer">
         {arr &&
           arr.map((ele) => (

@@ -23,8 +23,8 @@ const SingleBox = ({ des, link, img }) => {
       border={"0.5px solid #44d62c"}
     >
       <CardBody>
-        <Box p="5px 15%">
-          <Image w={"100%"} src={img} width={"200px"} height={"200px"} />
+        <Box p="10px 10px">
+          <Image w={"70%"} src={img} height={"130px"} margin="auto" />
         </Box>
       </CardBody>
       <CardFooter m="auto">
@@ -33,6 +33,7 @@ const SingleBox = ({ des, link, img }) => {
           _hover={{ color: "#9130c2" }}
           letterSpacing="1px"
           color="black"
+          marginTop={"-45px"}
         >
           {des}{" "}
         </Text>

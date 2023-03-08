@@ -7,9 +7,9 @@ import { useMedia } from "../MediaQuery/UseMedia";
 import { gridData } from "../components/vps/dummyData";
 /* img */
 const firstImg =
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8oh7mxxrKamQ87tYx3DZiMAUEm5JvnszeBg&usqp=CAU";
+  "https://uploads-ssl.webflow.com/5f1b4085f4118a504729a0ea/5f1b427a40cb57eaceb0b01c_Rocket.svg";
 
-const Dedicate = () => {
+const Socket = () => {
   const { smallScreen, midBr } = useMedia();
 
   const lgStyle = {
@@ -36,33 +36,22 @@ const Dedicate = () => {
             pt="85px"
             w={["96%", "96%", "80%", "50%", "40%"]}
             textAlign={"left"}
-            margin="left"
-            marginLeft={"90px"}
+            margin="right"
+            marginLeft={["20px", "20px", "80px", "400"]}
+            padding="5px"
           >
             <Box ml={["0px", "1%", "3%", "5%", "8%"]}>
               <Text
-                mt={["10px", "10px", "140px", "140px", "140px"]}
+                mt={["10px", "10px", "40px", "40px", "40px"]}
                 fontSize={"4xl"}
                 fontWeight="bold"
                 color="black "
               >
-                Dedicated Cloud Server
+                Secure Socket Layer
               </Text>
-              <Text
-                mt="3"
-                lineHeight={"40px"}
-                color="black"
-                maxW={["100%", "90%", "85%", "75%", "70%"]}
-                fontSize={"3xl"}
-              >
-                Cloud servers are stable, fast and secure.{" "}
-              </Text>
-              <Text mt="7" color="black">
-                A dedicated cloud is a single-tenant cloud infrastructure, which
-                essentially acts as an isolated, single-tenant public cloud.
-                Dedicated clouds are set as an infrastructure as a service
-                (IaaS) and are made to reduce an organizations downtime and cost
-                while promoting flexibility and performance.
+              
+              <Text mt="7" color="black" fontSize={"sm"}>
+              Websites need SSL certificates to keep user data secure, verify ownership of the website, prevent attackers from creating a fake version of the site, and convey trust to users
               </Text>
               <Box mt="20px"></Box>
               <Button
@@ -93,29 +82,25 @@ const Dedicate = () => {
       {/* second */}
       <Box bgColor={"#f5f8fd"} p="50px 10%" textAlign={"center"}>
         <Text color={"#4ea819"} fontSize={"4xl"} fontWeight="bold">
-          Benifits Of Dedicated Server
+        Benifits of SSL
         </Text>
         <Text
           fontSize={
             !smallScreen ? "sm" : !midBr ? "sm" : "sm"
           } /* color="blue" */
         >
-          Server resources are not shared. When you choose a dedicated hosting
-          provider, you get the full resources & full control of single server.
+          SSL Certificate secures the data which is in transit between server and browser. In simple words, it keeps the information private and secure.
         </Text>
-        <GridTopicBox data={gridData.gridData3} />
+        <GridTopicBox data={gridData.gridDataSSL} />
       </Box>
       {/* third */}
       <Box p="50px 10%" textAlign={"center"}>
         <Text color={"#4ea819"} fontSize={"4xl"} fontWeight="bold">
-          Features
+        Feature of SSL Cerificate
         </Text>
 
-        <Text textAlign={"center"} color="black">
-          Cloud Servers provide all the advanced features you need to build your
-          application or website. Manage everything from within an intuitive
-          control panel, making adjustments in real time as your requirements
-          change, and matching resources precisely to your requirements.
+        <Text textAlign={"center"} color="black" fontSize={"sm"}>
+        SSL security is common for Business Process Portal modules accessible through the Web, such as Home, Management, and Administration
         </Text>
         <Flex
           flexDirection={!midBr ? "column" : "row"}
@@ -124,18 +109,12 @@ const Dedicate = () => {
         >
           <Box w={midBr ? "47%" : "100%"}>
             <Image
-              src="https://thumbs.dreamstime.com/b/web-hosting-vector-banner-isometric-cloud-computing-media-server-d-futuristic-abstract-datacenter-network-system-224815462.jpg"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX4uMW8XKiQvvepi8Ihp6RgSwoUeIQUE86wwMpoDsCjp8eVTN9Jbr0gwEp4wXR2OL8k_I&usqp=CAU"
+              width="100%"
               height={"350px"}
             ></Image>
           </Box>
           <Box p="1%" w={midBr ? "47%" : "100%"}>
-            {/*  <Text textAlign={"left"}>
-              Cloud Servers provide all the advanced features you need to build
-              your application or website. Manage everything from within an
-              intuitive control panel, making adjustments in real time as your
-              requirements change, and matching resources precisely to your
-              requirements.
-            </Text> */}
             <Text
               bgColor="#09ab78"
               _hover={{
@@ -148,8 +127,7 @@ const Dedicate = () => {
               p="15px 10px"
               textAlign={"left"}
             >
-              Server resources are not shared. When you choose a dedicated
-              hosting
+              Encryption 256 Bit
             </Text>
             <Text
               bgColor="#09ab78"
@@ -164,7 +142,7 @@ const Dedicate = () => {
               p="15px 10px"
               /* border="1px solid red" */ textAlign={"right"}
             >
-              Reliable Security and Disaster Recovery
+              SSL Boost Website SEO Rankings
             </Text>
             {/* sec */}
             <Text
@@ -179,7 +157,7 @@ const Dedicate = () => {
               p="15px 10px"
               textAlign={"left"}
             >
-              Increased Flexibility, Reduced Costs
+            Secure Payments to Experience Safe Shopping
             </Text>
             <Text
               bgColor="#09ab78"
@@ -194,7 +172,7 @@ const Dedicate = () => {
               p="15px 10px"
               /* border="1px solid red" */ textAlign={"right"}
             >
-              Enhanced performance and security
+             SSL Increase Customer Trust & Revenue
             </Text>
           </Box>
         </Flex>
@@ -206,12 +184,12 @@ const Dedicate = () => {
           Advantage
         </Text>
         <Text fontSize={"sm"} /* color="blue" */>
-          Why choose your Solutions
+        Why choose your Solutions
         </Text>
-        <GridTopicBox data={gridData.gridData2} column={3} />
+        <GridTopicBox data={gridData.gridData3} column={4} margin="auto" />
       </Box>
     </Box>
   );
 };
 
-export default Dedicate;
+export default Socket;

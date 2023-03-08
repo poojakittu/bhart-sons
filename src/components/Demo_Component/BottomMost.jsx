@@ -4,15 +4,15 @@ import { Link } from "react-router-dom";
 
 function BottomMost() {
   return (
-    <Flex bg={"#4ea819"} mt="50px" py="70px" mb="100px">
+    <Flex bg={"#e8c615"} mt="50px" py="70px" mb="100px">
       <Flex w="60%" m="auto" flexDirection={"column"} justifyContent={"center"}>
         <Text
-          fontSize={{ base: "24px", md: "24px", lg: "36px" }}
+          fontSize={{ base: "12px", md: "14px", lg: "26px" }}
           fontWeight={"700"}
           color="#fff"
         >
-          Don't miss our Products, full of productivity resources with tips, trends,
-          statistics, and Support!
+          Don't miss our Products, full of productivity resources with tips,
+          trends, statistics, and Support!
         </Text>
         <Flex mt="20px" justify={"center"} gap={"20px"}>
           <Link to="/contact">
@@ -20,7 +20,7 @@ function BottomMost() {
               fontSize={"1.115rem"}
               border="1px solid white"
               borderRadius={5}
-              bg={"#4ea819"}
+              bg={"#e8c615"}
               color={"#fff"}
               padding={"0.8125rem 1.8rem"}
               fontWeight={"600"}

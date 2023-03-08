@@ -29,7 +29,7 @@ function AboutTimeline({ img, date, heading, text, tmp, isA }) {
           <Text
             fontWeight="800"
             Height="20px"
-            color="#4ea819"
+            color="#e8c615"
             mb="30px"
             textAlign="center"
           >
@@ -57,7 +57,8 @@ function AboutTimeline({ img, date, heading, text, tmp, isA }) {
         alignItems="center"
       >
         <Flex justifyContent="center" alignItems="center">
-          <Box w="30px" h="30px" borderRadius="50%" bg="#4ea819">
+          <Box w="30px" h="30px" borderRadius="50%" bg="#
+#e8c615">
             <Flex justifyContent="center" alignItems="center">
               <Box
                 w="15px"
@@ -77,7 +78,8 @@ function AboutTimeline({ img, date, heading, text, tmp, isA }) {
             w="30px"
             h="30px"
             borderRadius="50%"
-            bg="#4ea819"
+            bg="#
+#e8c615"
           >
             <Flex justifyContent="center" alignItems="center">
               <Box

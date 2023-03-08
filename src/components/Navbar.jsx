@@ -56,11 +56,23 @@ function Navbar() {
               <Link to="/gpu" as={RouterLink}>
                 GPU Server
               </Link>
-              <Link to="/hardware" as={RouterLink}>
+              <Link to="/backup" as={RouterLink}>
                 Backup And Storage
               </Link>
-              <Link to="/hardware" as={RouterLink}>
+              <Link to="/email" as={RouterLink}>
                 Premium Email Hosting
+              </Link>
+              <Link to="/employee" as={RouterLink}>
+                Employee Monitoring
+              </Link>
+              <Link to="/socket" as={RouterLink}>
+                Secure Socket Layer{" "}
+              </Link>
+              <Link to="/licence" as={RouterLink}>
+                Software Licencing
+              </Link>
+              <Link to="/hosting" as={RouterLink}>
+                Web Hosting
               </Link>
             </div>
           </div>
@@ -110,18 +122,7 @@ function Navbar() {
               {/* <Link to="/software" as={RouterLink}>
                 Email Solutions
               </Link> */}
-              <Link to="/software" as={RouterLink}>
-                Employee Monitoring
-              </Link>
-              <Link to="/software" as={RouterLink}>
-                Secure Socket Layer{" "}
-              </Link>
-              <Link to="/software" as={RouterLink}>
-                Software Licencing
-              </Link>
-              <Link to="/software" as={RouterLink}>
-                Web Hosting
-              </Link>
+              
             </div>
           </div>
           <div className={styles.makeup}>

@@ -54,7 +54,7 @@ function BottomUp() {
                   fontSize={["15px", "16px", "16px", "18px"]}
                   border="0.8PX SOLID GREY"
                   borderRadius={5}
-                  bg={"#4ea819"}
+                  bg={"#e8c615"}
                   color={"#fff"}
                   marginLeft={"10px"}
                   padding={["12px 18px", "14px 20px", "14px 20px", "16px 22px"]}

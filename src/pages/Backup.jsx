@@ -7,9 +7,9 @@ import { useMedia } from "../MediaQuery/UseMedia";
 import { gridData } from "../components/vps/dummyData";
 /* img */
 const firstImg =
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8oh7mxxrKamQ87tYx3DZiMAUEm5JvnszeBg&usqp=CAU";
+  "https://uploads-ssl.webflow.com/5f1b4085f4118a504729a0ea/5f1b427a40cb57eaceb0b01c_Rocket.svg";
 
-const Dedicate = () => {
+const Backup = () => {
   const { smallScreen, midBr } = useMedia();
 
   const lgStyle = {
@@ -36,33 +36,33 @@ const Dedicate = () => {
             pt="85px"
             w={["96%", "96%", "80%", "50%", "40%"]}
             textAlign={"left"}
-            margin="left"
-            marginLeft={"90px"}
+            margin="right"
+            marginLeft={["20px", "20px", "80px", "400"]}
+            padding="5px"
           >
             <Box ml={["0px", "1%", "3%", "5%", "8%"]}>
               <Text
-                mt={["10px", "10px", "140px", "140px", "140px"]}
+                mt={["10px", "10px", "40px", "40px", "40px"]}
                 fontSize={"4xl"}
                 fontWeight="bold"
                 color="black "
               >
-                Dedicated Cloud Server
+                Backup & Storage
               </Text>
               <Text
                 mt="3"
                 lineHeight={"40px"}
                 color="black"
                 maxW={["100%", "90%", "85%", "75%", "70%"]}
-                fontSize={"3xl"}
+                fontSize={"4xl"}
               >
-                Cloud servers are stable, fast and secure.{" "}
+                fast and secure.{" "}
               </Text>
-              <Text mt="7" color="black">
-                A dedicated cloud is a single-tenant cloud infrastructure, which
-                essentially acts as an isolated, single-tenant public cloud.
-                Dedicated clouds are set as an infrastructure as a service
-                (IaaS) and are made to reduce an organizations downtime and cost
-                while promoting flexibility and performance.
+              <Text mt="7" color="black" fontSize={"sm"}>
+                Backup storage is the supplementary, off-device storage of files
+                and application data. It is both hardware- and software-based
+                and allows for the secure maintenance, management, and retrieval
+                of important backup data
               </Text>
               <Box mt="20px"></Box>
               <Button
@@ -93,29 +93,29 @@ const Dedicate = () => {
       {/* second */}
       <Box bgColor={"#f5f8fd"} p="50px 10%" textAlign={"center"}>
         <Text color={"#4ea819"} fontSize={"4xl"} fontWeight="bold">
-          Benifits Of Dedicated Server
+          Benifit of Backup & Stroage
         </Text>
         <Text
           fontSize={
             !smallScreen ? "sm" : !midBr ? "sm" : "sm"
           } /* color="blue" */
         >
-          Server resources are not shared. When you choose a dedicated hosting
-          provider, you get the full resources & full control of single server.
+          Data backup and recovery software offer replication functionality.
+          This can be used to create real-time replicas of your data and store
+          them away, making your data disaster-proof.
         </Text>
-        <GridTopicBox data={gridData.gridData3} />
+        <GridTopicBox data={gridData.gridDataBackup} />
       </Box>
       {/* third */}
       <Box p="50px 10%" textAlign={"center"}>
         <Text color={"#4ea819"} fontSize={"4xl"} fontWeight="bold">
-          Features
+          Feature of Backup & Stroage
         </Text>
 
-        <Text textAlign={"center"} color="black">
-          Cloud Servers provide all the advanced features you need to build your
-          application or website. Manage everything from within an intuitive
-          control panel, making adjustments in real time as your requirements
-          change, and matching resources precisely to your requirements.
+        <Text textAlign={"center"} color="black" fontSize={"sm"}>
+          Your backup is securely stored in the cloud until you need to restore
+          it. If you experience data loss for any reason, you can restore to the
+          most recent “clean” copy of your systems.
         </Text>
         <Flex
           flexDirection={!midBr ? "column" : "row"}
@@ -124,18 +124,12 @@ const Dedicate = () => {
         >
           <Box w={midBr ? "47%" : "100%"}>
             <Image
-              src="https://thumbs.dreamstime.com/b/web-hosting-vector-banner-isometric-cloud-computing-media-server-d-futuristic-abstract-datacenter-network-system-224815462.jpg"
+              src="https://www.pcworld.com/wp-content/uploads/2022/10/online_backup_cloud_service-100737202-orig.jpg?quality=50&strip=all"
+              width="100%"
               height={"350px"}
             ></Image>
           </Box>
           <Box p="1%" w={midBr ? "47%" : "100%"}>
-            {/*  <Text textAlign={"left"}>
-              Cloud Servers provide all the advanced features you need to build
-              your application or website. Manage everything from within an
-              intuitive control panel, making adjustments in real time as your
-              requirements change, and matching resources precisely to your
-              requirements.
-            </Text> */}
             <Text
               bgColor="#09ab78"
               _hover={{
@@ -148,8 +142,7 @@ const Dedicate = () => {
               p="15px 10px"
               textAlign={"left"}
             >
-              Server resources are not shared. When you choose a dedicated
-              hosting
+              Take Backup Url, website & any Software.
             </Text>
             <Text
               bgColor="#09ab78"
@@ -164,7 +157,7 @@ const Dedicate = () => {
               p="15px 10px"
               /* border="1px solid red" */ textAlign={"right"}
             >
-              Reliable Security and Disaster Recovery
+              Support all platform.
             </Text>
             {/* sec */}
             <Text
@@ -179,7 +172,7 @@ const Dedicate = () => {
               p="15px 10px"
               textAlign={"left"}
             >
-              Increased Flexibility, Reduced Costs
+              Managed anti-malware protection
             </Text>
             <Text
               bgColor="#09ab78"
@@ -194,7 +187,7 @@ const Dedicate = () => {
               p="15px 10px"
               /* border="1px solid red" */ textAlign={"right"}
             >
-              Enhanced performance and security
+              Advanced Disaster Recovery
             </Text>
           </Box>
         </Flex>
@@ -206,7 +199,7 @@ const Dedicate = () => {
           Advantage
         </Text>
         <Text fontSize={"sm"} /* color="blue" */>
-          Why choose your Solutions
+          Backup & Storage gives you access to more resources, thereby allowing you to scale the resources as your business grows. It comes with many potential benefits - better reliability, superior security, improved performance and an uptime guarantee, etc
         </Text>
         <GridTopicBox data={gridData.gridData2} column={3} />
       </Box>
@@ -214,4 +207,4 @@ const Dedicate = () => {
   );
 };
 
-export default Dedicate;
+export default Backup;

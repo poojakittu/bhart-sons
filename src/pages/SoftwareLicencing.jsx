@@ -7,9 +7,9 @@ import { useMedia } from "../MediaQuery/UseMedia";
 import { gridData } from "../components/vps/dummyData";
 /* img */
 const firstImg =
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8oh7mxxrKamQ87tYx3DZiMAUEm5JvnszeBg&usqp=CAU";
+  "https://uploads-ssl.webflow.com/5f1b4085f4118a504729a0ea/5f1b427a40cb57eaceb0b01c_Rocket.svg";
 
-const Dedicate = () => {
+const SoftwareLicence = () => {
   const { smallScreen, midBr } = useMedia();
 
   const lgStyle = {
@@ -36,40 +36,33 @@ const Dedicate = () => {
             pt="85px"
             w={["96%", "96%", "80%", "50%", "40%"]}
             textAlign={"left"}
-            margin="left"
-            marginLeft={"90px"}
+            margin="right"
+            marginLeft={["20px", "20px", "80px", "400"]}
+            padding="5px"
           >
             <Box ml={["0px", "1%", "3%", "5%", "8%"]}>
               <Text
-                mt={["10px", "10px", "140px", "140px", "140px"]}
+                mt={["10px", "10px", "40px", "40px", "40px"]}
                 fontSize={"4xl"}
                 fontWeight="bold"
                 color="black "
               >
-                Dedicated Cloud Server
+                Software Licensing
               </Text>
-              <Text
-                mt="3"
-                lineHeight={"40px"}
-                color="black"
-                maxW={["100%", "90%", "85%", "75%", "70%"]}
-                fontSize={"3xl"}
-              >
-                Cloud servers are stable, fast and secure.{" "}
-              </Text>
-              <Text mt="7" color="black">
-                A dedicated cloud is a single-tenant cloud infrastructure, which
-                essentially acts as an isolated, single-tenant public cloud.
-                Dedicated clouds are set as an infrastructure as a service
-                (IaaS) and are made to reduce an organizations downtime and cost
-                while promoting flexibility and performance.
+
+              <Text mt="7" color="black" fontSize={"sm"}>
+                We are dealing with all kind of MicrosftWe are dealing with all
+                kinds of Microsoft license. Which help to make easy work,
+                reliable & Secure work.{" "}
               </Text>
               <Box mt="20px"></Box>
               <Button
                 background={"#4ea819"}
                 borderRadius={"50px 0px 50px 50px"}
               >
-                <a href="/demo" target="_blank">Get Started</a>  
+                <a href="/demo" target="_blank">
+                  Get Started
+                </a>
               </Button>
               {!smallScreen && <br />}
               {!smallScreen && <br />}
@@ -79,11 +72,11 @@ const Dedicate = () => {
                 borderRadius={"50px 0px 50px 50px"}
               >
                 <a
-          href="https://wa.me/9871418798"
-          rel="noopener norefferer"
-          target="_blank"
-        >
-                Talk to an Expert
+                  href="https://wa.me/9871418798"
+                  rel="noopener norefferer"
+                  target="_blank"
+                >
+                  Talk to an Expert
                 </a>
               </Button>
             </Box>
@@ -93,29 +86,29 @@ const Dedicate = () => {
       {/* second */}
       <Box bgColor={"#f5f8fd"} p="50px 10%" textAlign={"center"}>
         <Text color={"#4ea819"} fontSize={"4xl"} fontWeight="bold">
-          Benifits Of Dedicated Server
+          Benifit Software Licensing
         </Text>
         <Text
           fontSize={
             !smallScreen ? "sm" : !midBr ? "sm" : "sm"
           } /* color="blue" */
         >
-          Server resources are not shared. When you choose a dedicated hosting
-          provider, you get the full resources & full control of single server.
+          Software licensing is profitability. Software licensing offers
+          multiple ways to increase profitability including managing licenses
+          while at the same time protecting against privacy
         </Text>
-        <GridTopicBox data={gridData.gridData3} />
+        <GridTopicBox data={gridData.gridDataLicence} />
       </Box>
       {/* third */}
       <Box p="50px 10%" textAlign={"center"}>
         <Text color={"#4ea819"} fontSize={"4xl"} fontWeight="bold">
-          Features
+          Advantages of Software Licensing
         </Text>
 
-        <Text textAlign={"center"} color="black">
-          Cloud Servers provide all the advanced features you need to build your
-          application or website. Manage everything from within an intuitive
-          control panel, making adjustments in real time as your requirements
-          change, and matching resources precisely to your requirements.
+        <Text textAlign={"center"} color="black" fontSize={"sm"}>
+          Software licensing offers portability, piracy, profitability, and at
+          the same time protecting against privacy by creating legal software
+          agreements.{" "}
         </Text>
         <Flex
           flexDirection={!midBr ? "column" : "row"}
@@ -124,18 +117,12 @@ const Dedicate = () => {
         >
           <Box w={midBr ? "47%" : "100%"}>
             <Image
-              src="https://thumbs.dreamstime.com/b/web-hosting-vector-banner-isometric-cloud-computing-media-server-d-futuristic-abstract-datacenter-network-system-224815462.jpg"
+              src="https://www.jrebel.com/sites/default/files/image/2019-11/image-blog-legal-basics-of-software-licensing.jpg"
+              width="100%"
               height={"350px"}
             ></Image>
           </Box>
           <Box p="1%" w={midBr ? "47%" : "100%"}>
-            {/*  <Text textAlign={"left"}>
-              Cloud Servers provide all the advanced features you need to build
-              your application or website. Manage everything from within an
-              intuitive control panel, making adjustments in real time as your
-              requirements change, and matching resources precisely to your
-              requirements.
-            </Text> */}
             <Text
               bgColor="#09ab78"
               _hover={{
@@ -148,8 +135,7 @@ const Dedicate = () => {
               p="15px 10px"
               textAlign={"left"}
             >
-              Server resources are not shared. When you choose a dedicated
-              hosting
+              Microsoft
             </Text>
             <Text
               bgColor="#09ab78"
@@ -164,7 +150,7 @@ const Dedicate = () => {
               p="15px 10px"
               /* border="1px solid red" */ textAlign={"right"}
             >
-              Reliable Security and Disaster Recovery
+              Ts Plus
             </Text>
             {/* sec */}
             <Text
@@ -179,7 +165,7 @@ const Dedicate = () => {
               p="15px 10px"
               textAlign={"left"}
             >
-              Increased Flexibility, Reduced Costs
+              Adobe
             </Text>
             <Text
               bgColor="#09ab78"
@@ -194,7 +180,39 @@ const Dedicate = () => {
               p="15px 10px"
               /* border="1px solid red" */ textAlign={"right"}
             >
-              Enhanced performance and security
+              Corel Draw
+            </Text>
+
+            <Text
+              bgColor="#09ab78"
+              boxShadow={`rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset`}
+              _hover={{
+                textAlign: "left",
+                background: "#4ea819",
+                color: "white",
+              }}
+              mt="15px"
+              borderRadius={"50px 0px 50px 50px"}
+              p="15px 10px"
+              /* border="1px solid red" */ textAlign={"right"}
+            >
+              Catia 3D
+            </Text>
+
+            <Text
+              bgColor="#09ab78"
+              boxShadow={`rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset`}
+              _hover={{
+                textAlign: "left",
+                background: "#4ea819",
+                color: "white",
+              }}
+              mt="15px"
+              borderRadius={"50px 0px 50px 50px"}
+              p="15px 10px"
+              /* border="1px solid red" */ textAlign={"right"}
+            >
+              Autocad
             </Text>
           </Box>
         </Flex>
@@ -205,13 +223,13 @@ const Dedicate = () => {
         <Text color={"#4ea819"} fontSize={"4xl"} fontWeight="bold">
           Advantage
         </Text>
-        <Text fontSize={"sm"} /* color="blue" */>
+        <Text fontSize={"md"} /* color="blue" */>
           Why choose your Solutions
         </Text>
-        <GridTopicBox data={gridData.gridData2} column={3} />
+        <GridTopicBox data={gridData.gridDataLicence} column={4} />
       </Box>
     </Box>
   );
 };
 
-export default Dedicate;
+export default SoftwareLicence;

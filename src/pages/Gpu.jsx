@@ -1,13 +1,15 @@
-import { Box, Button, Flex, Image, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, Image, SimpleGrid, Text } from "@chakra-ui/react";
 import React from "react";
 import GridTopicBox from "../components/vps/GridTopicBox";
 import { useMedia } from "../MediaQuery/UseMedia";
 
 /* dummy Data */
 import { gridData } from "../components/vps/dummyData";
+import { pfData, pfData1 } from "../components/pricing/data";
+import PriceBox from "../components/pricing/priceBox";
 /* img */
 const firstImg =
-  "https://img.freepik.com/premium-photo/cloud-server-storing-personal-business-data-isolated-white-background-3d-render_188237-1086.jpg";
+  "https://uploads-ssl.webflow.com/5f1b4085f4118a504729a0ea/5f1b427a40cb57eaceb0b01c_Rocket.svg";
 
 const Gpu = () => {
   const { smallScreen, midBr } = useMedia();
@@ -36,15 +38,18 @@ const Gpu = () => {
             pt="85px"
             w={["96%", "96%", "80%", "50%", "40%"]}
             textAlign={"left"}
+            margin="right"
+            marginLeft={["20px", "20px", "80px", "400"]}
+            padding="5px"
           >
             <Box ml={["0px", "1%", "3%", "5%", "8%"]}>
               <Text
-                mt={["10px", "160px", "140px", "140px", "140px"]}
+                mt={["10px", "10px", "40px", "40px", "40px"]}
                 fontSize={"4xl"}
                 fontWeight="bold"
                 color="black "
               >
-                Cloud VPS
+                GPU Cloud Server
               </Text>
               <Text
                 mt="3"
@@ -53,20 +58,23 @@ const Gpu = () => {
                 maxW={["100%", "90%", "85%", "75%", "70%"]}
                 fontSize={"4xl"}
               >
-                Cloud servers are stable, fast and secure.{" "}
+                Cloud Gpu are stable, fast and secure.{" "}
               </Text>
-              <Text mt="7" color="black">
-                They avoid the hardware issues seen with physical servers, and
-                they are likely to be the most stable option for businesses
-                wanting to keep their IT budget down. Cloud servers provide a
-                faster service for your money.
+              <Text mt="7" color="black" fontSize={"sm"}>
+                GPU-accelerated computing is beneficial in data-intensive
+                applications, such as artificial intelligence and machine
+                learning. A cloud graphics processing unit allows businesses to
+                take advantage of this processing power without requiring that a
+                GPU is deployed on the user's local device.
               </Text>
               <Box mt="20px"></Box>
               <Button
                 background={"#4ea819"}
                 borderRadius={"50px 0px 50px 50px"}
               >
-                Get Started
+                <a href="/demo" target="_blank">
+                  Get Started
+                </a>
               </Button>
               {!smallScreen && <br />}
               {!smallScreen && <br />}
@@ -75,7 +83,13 @@ const Gpu = () => {
                 background={"#4ea819"}
                 borderRadius={"50px 0px 50px 50px"}
               >
-                Talk to an Expert
+                <a
+                  href="https://wa.me/9871418798"
+                  rel="noopener norefferer"
+                  target="_blank"
+                >
+                  Talk to an Expert
+                </a>
               </Button>
             </Box>
           </Box>
@@ -84,31 +98,30 @@ const Gpu = () => {
       {/* second */}
       <Box bgColor={"#f5f8fd"} p="50px 10%" textAlign={"center"}>
         <Text color={"#4ea819"} fontSize={"4xl"} fontWeight="bold">
-          Benifit of Cloud Server
+          Benifit of GPU Server
         </Text>
         <Text
           fontSize={
-            !smallScreen ? "md" : !midBr ? "xl" : "2xl"
+            !smallScreen ? "sm" : !midBr ? "sm" : "sm"
           } /* color="blue" */
         >
-          A simple way to cut costs, take advantage of economies of scale, and
-          focus on your core business? By upgrading to a server in the cloud,
-          your organisation avoids excessive infrastructure spending as it
-          brings enhanced reliability in a high-availability environment.
+          Help reduce the workload of the CPU by separating tasks even further.
+          Essentially reducing graphic processing for CPU's
         </Text>
-        <GridTopicBox data={gridData.gridData1} />
+        <GridTopicBox data={gridData.gridData4} />
       </Box>
       {/* third */}
       <Box p="50px 10%" textAlign={"center"}>
         <Text color={"#4ea819"} fontSize={"4xl"} fontWeight="bold">
-          Features
+          Feature of GPU Server
         </Text>
 
-        <Text textAlign={"center"} color="black">
-          Cloud Servers provide all the advanced features you need to build your
-          application or website. Manage everything from within an intuitive
-          control panel, making adjustments in real time as your requirements
-          change, and matching resources precisely to your requirements.
+        <Text textAlign={"center"} color="black" fontSize={"sm"}>
+          GPU servers also produce clear images and are obviously superior for
+          graphically intensive tasks. Because GPUs can handle more calculations
+          per second than CPUs, GPU servers provide advantages in space and
+          power efficiency, allowing a single server to handle a larger
+          workload.
         </Text>
         <Flex
           flexDirection={!midBr ? "column" : "row"}
@@ -116,16 +129,13 @@ const Gpu = () => {
           justifyContent={"space-between"}
         >
           <Box w={midBr ? "47%" : "100%"}>
-            <Image src="https://img.freepik.com/free-vector/cloud-server-banner-laptop-with-cloud-icon_39422-371.jpg"></Image>
+            <Image
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX4uMW8XKiQvvepi8Ihp6RgSwoUeIQUE86wwMpoDsCjp8eVTN9Jbr0gwEp4wXR2OL8k_I&usqp=CAU"
+              width="100%"
+              height={"350px"}
+            ></Image>
           </Box>
           <Box p="1%" w={midBr ? "47%" : "100%"}>
-            {/*  <Text textAlign={"left"}>
-              Cloud Servers provide all the advanced features you need to build
-              your application or website. Manage everything from within an
-              intuitive control panel, making adjustments in real time as your
-              requirements change, and matching resources precisely to your
-              requirements.
-            </Text> */}
             <Text
               bgColor="#09ab78"
               _hover={{
@@ -138,7 +148,8 @@ const Gpu = () => {
               p="15px 10px"
               textAlign={"left"}
             >
-              Custome option for CPU, RAM, Storage & Bandwidth etc.
+              Accelerate the rendering of real-time 2D and 3D graphics
+              applications.
             </Text>
             <Text
               bgColor="#09ab78"
@@ -153,7 +164,7 @@ const Gpu = () => {
               p="15px 10px"
               /* border="1px solid red" */ textAlign={"right"}
             >
-              Admin & root acess
+              Improved with GPUs. Video editors and graphic designers
             </Text>
             {/* sec */}
             <Text
@@ -168,7 +179,7 @@ const Gpu = () => {
               p="15px 10px"
               textAlign={"left"}
             >
-              Choose operating system sutable for business
+              Many computing applications can run well with integrated GPUs
             </Text>
             <Text
               bgColor="#09ab78"
@@ -183,10 +194,37 @@ const Gpu = () => {
               p="15px 10px"
               /* border="1px solid red" */ textAlign={"right"}
             >
-              1 Public Ip
+              GPUs can handle more calculations per second than CPUs
             </Text>
           </Box>
         </Flex>
+      </Box>
+
+      <Box p="50px 10%" textAlign={"center"}>
+        <Text color={"#4ea819"} fontSize={"4xl"} fontWeight="bold">
+          GPU Prices
+        </Text>
+        <SimpleGrid
+          alignItems="center"
+          w={["100", "100%", "90%", "85%"]}
+          m="auto"
+          mt="80px"
+          columns={["1", "1", "2", "3"]}
+          spacing="30px"
+        >
+          {pfData1.map((ele, index) => {
+            return (
+              <PriceBox
+                key={ele.type}
+                type={ele.type}
+                rs={ele.rs}
+                tx={ele.tx}
+                data={ele.ft}
+                server={ele.server}
+              />
+            );
+          })}
+        </SimpleGrid>
       </Box>
 
       {/* fourth */}
@@ -194,7 +232,7 @@ const Gpu = () => {
         <Text color={"#4ea819"} fontSize={"4xl"} fontWeight="bold">
           Advantage
         </Text>
-        <Text fontSize={"2xl"} /* color="blue" */>
+        <Text fontSize={"sm"} /* color="blue" */>
           Why choose your Solutions
         </Text>
         <GridTopicBox data={gridData.gridData2} column={3} />

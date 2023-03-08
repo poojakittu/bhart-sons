@@ -1,7 +1,7 @@
 import { Box, Heading, Text } from "@chakra-ui/react";
 import PlanSingleDiv from "./planSingleDiv";
 
-function PriceBox({ type, state, handleState, rs, tx, data, server }) {
+function PriceBox({ type, state, handleState, rs, tx, data }) {
   return (
     <Box
       onClick={() => handleState(type)}
@@ -10,7 +10,7 @@ function PriceBox({ type, state, handleState, rs, tx, data, server }) {
       borderRadius="10px"
       key={Date.now()}
     >
-      {type === "Premium" ? (
+      {type === "Cloud VPS Premium" ? (
         <Box w="100%" borderRadius="7px 7px 0px 0px" mb="20px" bg="#4ea819">
           <Heading fontSize="17px" p="10px" color="#fff">
             Best value
@@ -19,38 +19,17 @@ function PriceBox({ type, state, handleState, rs, tx, data, server }) {
       ) : null}
       <Box p="15px">
         <Box>
-          <Heading
-            fontSize="20px"
-            mt="20px"
-            bgColor={"red"}
-            color="white"
-            padding={"5px"}
-            
-
-          >
-            {server}
-          </Heading>
-          <Heading fontSize="20px" mt="20px">
+          <Heading fontSize="20px" mt="2px">
             {type}
           </Heading>
-          <Heading mt="13px">{rs}</Heading>
-          <Text mt="13px">user / month</Text>
-
-          <Text
-            color={"#475056"}
-            fontWeight={"400"}
-            textAlign={"center"}
-            mt="20px"
-            fontSize="14px"
-          >
-            No credit card required.
-          </Text>
+          <Heading mt="1px">{rs}</Heading>
+          <Text mt="1px">user / month</Text>
         </Box>
-        <Box mt="50px">
-          <Text color={"#475056"} fontWeight={"400"} textAlign={"left"}>
+        <Box mt="5px" fontSize={"14px"}>
+          <Text color={"#475056"} fontWeight={"900"} textAlign={"left"}>
             {tx}
           </Text>
-          <Box>
+          <Box fontSize={"14px"}>
             {data.map((ele) => {
               return <PlanSingleDiv ele={ele} />;
             })}

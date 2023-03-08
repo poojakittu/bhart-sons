@@ -1,10 +1,12 @@
-import { Box, Button, Flex, Image, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, Image, SimpleGrid, Text } from "@chakra-ui/react";
 import React from "react";
 import GridTopicBox from "../components/vps/GridTopicBox";
 import { useMedia } from "../MediaQuery/UseMedia";
 
 /* dummy Data */
 import { gridData } from "../components/vps/dummyData";
+import { pfData } from "../components/pricing/data";
+import PriceBox from "../components/pricing/priceBox";
 /* img */
 const firstImg =
   "https://img.freepik.com/premium-photo/cloud-server-storing-personal-business-data-isolated-white-background-3d-render_188237-1086.jpg";
@@ -36,10 +38,12 @@ const Vps = () => {
             pt="85px"
             w={["96%", "96%", "80%", "50%", "40%"]}
             textAlign={"left"}
+            margin="left"
+            marginLeft={"90px"}
           >
             <Box ml={["0px", "1%", "3%", "5%", "8%"]}>
               <Text
-                mt={["10px", "160px", "140px", "140px", "140px"]}
+                mt={["10px", "10px", "140px", "140px", "140px"]}
                 fontSize={"4xl"}
                 fontWeight="bold"
                 color="black "
@@ -62,11 +66,14 @@ const Vps = () => {
                 faster service for your money.
               </Text>
               <Box mt="20px"></Box>
+
               <Button
                 background={"#4ea819"}
                 borderRadius={"50px 0px 50px 50px"}
               >
-                Get Started
+                <a href="/demo" target="_blank">
+                  Get Started
+                </a>
               </Button>
               {!smallScreen && <br />}
               {!smallScreen && <br />}
@@ -75,7 +82,13 @@ const Vps = () => {
                 background={"#4ea819"}
                 borderRadius={"50px 0px 50px 50px"}
               >
-                Talk to an Expert
+                <a
+                  href="https://wa.me/9871418798"
+                  rel="noopener norefferer"
+                  target="_blank"
+                >
+                  Talk to an Expert
+                </a>
               </Button>
             </Box>
           </Box>
@@ -84,11 +97,11 @@ const Vps = () => {
       {/* second */}
       <Box bgColor={"#f5f8fd"} p="50px 10%" textAlign={"center"}>
         <Text color={"#4ea819"} fontSize={"4xl"} fontWeight="bold">
-          Benifit of Cloud Server
+          Benifits of Cloud Server
         </Text>
         <Text
           fontSize={
-            !smallScreen ? "md" : !midBr ? "xl" : "2xl"
+            !smallScreen ? "md" : !midBr ? "sm" : "sm"
           } /* color="blue" */
         >
           A simple way to cut costs, take advantage of economies of scale, and
@@ -116,7 +129,7 @@ const Vps = () => {
           justifyContent={"space-between"}
         >
           <Box w={midBr ? "47%" : "100%"}>
-            <Image src="https://img.freepik.com/free-vector/cloud-server-banner-laptop-with-cloud-icon_39422-371.jpg"></Image>
+            <Image src="https://go4hosting.in/blog/wp-content/uploads/2018/11/dedicated-to-cloud-hosting.jpg"></Image>
           </Box>
           <Box p="1%" w={midBr ? "47%" : "100%"}>
             {/*  <Text textAlign={"left"}>
@@ -188,6 +201,32 @@ const Vps = () => {
           </Box>
         </Flex>
       </Box>
+      <Box p="50px 10%" textAlign={"center"}>
+        <Text color={"#4ea819"} fontSize={"4xl"} fontWeight="bold">
+          Cloud VPS Prices
+        </Text>
+        <SimpleGrid
+          alignItems="center"
+          w={["100", "100%", "90%", "85%"]}
+          m="auto"
+          mt="80px"
+          columns={["1", "1", "2", "3"]}
+          spacing="30px"
+        >
+          {pfData.map((ele, index) => {
+            return (
+              <PriceBox
+                key={ele.type}
+                type={ele.type}
+                rs={ele.rs}
+                tx={ele.tx}
+                data={ele.ft}
+                server={ele.server}
+              />
+            );
+          })}
+        </SimpleGrid>
+      </Box>
 
       {/* fourth */}
       <Box p="50px 10%" textAlign={"center"}>
@@ -197,7 +236,7 @@ const Vps = () => {
         <Text fontSize={"2xl"} /* color="blue" */>
           Why choose your Solutions
         </Text>
-        <GridTopicBox data={gridData.gridData2} column={3} />
+        <GridTopicBox data={gridData.gridData2} column={4} />
       </Box>
     </Box>
   );

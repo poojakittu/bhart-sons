@@ -297,23 +297,6 @@ function Home() {
           </Heading>
 
           <Stack w="70%" m="auto" spacing="20px">
-            <Accordion border="1px solid #D6D8D9" allowToggle>
-              <AccordionItem>
-                <h2>
-                  <AccordionButton>
-                    <Box
-                      flex="1"
-                      fontWeight="bold"
-                      color="#475056"
-                      textAlign="left"
-                    >
-                      How does using a time tracker improve productivity?
-                    </Box>
-                    <AccordionIcon />
-                  </AccordionButton>
-                </h2>
-              </AccordionItem>
-            </Accordion>
 
             <Accordion border="1px solid #D6D8D9" allowToggle>
               <AccordionItem>

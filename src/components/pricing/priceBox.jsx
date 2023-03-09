@@ -1,7 +1,7 @@
 import { Box, Heading, Text } from "@chakra-ui/react";
 import PlanSingleDiv from "./planSingleDiv";
 
-function PriceBox({ type, state, handleState, rs, tx, data }) {
+function PriceBox({ type, state, handleState, rs, tx, data, xx, xy }) {
   return (
     <Box
       onClick={() => handleState(type)}
@@ -22,8 +22,9 @@ function PriceBox({ type, state, handleState, rs, tx, data }) {
           <Heading fontSize="20px" mt="2px">
             {type}
           </Heading>
+          <Text>{xy}</Text>
           <Heading mt="1px">{rs}</Heading>
-          <Text mt="1px">user / month</Text>
+          <Text mt="1px">{xx}</Text>
         </Box>
         <Box mt="5px" fontSize={"14px"}>
           <Text color={"#475056"} fontWeight={"900"} textAlign={"left"}>

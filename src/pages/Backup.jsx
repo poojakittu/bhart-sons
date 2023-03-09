@@ -8,8 +8,8 @@ import { gridData } from "../components/vps/dummyData";
 import { pfData3 } from "../components/pricing/data";
 import PriceBox from "../components/pricing/priceBox";
 /* img */
-const firstImg =
-  "https://uploads-ssl.webflow.com/5f1b4085f4118a504729a0ea/5f1b427a40cb57eaceb0b01c_Rocket.svg";
+const firstImg ="https://www.ibm.com/content/dam/connectedassets-adobe-cms/worldwide-content/cdp/cf/ul/g/aa/06/storage-backup-recovery-leadspace-image.component.xl.ts=1643992481833.png/content/adobe-cms/us/en/backup-recovery/_jcr_content/root/leadspace"
+  // "https://uploads-ssl.webflow.com/5f1b4085f4118a504729a0ea/5f1b427a40cb57eaceb0b01c_Rocket.svg";
 
 const Backup = () => {
   const { smallScreen, midBr } = useMedia();
@@ -24,31 +24,29 @@ const Backup = () => {
   };
 
   return (
-    <Box paddingTop="80px">
-      {/* first */}
-      <Box>
-        <Box h={1}></Box>
+    <Box paddingTop="60px" m="auto">
+    {/* first */}
+    <Box>
+      <Box h={1}></Box>
+      <Box
+        w="100%"
+        minHeight={!smallScreen ? "400px" : "670px"}
+        style={lgStyle}
+      >
         <Box
-          w="100%"
-          minHeight={!smallScreen ? "400px" : "670px"}
-          style={lgStyle}
+          m="left"
+          p="5%"
+          pt="65px"
+          w={["96%", "96%", "80%", "50%", "40%"]}
+          textAlign={"left"}
         >
-          <Box
-            m="auto"
-            pt="85px"
-            w={["96%", "96%", "80%", "50%", "40%"]}
-            textAlign={"left"}
-            margin="right"
-            marginLeft={["20px", "20px", "80px", "400"]}
-            padding="5px"
-          >
-            <Box ml={["0px", "1%", "3%", "5%", "8%"]}>
-              <Text
-                mt={["10px", "10px", "40px", "40px", "40px"]}
-                fontSize={"4xl"}
-                fontWeight="bold"
-                color="black "
-              >
+          <Box ml={["0px", "1%", "1%", "1%", "1%"]}>
+            <Text
+              mt={["10px", "10px", "140px", "140px", "140px"]}
+              fontSize={"4xl"}
+              fontWeight="bold"
+              color="black "
+            >
                 Backup & Storage
               </Text>
               <Text
@@ -60,7 +58,7 @@ const Backup = () => {
               >
                 fast and secure.{" "}
               </Text>
-              <Text mt="7" color="black" fontSize={"sm"}>
+              <Text mt="7" color="black" >
                 Backup storage is the supplementary, off-device storage of files
                 and application data. It is both hardware- and software-based
                 and allows for the secure maintenance, management, and retrieval
@@ -216,6 +214,7 @@ const Backup = () => {
                 type={ele.type}
                 rs={ele.rs}
                 tx={ele.tx}
+                xx={ele.xx}
                 data={ele.ft}
                 server={ele.server}
               />

@@ -34,12 +34,11 @@ const Vps = () => {
           style={lgStyle}
         >
           <Box
-            m="auto"
+            m="left"
+            p="5%"
             pt="65px"
             w={["96%", "96%", "80%", "50%", "40%"]}
             textAlign={"left"}
-           
-           
           >
             <Box ml={["0px", "1%", "1%", "1%", "1%"]}>
               <Text
@@ -221,6 +220,7 @@ const Vps = () => {
                 rs={ele.rs}
                 tx={ele.tx}
                 data={ele.ft}
+                xx={ele.xx}
                 server={ele.server}
               />
             );

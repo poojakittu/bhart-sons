@@ -1,13 +1,15 @@
-import { Box, Button, Flex, Image, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, Image, SimpleGrid, Text } from "@chakra-ui/react";
 import React from "react";
 import GridTopicBox from "../components/vps/GridTopicBox";
 import { useMedia } from "../MediaQuery/UseMedia";
 
 /* dummy Data */
 import { gridData } from "../components/vps/dummyData";
+import { pfData8 } from "../components/pricing/data1";
+import PriceBox from "../components/pricing/priceBox";
 /* img */
 const firstImg =
-  "https://uploads-ssl.webflow.com/5f1b4085f4118a504729a0ea/5f1b427a40cb57eaceb0b01c_Rocket.svg";
+  "https://www.fasthosts.co.uk/blog/content/images/2022/06/What_is_email_hosting_1920_x_870_-_2.png";
 
 const Employee = () => {
   const { smallScreen, midBr } = useMedia();
@@ -22,7 +24,7 @@ const Employee = () => {
   };
 
   return (
-    <Box paddingTop="80px">
+    <Box paddingTop="60px" m="auto">
       {/* first */}
       <Box>
         <Box h={1}></Box>
@@ -32,33 +34,31 @@ const Employee = () => {
           style={lgStyle}
         >
           <Box
-            m="auto"
-            pt="85px"
+            m="left"
+            p="5%"
+            pt="65px"
             w={["96%", "96%", "80%", "50%", "40%"]}
             textAlign={"left"}
-            margin="right"
-            marginLeft={["20px", "20px", "80px", "400"]}
-            padding="5px"
           >
-            <Box ml={["0px", "1%", "3%", "5%", "8%"]}>
+            <Box ml={["0px", "1%", "1%", "1%", "1%"]}>
               <Text
-                mt={["10px", "10px", "40px", "40px", "40px"]}
+                mt={["10px", "10px", "140px", "140px", "140px"]}
                 fontSize={"4xl"}
                 fontWeight="bold"
-                color="black "
+                color="white"
               >
                 Employee Monitoring Tool
               </Text>
               <Text
                 mt="3"
                 lineHeight={"40px"}
-                color="black"
+                color="white"
                 maxW={["100%", "90%", "85%", "75%", "70%"]}
                 fontSize={"4xl"}
               >
                 Employee are stable, fast and secure.{" "}
               </Text>
-              <Text mt="7" color="black" fontSize={"sm"}>
+              <Text mt="7" color="white" fontSize={"md"}>
                 Employee monitoring Tool boosts the employee oversight
                 capabilities of companies, ensuring that employees are following
                 best practices when it comes to work-related tasks, access to
@@ -71,7 +71,9 @@ const Employee = () => {
                 background={"#e8c615"}
                 borderRadius={"50px 0px 50px 50px"}
               >
-                <a href="/demo" target="_blank">Get Started</a>  
+                <a href="/demo" target="_blank">
+                  Get Started
+                </a>
               </Button>
               {!smallScreen && <br />}
               {!smallScreen && <br />}
@@ -81,11 +83,11 @@ const Employee = () => {
                 borderRadius={"50px 0px 50px 50px"}
               >
                 <a
-          href="https://wa.me/9871418798"
-          rel="noopener norefferer"
-          target="_blank"
-        >
-                Talk to an Expert
+                  href="https://wa.me/9871418798"
+                  rel="noopener norefferer"
+                  target="_blank"
+                >
+                  Talk to an Expert
                 </a>
               </Button>
             </Box>
@@ -373,34 +375,47 @@ const Employee = () => {
 
       {/* fourth */}
 
-      <Box p="50px 10%" textAlign={"center"}>
-        <Text color={"#e8c615"} fontSize={"4xl"} fontWeight="bold">
-          Operating System Support
-        </Text>
-        <Text fontSize={"sm"} /* color="blue" */>Mac , Windows & Linux</Text>
-      </Box>
-
-      <Box p="50px 10%" textAlign={"center"}>
-        <Text color={"#e8c615"} fontSize={"4xl"} fontWeight="bold">
-          What is Employee Montioring Tools ?
-        </Text>
-        <Text fontSize={"sm"} >Employee Monitoring helps to monitor all employee activity in one centralized location.</Text>
-      </Box>
-
+      {/* 
       <Box p="50px 10%" textAlign={"center"}>
         <Text color={"#e8c615"} fontSize={"4xl"} fontWeight="bold">
         Why Employee Monitoring tool Impoetant for our bussniess ?
         </Text>
         <Text fontSize={"sm"} >Its help to scale up your busniess & improve employee productivity.</Text>
+      </Box> */}
+      <Box p="50px 10%" textAlign={"center"}>
+        <Text color={"#e8c615"} fontSize={"4xl"} fontWeight="bold">
+          Prices
+        </Text>
+        <SimpleGrid
+          alignItems="center"
+          w={["100", "100%", "90%", "85%"]}
+          m="auto"
+          mt="80px"
+          columns={["1", "1", "2", "3"]}
+          spacing="30px"
+        >
+          {pfData8.map((ele, index) => {
+            return (
+              <PriceBox
+                key={ele.type}
+                type={ele.type}
+                rs={ele.rs}
+                xx={ele.xx}
+                tx={ele.tx}
+                data={ele.ft}
+                server={ele.server}
+              />
+            );
+          })}
+        </SimpleGrid>
       </Box>
-
 
       <Box p="50px 10%" textAlign={"center"}>
         <Text color={"#e8c615"} fontSize={"4xl"} fontWeight="bold">
           Advantage
         </Text>
         <Text fontSize={"sm"} /* color="blue" */>
-        Why choose your Solutions
+          Why choose your Solutions
         </Text>
         <GridTopicBox data={gridData.gridData3} column={4} margin="auto" />
       </Box>

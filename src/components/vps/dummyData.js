@@ -1,4 +1,4 @@
-import { relible, enhance, easy,  secure } from "../../assets/images";
+import { relible, enhance, easy, secure } from "../../assets/images";
 
 export const gridData = {
   gridData1: [
@@ -207,6 +207,33 @@ export const gridData = {
     {
       img: enhance,
       des: "Copyright laws, impacting your reputation.",
+    },
+  ],
+
+  gridDataLicence1: [
+    {
+      img: "https://authy.com/wp-content/uploads/new-microsoft-logo-SIZED-SQUARE-300x297-300x297.jpg",
+      des: "Microsoft",
+    },
+    {
+      img: "https://tsplus.net/wp-content/uploads/2021/01/square-transparent.png",
+      des: "Ts Plus",
+    },
+    {
+      img: "https://w7.pngwing.com/pngs/876/879/png-transparent-coreldraw-keygen-computer-software-graphics-editor-others-cdr-balloon-logo-thumbnail.png",
+      des: "Corel Draw",
+    },
+    {
+      img: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Adobe_Systems_logo_and_wordmark.svg/1477px-Adobe_Systems_logo_and_wordmark.svg.png",
+      des: "Adobe",
+    },
+    {
+      img: "https://w7.pngwing.com/pngs/727/102/png-transparent-autocad-logo-autocad-civil-3d-computer-aided-design-autodesk-mechanical-miscellaneous-angle-3d-computer-graphics-thumbnail.png",
+      des: "Autocad",
+    },
+    {
+      img: "https://upload.wikimedia.org/wikipedia/commons/6/60/DS-CATIA-Logo.png",
+      des: "Catia 3D",
     },
   ],
 };

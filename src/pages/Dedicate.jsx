@@ -24,7 +24,7 @@ const Dedicate = () => {
   };
 
   return (
-    <Box paddingTop="80px">
+    <Box paddingTop="60px" m="auto">
       {/* first */}
       <Box>
         <Box h={1}></Box>
@@ -34,14 +34,13 @@ const Dedicate = () => {
           style={lgStyle}
         >
           <Box
-            m="auto"
-            pt="85px"
+            m="left"
+            p="5%"
+            pt="65px"
             w={["96%", "96%", "80%", "50%", "40%"]}
             textAlign={"left"}
-            margin="left"
-            marginLeft={"90px"}
           >
-            <Box ml={["0px", "1%", "3%", "5%", "8%"]}>
+            <Box ml={["0px", "1%", "1%", "1%", "1%"]}>
               <Text
                 mt={["10px", "10px", "140px", "140px", "140px"]}
                 fontSize={"4xl"}
@@ -54,8 +53,8 @@ const Dedicate = () => {
                 mt="3"
                 lineHeight={"40px"}
                 color="black"
-                maxW={["100%", "90%", "85%", "75%", "70%"]}
-                fontSize={"3xl"}
+                maxW={["100%", "90%", "85%", "75%", "60%"]}
+                fontSize={["3xl", "xl", "xl", "xl"]}
               >
                 Cloud servers are stable, fast and secure.{" "}
               </Text>

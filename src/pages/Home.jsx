@@ -85,15 +85,12 @@ function Home() {
                 </Text>
               </Box>
             </Stack>
-            <Box
-              w={["70%", "70%", "70%", "40%"]}
-              h="100%"
-              as="iframe"
-              src="https://www.youtube.com/embed/sgmDvqlSMF4?playlist=sgmDvqlSMF4&autoplay=1&mute=1&loop=1&enablejsapi=1&origin=https%3A%2F%2Fdesktime.com"
-              sx={{
-                aspectRatio: "16/9",
-              }}
-            />
+            <Box w={["70%", "70%", "70%", "40%"]} h="100%">
+              <img
+                src="https://userguiding.com/wp-content/uploads/2022/05/best-cloud-computing-services.jpg"
+                alt=""
+              />
+            </Box>
           </Flex>
           <Flex p="25px 0" justifyContent="center">
             <Image
@@ -297,7 +294,6 @@ function Home() {
           </Heading>
 
           <Stack w="70%" m="auto" spacing="20px">
-
             <Accordion border="1px solid #D6D8D9" allowToggle>
               <AccordionItem>
                 <h2>

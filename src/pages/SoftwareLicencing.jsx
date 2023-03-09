@@ -7,8 +7,7 @@ import { pfData6 } from "../components/pricing/data1";
 import { gridData } from "../components/vps/dummyData";
 import PriceBox from "../components/pricing/priceBox";
 /* img */
-const firstImg =
-  "https://uploads-ssl.webflow.com/5f1b4085f4118a504729a0ea/5f1b427a40cb57eaceb0b01c_Rocket.svg";
+const firstImg = "https://i.ibb.co/kKtkDHj/Software-License-Banner.png";
 
 const SoftwareLicence = () => {
   const { smallScreen, midBr } = useMedia();
@@ -23,7 +22,7 @@ const SoftwareLicence = () => {
   };
 
   return (
-    <Box paddingTop="80px">
+    <Box paddingTop="60px" m="auto">
       {/* first */}
       <Box>
         <Box h={1}></Box>
@@ -33,17 +32,15 @@ const SoftwareLicence = () => {
           style={lgStyle}
         >
           <Box
-            m="auto"
-            pt="85px"
+            m="left"
+            p="5%"
+            pt="65px"
             w={["96%", "96%", "80%", "50%", "40%"]}
             textAlign={"left"}
-            margin="right"
-            marginLeft={["20px", "20px", "80px", "400"]}
-            padding="5px"
           >
-            <Box ml={["0px", "1%", "3%", "5%", "8%"]}>
+            <Box ml={["0px", "1%", "1%", "1%", "1%"]}>
               <Text
-                mt={["10px", "10px", "40px", "40px", "40px"]}
+                mt={["10px", "10px", "140px", "140px", "140px"]}
                 fontSize={"4xl"}
                 fontWeight="bold"
                 color="black "
@@ -51,7 +48,7 @@ const SoftwareLicence = () => {
                 Software Licensing
               </Text>
 
-              <Text mt="7" color="black" fontSize={"sm"}>
+              <Text mt="7" color="black" fontSize={"md"}>
                 We are dealing with all kind of MicrosftWe are dealing with all
                 kinds of Microsoft license. Which help to make easy work,
                 reliable & Secure work.{" "}
@@ -136,7 +133,7 @@ const SoftwareLicence = () => {
               p="15px 10px"
               textAlign={"left"}
             >
-              Microsoft
+              Improved Cybersecurity
             </Text>
             <Text
               bgColor="#09ab78"
@@ -151,7 +148,7 @@ const SoftwareLicence = () => {
               p="15px 10px"
               /* border="1px solid red" */ textAlign={"right"}
             >
-              Ts Plus
+              Avoid Legal Penalties
             </Text>
             {/* sec */}
             <Text
@@ -166,7 +163,7 @@ const SoftwareLicence = () => {
               p="15px 10px"
               textAlign={"left"}
             >
-              Adobe
+              Flexibility
             </Text>
             <Text
               bgColor="#09ab78"
@@ -181,45 +178,13 @@ const SoftwareLicence = () => {
               p="15px 10px"
               /* border="1px solid red" */ textAlign={"right"}
             >
-              Corel Draw
-            </Text>
-
-            <Text
-              bgColor="#09ab78"
-              boxShadow={`rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset`}
-              _hover={{
-                textAlign: "left",
-                background: "#e8c615",
-                color: "white",
-              }}
-              mt="15px"
-              borderRadius={"50px 0px 50px 50px"}
-              p="15px 10px"
-              /* border="1px solid red" */ textAlign={"right"}
-            >
-              Catia 3D
-            </Text>
-
-            <Text
-              bgColor="#09ab78"
-              boxShadow={`rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset`}
-              _hover={{
-                textAlign: "left",
-                background: "#e8c615",
-                color: "white",
-              }}
-              mt="15px"
-              borderRadius={"50px 0px 50px 50px"}
-              p="15px 10px"
-              /* border="1px solid red" */ textAlign={"right"}
-            >
-              Autocad
+              Promotes Market Growth
             </Text>
           </Box>
         </Flex>
       </Box>
 
-      <Box p="50px 10%" textAlign={"center"}>
+      {/* <Box p="50px 10%" textAlign={"center"}>
         <Text color={"#e8c615"} fontSize={"4xl"} fontWeight="bold">
           Prices
         </Text>
@@ -244,17 +209,15 @@ const SoftwareLicence = () => {
             );
           })}
         </SimpleGrid>
-      </Box>
+      </Box> */}
 
       {/* fourth */}
       <Box p="50px 10%" textAlign={"center"}>
         <Text color={"#e8c615"} fontSize={"4xl"} fontWeight="bold">
-          Advantage
+          Software License
         </Text>
-        <Text fontSize={"md"} /* color="blue" */>
-          Why choose your Solutions
-        </Text>
-        <GridTopicBox data={gridData.gridDataLicence} column={4} />
+
+        <GridTopicBox data={gridData.gridDataLicence1} column={4} />
       </Box>
     </Box>
   );

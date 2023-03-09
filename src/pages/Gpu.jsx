@@ -60,7 +60,7 @@ const Gpu = () => {
               >
                  Gpu Cloud are stable, fast and secure.{" "}
               </Text>
-              <Text mt="7" color="black" fontSize={"sm"}>
+              <Text mt="7" color="black" >
                 GPU-accelerated computing is beneficial in data-intensive
                 applications, such as artificial intelligence and machine
                 learning. A cloud graphics processing unit allows businesses to
@@ -219,6 +219,7 @@ const Gpu = () => {
                 type={ele.type}
                 rs={ele.rs}
                 tx={ele.tx}
+                xx={ele.xx}
                 data={ele.ft}
                 server={ele.server}
               />

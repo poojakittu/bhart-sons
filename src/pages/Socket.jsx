@@ -9,7 +9,7 @@ import { pfData5 } from "../components/pricing/data";
 import PriceBox from "../components/pricing/priceBox";
 /* img */
 const firstImg =
-  "https://uploads-ssl.webflow.com/5f1b4085f4118a504729a0ea/5f1b427a40cb57eaceb0b01c_Rocket.svg";
+  "https://assets.website-files.com/5ff66329429d880392f6cba2/61f24c3e4f3ff41f447f42de_SSL%20preview.jpg";
 
 const Socket = () => {
   const { smallScreen, midBr } = useMedia();
@@ -24,7 +24,7 @@ const Socket = () => {
   };
 
   return (
-    <Box paddingTop="80px">
+    <Box paddingTop="60px" m="auto">
       {/* first */}
       <Box>
         <Box h={1}></Box>
@@ -34,17 +34,15 @@ const Socket = () => {
           style={lgStyle}
         >
           <Box
-            m="auto"
-            pt="85px"
+            m="left"
+            p="5%"
+            pt="65px"
             w={["96%", "96%", "80%", "50%", "40%"]}
             textAlign={"left"}
-            margin="right"
-            marginLeft={["20px", "20px", "80px", "400"]}
-            padding="5px"
           >
-            <Box ml={["0px", "1%", "3%", "5%", "8%"]}>
+            <Box ml={["0px", "1%", "1%", "1%", "1%"]}>
               <Text
-                mt={["10px", "10px", "40px", "40px", "40px"]}
+                mt={["10px", "10px", "140px", "140px", "140px"]}
                 fontSize={"4xl"}
                 fontWeight="bold"
                 color="black "
@@ -52,7 +50,7 @@ const Socket = () => {
                 Secure Socket Layer
               </Text>
 
-              <Text mt="7" color="black" fontSize={"sm"}>
+              <Text mt="7" color="black" fontSize={"md"}>
                 Websites need SSL certificates to keep user data secure, verify
                 ownership of the website, prevent attackers from creating a fake
                 version of the site, and convey trust to users
@@ -206,6 +204,8 @@ const Socket = () => {
                 rs={ele.rs}
                 tx={ele.tx}
                 data={ele.ft}
+                xx={ele.xx}
+                xy={ele.xy}
                 server={ele.server}
               />
             );

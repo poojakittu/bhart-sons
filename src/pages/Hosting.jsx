@@ -5,11 +5,10 @@ import { useMedia } from "../MediaQuery/UseMedia";
 
 /* dummy Data */
 import { gridData } from "../components/vps/dummyData";
-import { pfData7 } from "../components/pricing/data";
+import { pfData7 } from "../components/pricing/data1";
 import PriceBox from "../components/pricing/priceBox";
 /* img */
-const firstImg =
-  "https://uploads-ssl.webflow.com/5f1b4085f4118a504729a0ea/5f1b427a40cb57eaceb0b01c_Rocket.svg";
+const firstImg = "https://i.ibb.co/Yhp71hF/Web-Hosting.png";
 
 const Hosting = () => {
   const { smallScreen, midBr } = useMedia();
@@ -24,7 +23,7 @@ const Hosting = () => {
   };
 
   return (
-    <Box paddingTop="80px">
+    <Box paddingTop="60px" m="auto">
       {/* first */}
       <Box>
         <Box h={1}></Box>
@@ -34,17 +33,15 @@ const Hosting = () => {
           style={lgStyle}
         >
           <Box
-            m="auto"
-            pt="85px"
+            m="left"
+            p="5%"
+            pt="65px"
             w={["96%", "96%", "80%", "50%", "40%"]}
             textAlign={"left"}
-            margin="right"
-            marginLeft={["20px", "20px", "80px", "400"]}
-            padding="5px"
           >
-            <Box ml={["0px", "1%", "3%", "5%", "8%"]}>
+            <Box ml={["0px", "1%", "1%", "1%", "1%"]}>
               <Text
-                mt={["10px", "10px", "40px", "40px", "40px"]}
+                mt={["10px", "10px", "140px", "140px", "140px"]}
                 fontSize={"4xl"}
                 fontWeight="bold"
                 color="black "
@@ -52,7 +49,7 @@ const Hosting = () => {
                 Web Hosting
               </Text>
 
-              <Text mt="7" color="black" fontSize={"sm"}>
+              <Text mt="7" color="black" fontSize={"md"}>
                 Web hosting is a service that allows you to store your website's
                 files on a server, making it accessible to everyone online.
               </Text>
@@ -205,6 +202,7 @@ const Hosting = () => {
                 key={ele.type}
                 type={ele.type}
                 rs={ele.rs}
+                xx={ele.xx}
                 tx={ele.tx}
                 data={ele.ft}
                 server={ele.server}

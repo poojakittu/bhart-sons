@@ -9,7 +9,7 @@ import { pfData4 } from "../components/pricing/data";
 import PriceBox from "../components/pricing/priceBox";
 /* img */
 const firstImg =
-  "https://uploads-ssl.webflow.com/5f1b4085f4118a504729a0ea/5f1b427a40cb57eaceb0b01c_Rocket.svg";
+  "https://www.fasthosts.co.uk/blog/content/images/2022/06/What_is_email_hosting_1920_x_870_-_2.png";
 
 const Email = () => {
   const { smallScreen, midBr } = useMedia();
@@ -24,7 +24,7 @@ const Email = () => {
   };
 
   return (
-    <Box paddingTop="80px">
+    <Box paddingTop="60px" m="auto">
       {/* first */}
       <Box>
         <Box h={1}></Box>
@@ -34,25 +34,23 @@ const Email = () => {
           style={lgStyle}
         >
           <Box
-            m="auto"
-            pt="85px"
+            m="left"
+            p="5%"
+            pt="65px"
             w={["96%", "96%", "80%", "50%", "40%"]}
             textAlign={"left"}
-            margin="right"
-            marginLeft={["20px", "20px", "80px", "400"]}
-            padding="5px"
           >
-            <Box ml={["0px", "1%", "3%", "5%", "8%"]}>
+            <Box ml={["0px", "1%", "1%", "1%", "1%"]}>
               <Text
-                mt={["10px", "10px", "40px", "40px", "100px"]}
+                mt={["10px", "10px", "140px", "140px", "140px"]}
                 fontSize={"4xl"}
                 fontWeight="bold"
-                color="black "
+                color="white"
               >
                 Email Hosting
               </Text>
 
-              <Text mt="7" color="black" fontSize={"sm"}>
+              <Text mt="7" color="white" fontSize={"md"} >
                 A professional business email address instills a sense of trust
                 in your customers as compared to a @gmail.com or @yahoo.com
                 email address. Hence a Professional email address boosts your
@@ -270,6 +268,7 @@ const Email = () => {
                 type={ele.type}
                 rs={ele.rs}
                 tx={ele.tx}
+                xx={ele.xx}
                 data={ele.ft}
                 server={ele.server}
               />

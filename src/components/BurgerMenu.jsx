@@ -11,6 +11,8 @@ import {
   Flex,
 } from "@chakra-ui/react";
 
+import styles from "./Header.module.css";
+
 import { GiHamburgerMenu } from "react-icons/gi";
 
 import { Link as RouterLink } from "react-router-dom";
@@ -43,49 +45,156 @@ const BurgerMenu = () => {
 
           <Flex
             flexDirection="column"
-            justifyContent="center"
-            alignItems="center"
+            justifyContent="left"
+            alignItems="left"
             gap="20px"
             zIndex="100"
             fontSize="22px"
             fontWeight="bold"
+            margin={"left"}
           >
-            <Link
-              as={RouterLink}
-              to="/demo"
-              className="un"
-              _hover={{ textDecoration: "none" }}
-            >
-              Demo
-            </Link>
-            <Divider orientation="horizontal" />
+             <div className={styles.makeup}>
             <Link
               className="un"
               _hover={{ textDecoration: "none" }}
               as={RouterLink}
-              to="/pricing"
+              to=""
             >
-              Pricing
+              Cloud Solutions
             </Link>
-            <Divider orientation="horizontal" />
+            <div className={styles.dropdown1}>
+              <Link to="/vps" as={RouterLink}>
+                Cloud VPS
+              </Link>
+              <Link to="/dedicate" as={RouterLink}>
+                Dedicate Server
+              </Link>
+              <Link to="/gpu" as={RouterLink}>
+                GPU Server
+              </Link>
+              <Link to="/backup" as={RouterLink}>
+                Backup And Storage
+              </Link>
+              <Link to="/email" as={RouterLink}>
+                Premium Email Hosting
+              </Link>
+              <Link to="/employee" as={RouterLink}>
+                Employee Monitoring
+              </Link>
+              <Link to="/socket" as={RouterLink}>
+                Secure Socket Layer{" "}
+              </Link>
+              <Link to="/licence" as={RouterLink}>
+                Software Licencing
+              </Link>
+              <Link to="/hosting" as={RouterLink}>
+                Web Hosting
+              </Link>
+            </div>
+          </div>
+         
 
+          {/* <Link
+            className="un"
+            _hover={{ textDecoration: "none" }}
+            as={RouterLink}
+            to="/pricing"
+          >
+            Cloud Pricing
+          </Link> */}
+
+          <div className={styles.makeup}>
             <Link
-              as={RouterLink}
-              to="/aboutus"
               className="un"
               _hover={{ textDecoration: "none" }}
-            >
-              About us
-            </Link>
-            <Divider orientation="horizontal" />
-            <Link
               as={RouterLink}
-              to="/faq"
+              to="/software"
+            >
+              Softwares
+            </Link>
+
+            <div className={styles.dropdown1}>
+              <Link to="/software" as={RouterLink}>
+                Access Control{" "}
+              </Link>
+              <Link to="/software" as={RouterLink}>
+                Biometic Attendance
+              </Link>
+              <Link to="/software" as={RouterLink}>
+                Payroll-Software
+              </Link>
+              <Link to="/software" as={RouterLink}>
+                Visual ERP{" "}
+              </Link>
+              <Link to="/software" as={RouterLink}>
+                Website Design
+              </Link>
+              {/* <Link to="/software" as={RouterLink}>
+                Cloud & Storage
+              </Link> */}
+              {/* <Link to="/software" as={RouterLink}>
+                Dedicate Server{" "}
+              </Link> */}
+              {/* <Link to="/software" as={RouterLink}>
+                Email Solutions
+              </Link> */}
+              
+            </div>
+          </div>
+          <div className={styles.makeup}>
+            <Link
               className="un"
               _hover={{ textDecoration: "none" }}
+              as={RouterLink}
+              to="/hardware"
             >
-              FAQ
+              Hardwares
             </Link>
+            <div className={styles.dropdown1}>
+              <Link to="/hardware" as={RouterLink}>
+                It Equipment
+              </Link>
+              <Link to="/network" as={RouterLink}>
+                Network Security
+              </Link>
+              <Link to="/rental" as={RouterLink}>
+                Rental
+              </Link>
+              {/* <Link to="/hardware" as={RouterLink}>
+                Servers
+              </Link>
+              <Link to="/hardware" as={RouterLink}>
+                Technical Support
+              </Link> */}
+            </div>
+          </div>
+
+         
+
+          <Link
+            as={RouterLink}
+            to="/aboutus"
+            className="un"
+            _hover={{ textDecoration: "none" }}
+          >
+            About us
+          </Link>
+          <Link
+            as={RouterLink}
+            to="/contact"
+            className="un"
+            _hover={{ textDecoration: "none" }}
+          >
+            Contact us
+          </Link>
+          <Link
+            as={RouterLink}
+            to="/demo"
+            className="un"
+            _hover={{ textDecoration: "none" }}
+          >
+           Book a Demo
+          </Link>
             <Divider orientation="horizontal" />
 
             <Divider orientation="horizontal" />

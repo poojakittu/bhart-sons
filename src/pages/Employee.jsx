@@ -9,7 +9,7 @@ import { pfData8 } from "../components/pricing/data1";
 import PriceBox from "../components/pricing/priceBox";
 /* img */
 const firstImg =
-  "https://www.fasthosts.co.uk/blog/content/images/2022/06/What_is_email_hosting_1920_x_870_-_2.png";
+  "https://i.ibb.co/8XYGrTk/Employee-Monitoring-Tools.png";
 
 const Employee = () => {
   const { smallScreen, midBr } = useMedia();

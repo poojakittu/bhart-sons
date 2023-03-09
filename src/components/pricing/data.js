@@ -341,7 +341,7 @@ export const pfData5 = [
     xy: "Domain Validation Certificates",
     type: "PositiveSSL DV Certificates",
     xx: "Per Year",
-    rs: "₹7000",
+    rs: "₹3850",
     tx: "Basic features:",
     ft: [
       "Boosts Google® rankings",
@@ -432,7 +432,7 @@ export const pfData4 = [
 export const pfData3 = [
   {
     server: "Cloud Backup Solution",
-    type: "Cloud VPS V8",
+    type: "Cloud Backup Solution",
     rs: "₹10/GB",
     tx: "Basic features:",
     xx: "GB/MONTH",
@@ -450,10 +450,10 @@ export const pfData3 = [
   },
   {
     server: "Premium Cloud Backup Solution",
-    type: "Cloud VPS V16",
+    type: "Premium Cloud Backup Solution",
     rs: "₹12/GB",
     tx: "Basic features:",
-    xx: "GB/MONTH",
+     xx: "GB/MONTH",
     ft: [
       "Incremental Backup",
       "Drive/File & Entire Machine Backup",
@@ -469,10 +469,10 @@ export const pfData3 = [
   },
   {
     server: "On Premise Backup Solution",
-    type: "Cloud VPS V20",
+    type: "On Premise Backup Solution",
     rs: "₹4000",
     tx: "Basic features:",
-    xx: "GB/MONTH",
+    xx: "DEVICE/MONTH",
     ft: [
       "Incremental Backup",
       "Drive/File & Entire Machine Backup",
@@ -523,7 +523,7 @@ export const pfData2 = [
   {
     server: "Dedicated Server Premium",
     type: "Dedicated Server Premium",
-    rs: "₹10500",
+    rs: "₹21500",
     tx: "Basic features:",
     ft: [
       "16 vCore CPU",

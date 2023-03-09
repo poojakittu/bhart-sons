@@ -97,7 +97,7 @@ function Footer() {
               </a>
               <GrSkype className="ficons" />
               <a
-                href="https://wa.me/9871418798"
+                href="https://wa.me/9818648486"
                 rel="noopener norefferer"
                 target="_blank"
               >

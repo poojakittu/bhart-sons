@@ -27,7 +27,7 @@ function App() {
           {" "} */}
 
         <FloatingWhatsApp
-          phoneNumber="9871418798"
+          phoneNumber="9818648486"
           accountName="Welcome Bharat & Son's"
         />
         {/* </a> */}

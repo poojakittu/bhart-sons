@@ -240,9 +240,9 @@ function Home() {
                 <Text color="#475056" fontSize="18px">
                   Easy-to-Use, Robust, Flexible and Feature Rich HR, Payroll
                   Software and Employee Self Service with Web / Online and
-                  Payroll Software Functionalities for the Indian. M-Tech can be
-                  used Globally with some customizations to meet country
-                  specific requirements.
+                  Payroll Software Functionalities for the Indian. can be used
+                  Globally with some customizations to meet country specific
+                  requirements.
                 </Text>
               </Box>
 
@@ -257,9 +257,9 @@ function Home() {
                   VisualPay Payroll Software can be used by private sector
                   companies in India as well as Internationally and by Indian
                   Central Govt Organizations meeting VI Pay Commission
-                  requirements. M-Tech is committed to providing you with a
-                  World class Product, Well defined Implementation Methodology &
-                  Excellent Support System
+                  requirements. Bharat & Son's is committed to providing you
+                  with a World class Product, Well defined Implementation
+                  Methodology & Excellent Support System
                 </Text>
               </Box>
             </Stack>

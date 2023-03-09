@@ -49,7 +49,7 @@ const SoftwareLicence = () => {
               </Text>
 
               <Text mt="7" color="black" fontSize={"md"}>
-                We are dealing with all kind of MicrosftWe are dealing with all
+               We are dealing with all
                 kinds of Microsoft license. Which help to make easy work,
                 reliable & Secure work.{" "}
               </Text>

@@ -9,7 +9,7 @@ import { pfData2 } from "../components/pricing/data";
 import PriceBox from "../components/pricing/priceBox";
 /* img */
 const firstImg =
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8oh7mxxrKamQ87tYx3DZiMAUEm5JvnszeBg&usqp=CAU";
+  "https://i.ibb.co/cNJGHdB/dedicated-server-banner.jpg";
 
 const Dedicate = () => {
   const { smallScreen, midBr } = useMedia();

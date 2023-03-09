@@ -94,7 +94,7 @@ const Contact = () => {
             provides the timely, accurate and actionable information.
             Easy-to-Use, Robust, Flexible and Feature Rich HR, Payroll Software
             and Employee Self Service with Web / Online and Payroll Software
-            Functionalities for the Indian. M-Tech can be used Globally with
+            Functionalities for the Indian. Bharat & Son's can be used Globally with
             some customizations to meet country specific requirements.
           </Text>
         </Box>

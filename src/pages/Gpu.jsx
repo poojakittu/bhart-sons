@@ -8,8 +8,7 @@ import { gridData } from "../components/vps/dummyData";
 import { pfData, pfData1 } from "../components/pricing/data";
 import PriceBox from "../components/pricing/priceBox";
 /* img */
-const firstImg =
-  "https://uploads-ssl.webflow.com/5f1b4085f4118a504729a0ea/5f1b427a40cb57eaceb0b01c_Rocket.svg";
+const firstImg = "https://i.ibb.co/k9L1Qw7/GPU-Server.jpg";
 
 const Gpu = () => {
   const { smallScreen, midBr } = useMedia();
@@ -24,7 +23,7 @@ const Gpu = () => {
   };
 
   return (
-    <Box paddingTop="80px">
+    <Box paddingTop="60px" m="auto">
       {/* first */}
       <Box>
         <Box h={1}></Box>
@@ -34,33 +33,31 @@ const Gpu = () => {
           style={lgStyle}
         >
           <Box
-            m="auto"
-            pt="85px"
+            m="left"
+            p="5%"
+            pt="65px"
             w={["96%", "96%", "80%", "50%", "40%"]}
             textAlign={"left"}
-            margin="right"
-            marginLeft={["20px", "20px", "80px", "400"]}
-            padding="5px"
           >
-            <Box ml={["0px", "1%", "3%", "5%", "8%"]}>
+            <Box ml={["0px", "1%", "1%", "1%", "1%"]}>
               <Text
-                mt={["10px", "10px", "40px", "40px", "40px"]}
+                mt={["10px", "10px", "140px", "140px", "140px"]}
                 fontSize={"4xl"}
                 fontWeight="bold"
-                color="black "
+                color="white "
               >
                 GPU Cloud Server
               </Text>
               <Text
                 mt="3"
                 lineHeight={"40px"}
-                color="black"
                 maxW={["100%", "90%", "85%", "75%", "70%"]}
                 fontSize={"4xl"}
+                color="white "
               >
-                 Gpu Cloud are stable, fast and secure.{" "}
+                Gpu Cloud are stable, fast and secure.{" "}
               </Text>
-              <Text mt="7" color="black" >
+              <Text mt="7" color="white ">
                 GPU-accelerated computing is beneficial in data-intensive
                 applications, such as artificial intelligence and machine
                 learning. A cloud graphics processing unit allows businesses to

@@ -28,14 +28,15 @@ export default function Software() {
   return (
     <>
       <div className="speacer" style={{paddingTop:"100px"}} >
-        <img style={{height:"400px",width:"100%"}} src="https://i0.wp.com/itscurrie.com/wp-content/uploads/2016/10/time_management_software_full_14177545.jpg?fit=2739%2C1825&ssl=1" alt="" />
+        <img style={{height:"600px",width:"100%"}}
+         src="https://static.javatpoint.com/blog/images/what-is-software.png" alt="" />
       </div>
       <div className="directoryintro">
         <h1>	Software Solutions </h1>
         <p>
         which has earned an excellent reputation for its quality Products, services,
          ethics, professionalism and credibility in the field of Software Development,
-          Implementations, Support & Service. M-Tech is promoted and managed by experienced
+          Implementations, Support & Service. Bharat & Son's is promoted and managed by experienced
            professionals, with multidisciplinary skills and expertise and backed by a wide
             network of associates and consultants.
 

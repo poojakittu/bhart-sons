@@ -45,20 +45,20 @@ const Employee = () => {
                 mt={["10px", "10px", "140px", "140px", "140px"]}
                 fontSize={"4xl"}
                 fontWeight="bold"
-                color="white"
+                color="black"
               >
                 Employee Monitoring Tool
               </Text>
               <Text
                 mt="3"
                 lineHeight={"40px"}
-                color="white"
+                color="black"
                 maxW={["100%", "90%", "85%", "75%", "70%"]}
                 fontSize={"4xl"}
               >
                 Employee are stable, fast and secure.{" "}
               </Text>
-              <Text mt="7" color="white" fontSize={"md"}>
+              <Text mt="7" color="black" fontSize={"md"}>
                 Employee monitoring Tool boosts the employee oversight
                 capabilities of companies, ensuring that employees are following
                 best practices when it comes to work-related tasks, access to

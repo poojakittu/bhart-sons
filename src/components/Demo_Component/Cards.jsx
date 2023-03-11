@@ -27,7 +27,7 @@ function Cards(props) {
         >
           {Content.map((el, i) => (
             <GridItem key={i}>
-              <SingleCard heading={el.heading} text={el.text} img={el.img} />
+              <SingleCard heading={el.heading} text={el.text} img={el.img} buttonText={el.buttonText}/>
             </GridItem>
           ))}
         </Grid>

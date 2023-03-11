@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Flex, Button, Text } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 function Headersection() {
   return (
     <Box
@@ -40,7 +41,7 @@ function Headersection() {
               color={"#333c43"}
               mb="-0.5px"
             >
-            It Solutions
+              It Solutions
             </Text>
             <Text
               w={["90%", "100%", "90%", "100%"]}
@@ -69,9 +70,8 @@ function Headersection() {
                 fontWeight={"600"}
               >
                 {" "}
-                BOOK A DEMO
+                <Link to="/contact">BOOK A DEMO</Link>
               </Button>
-             
             </Flex>
           </Flex>
         </Flex>

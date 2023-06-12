@@ -67,10 +67,6 @@ export const gridData = {
     },
   ],
   gridData4: [
-    // {
-    //   img:"https://miro.medium.com/max/766/1*hxwh1DxpabwY1H6zzRljgA.jpeg",
-    //   des:"Pay-as-you-go for computing",
-    // },
     {
       img: easy,
       des: "Creates a Professional Impression",

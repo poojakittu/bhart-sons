@@ -8,8 +8,9 @@ import { gridData } from "../components/vps/dummyData";
 import { pfData3 } from "../components/pricing/data";
 import PriceBox from "../components/pricing/priceBox";
 /* img */
-const firstImg ="https://www.ibm.com/content/dam/connectedassets-adobe-cms/worldwide-content/cdp/cf/ul/g/aa/06/storage-backup-recovery-leadspace-image.component.xl.ts=1643992481833.png/content/adobe-cms/us/en/backup-recovery/_jcr_content/root/leadspace"
-  // "https://uploads-ssl.webflow.com/5f1b4085f4118a504729a0ea/5f1b427a40cb57eaceb0b01c_Rocket.svg";
+const firstImg =
+  "https://www.ibm.com/content/dam/connectedassets-adobe-cms/worldwide-content/cdp/cf/ul/g/aa/06/storage-backup-recovery-leadspace-image.component.xl.ts=1643992481833.png/content/adobe-cms/us/en/backup-recovery/_jcr_content/root/leadspace";
+// "https://uploads-ssl.webflow.com/5f1b4085f4118a504729a0ea/5f1b427a40cb57eaceb0b01c_Rocket.svg";
 
 const Backup = () => {
   const { smallScreen, midBr } = useMedia();
@@ -25,28 +26,28 @@ const Backup = () => {
 
   return (
     <Box paddingTop="60px" m="auto">
-    {/* first */}
-    <Box>
-      <Box h={1}></Box>
-      <Box
-        w="100%"
-        minHeight={!smallScreen ? "400px" : "670px"}
-        style={lgStyle}
-      >
+      {/* first */}
+      <Box>
+        <Box h={1}></Box>
         <Box
-          m="left"
-          p="5%"
-          pt="65px"
-          w={["96%", "96%", "80%", "50%", "40%"]}
-          textAlign={"left"}
+          w="100%"
+          minHeight={!smallScreen ? "400px" : "670px"}
+          style={lgStyle}
         >
-          <Box ml={["0px", "1%", "1%", "1%", "1%"]}>
-            <Text
-              mt={["10px", "10px", "140px", "140px", "140px"]}
-              fontSize={"4xl"}
-              fontWeight="bold"
-              color="black "
-            >
+          <Box
+            m="left"
+            p="5%"
+            pt="65px"
+            w={["96%", "96%", "80%", "50%", "40%"]}
+            textAlign={"left"}
+          >
+            <Box ml={["0px", "1%", "1%", "1%", "1%"]}>
+              <Text
+                mt={["10px", "10px", "140px", "140px", "140px"]}
+                fontSize={"4xl"}
+                fontWeight="bold"
+                color="black "
+              >
                 Backup & Storage
               </Text>
               <Text
@@ -58,7 +59,7 @@ const Backup = () => {
               >
                 fast and secure.{" "}
               </Text>
-              <Text mt="7" color="black" >
+              <Text mt="7" color="black">
                 Backup storage is the supplementary, off-device storage of files
                 and application data. It is both hardware- and software-based
                 and allows for the secure maintenance, management, and retrieval
@@ -106,7 +107,7 @@ const Backup = () => {
           This can be used to create real-time replicas of your data and store
           them away, making your data disaster-proof.
         </Text>
-        <GridTopicBox data={gridData.gridDataBackup} />
+        <GridTopicBox data={gridData.gridData1} />
       </Box>
       {/* third */}
       <Box p="50px 10%" textAlign={"center"}>
@@ -133,7 +134,7 @@ const Backup = () => {
           </Box>
           <Box p="1%" w={midBr ? "47%" : "100%"}>
             <Text
-              bgColor="#09ab78"
+              bgColor="#e8c615"
               _hover={{
                 textAlign: "right",
                 background: "#e8c615",
@@ -147,7 +148,7 @@ const Backup = () => {
               Take Backup Url, website & any Software.
             </Text>
             <Text
-              bgColor="#09ab78"
+              bgColor="#e8c615"
               boxShadow={`rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset`}
               _hover={{
                 textAlign: "left",
@@ -163,7 +164,7 @@ const Backup = () => {
             </Text>
             {/* sec */}
             <Text
-              bgColor="#09ab78"
+              bgColor="#e8c615"
               _hover={{
                 textAlign: "right",
                 background: "#e8c615",
@@ -177,7 +178,7 @@ const Backup = () => {
               Managed anti-malware protection
             </Text>
             <Text
-              bgColor="#09ab78"
+              bgColor="#e8c615"
               boxShadow={`rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset`}
               _hover={{
                 textAlign: "left",

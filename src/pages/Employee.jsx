@@ -155,7 +155,7 @@ const Employee = () => {
 
           <Box p="1%" w={midBr ? "47%" : "100%"}>
             <Text
-              bgColor="#09ab78"
+              bgColor="#e8c615"
               _hover={{
                 textAlign: "right",
                 background: "#e8c615",
@@ -169,7 +169,7 @@ const Employee = () => {
               Visible/InVisible Working
             </Text>
             <Text
-              bgColor="#09ab78"
+              bgColor="#e8c615"
               boxShadow={`rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset`}
               _hover={{
                 textAlign: "left",
@@ -185,7 +185,7 @@ const Employee = () => {
             </Text>
             {/* sec */}
             <Text
-              bgColor="#09ab78"
+              bgColor="#e8c615"
               _hover={{
                 textAlign: "right",
                 background: "#e8c615",
@@ -199,7 +199,7 @@ const Employee = () => {
               Desktop activity logs
             </Text>
             <Text
-              bgColor="#09ab78"
+              bgColor="#e8c615"
               boxShadow={`rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset`}
               _hover={{
                 textAlign: "left",
@@ -214,7 +214,7 @@ const Employee = () => {
               Auto & Manual Login/Logout
             </Text>
             <Text
-              bgColor="#09ab78"
+              bgColor="#e8c615"
               boxShadow={`rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset`}
               _hover={{
                 textAlign: "left",
@@ -229,7 +229,7 @@ const Employee = () => {
               Online/Offline Tracking
             </Text>
             <Text
-              bgColor="#09ab78"
+              bgColor="#e8c615"
               boxShadow={`rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset`}
               _hover={{
                 textAlign: "left",
@@ -244,7 +244,7 @@ const Employee = () => {
               File Name & Path Tracking
             </Text>
             <Text
-              bgColor="#09ab78"
+              bgColor="#e8c615"
               _hover={{
                 textAlign: "right",
                 background: "#e8c615",
@@ -258,7 +258,7 @@ const Employee = () => {
               Whitelist & Blacklist Apps & URLs
             </Text>
             <Text
-              bgColor="#09ab78"
+              bgColor="#e8c615"
               _hover={{
                 textAlign: "right",
                 background: "#e8c615",
@@ -272,7 +272,7 @@ const Employee = () => {
               Productivity Calculator
             </Text>
             <Text
-              bgColor="#09ab78"
+              bgColor="#e8c615"
               _hover={{
                 textAlign: "right",
                 background: "#e8c615",
@@ -286,7 +286,7 @@ const Employee = () => {
               Email Reporting
             </Text>
             <Text
-              bgColor="#09ab78"
+              bgColor="#e8c615"
               _hover={{
                 textAlign: "right",
                 background: "#e8c615",
@@ -300,7 +300,7 @@ const Employee = () => {
               Configure idle time
             </Text>
             <Text
-              bgColor="#09ab78"
+              bgColor="#e8c615"
               _hover={{
                 textAlign: "right",
                 background: "#e8c615",
@@ -314,7 +314,7 @@ const Employee = () => {
               Active Directory Integration
             </Text>
             <Text
-              bgColor="#09ab78"
+              bgColor="#e8c615"
               _hover={{
                 textAlign: "right",
                 background: "#e8c615",
@@ -328,7 +328,7 @@ const Employee = () => {
               Department wise report
             </Text>
             <Text
-              bgColor="#09ab78"
+              bgColor="#e8c615"
               _hover={{
                 textAlign: "right",
                 background: "#e8c615",
@@ -342,7 +342,7 @@ const Employee = () => {
               Meeting App Categorization
             </Text>
             <Text
-              bgColor="#09ab78"
+              bgColor="#e8c615"
               _hover={{
                 textAlign: "right",
                 background: "#e8c615",
@@ -356,7 +356,7 @@ const Employee = () => {
               Automated Screenshots & Live track by Video
             </Text>
             <Text
-              bgColor="#09ab78"
+              bgColor="#e8c615"
               _hover={{
                 textAlign: "right",
                 background: "#e8c615",

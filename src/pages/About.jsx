@@ -18,41 +18,38 @@ export default function Box1() {
 
   return (
     <ChakraProvider>
-      <Box>
-        <Box pt="90px">
-          <Box
-            backgroundImage={["none", "none", "none", bgImage]}
-            backgroundRepeat="no-repeat"
-            backgroundSize="cover"
-            h="300px"
-          >
-            <Box
-              w={["100%", "100%", "100%", "40%"]}
-              m="auto"
-              textAlign="center"
-            >
-              <Heading
-                fontSize={["17px", "22px", "35px"]}
-                lineHeight="2rem"
-                mb="20px"
-                color={["#333c43", "#333c43", "#333c43", "#fff"]}
-                pt="60px"
-              >
-                About Bharat & Sons
-              </Heading>
-              <Text
-                fontWeight="600"
-                mb="30px"
-                color={["#333c43", "#333c43", "#333c43", "#fff"]}
-                p="10px"
-              >
-                TO MAINTAIN THE HIGHEST LEVELS OF QUALITY SERVICES SO THAT WE
-                CAN PROVIDE THE BEST CLOUD, HARDWARE AND SOFTWARE SERVICES IN
-              </Text>
-              <Center></Center>
-            </Box>
+      <Box pt={"90px"}>
+        <div id="hero" className="d-grid align-items-center">
+          <Box p={8}>
+            <Flex alignItems="center" width={"80%"} m={"auto"} gap={"40px"}>
+              <Box flex="1" pr={[0, 0, 0, 4]}>
+                <Heading as={"h1"} size="lg" mb={6}>
+                  IT & CLOUD SOLUTIONS
+                </Heading>
+                <Text mb={4}>
+                  To maintain the highest levels of quality services, we strive
+                  to provide the best cloud, hardware, and software services.
+                  Our commitment to excellence ensures that we deliver top-notch
+                  solutions to meet your needs effectively and efficiently. By
+                  staying at the forefront of technology and industry trends, we
+                  aim to exceed expectations and provide you with exceptional
+                  value. Trust us to deliver reliable, scalable, and secure
+                  solutions that empower your business to thrive in the digital
+                  age.
+                </Text>
+              </Box>
+              <Box flex="1" pl={[0, 0, 0, 4]}>
+                <Image
+                  src="https://ebookinfotech.com/img/about-us.gif"
+                  className="img-fluid animated"
+                  alt="hero-img"
+                  borderRadius={"90px"}
+                />
+              </Box>
+            </Flex>
           </Box>
-
+        </div>
+        <Box pt="90px">
           <Box mt="70px">
             <Flex
               w="90%"
@@ -75,7 +72,7 @@ export default function Box1() {
                 <Box>
                   <Heading
                     textAlign="left"
-                    fontSize={["17px", "22px", "35px"]}
+                    fontSize={["20px", "24px", "32px"]}
                     lineHeight="40px"
                     mb="30px"
                     color="#333c43"
@@ -84,30 +81,41 @@ export default function Box1() {
                   </Heading>
                   <Text
                     textAlign="left"
-                    lineHeight="20px"
+                    lineHeight="24px"
                     color="#475056"
                     mb="30px"
+                    fontSize={["14px", "16px", "18px"]}
                   >
-                    BHARAT & SONS SYSTEMS SOLUTION, IS A TECHNOLOGICALLY
-                    ADVANCED CLOUD COMPUTING COMPANY IN INDIA AND IS A LEADING
-                    PROVIDER OF ON DEMAND, SCALABLE AND RELIABLE CLOUD SERVICES.
-                    OUR ORGANIZATION IN IT SOLUTIONS AND SERVICES. WE PROVIDE A
-                    VARIETY OF SERVICES TO HELP YOU GET STARTED WITH THE RIGHT
-                    SOLUTION FOR YOUR NEEDS. OUR SERVICES INCLUDE DEDICATED
-                    SERVERS, VIRTUAL PRIVATE SERVERS, GPU SERVERS, CLOUD BACKUPS
-                    AND SOLUTIONS FOR EVERYDAY NEEDS TO CLIENTS LIKE EMAIL
-                    SOLUTIONS, EMPLOYEE MONITORING, SOFTWARE LICENSING &
-                    HARDWARE SERVICES. WE PARTNER WITH THE BEST IN INDUSTRY AND
-                    ADHERE TO THE GLOBAL STANDARDS IN CLOUD SOLUTIONS WITH 100%
-                    ENCRYPTION AND 99.9% UPTIME SLA. VAL
+                    Bharat & Sons Systems Solution is a technologically advanced
+                    cloud computing company in India and a leading provider of
+                    on-demand, scalable, and reliable cloud services. We
+                    specialize in IT solutions and services, offering a wide
+                    range of services to cater to your specific needs. Our
+                    comprehensive offerings include dedicated servers, virtual
+                    private servers, GPU servers, cloud backups, and solutions
+                    for everyday requirements such as email solutions, employee
+                    monitoring, software licensing, and hardware services.
                   </Text>
-                  <Text textAlign="left" lineHeight="20px" color="#475056">
-                    TO EXCEED THE EXPECTATIONS OF THE CUSTOMERS AND PROVIDE THEM
-                    WITH THE BEST CLOUD, HARDWARE AND SOFTWARE SERVICES THE MOST
-                    RELIABLE SUPPORT SYSTEM.
+                  <Text
+                    textAlign="left"
+                    lineHeight="24px"
+                    color="#475056"
+                    fontSize={["14px", "16px", "18px"]}
+                  >
+                    At Bharat & Sons Systems Solution, we prioritize our
+                    customers' satisfaction and strive to exceed their
+                    expectations. We are committed to providing the best cloud,
+                    hardware, and software services, backed by a reliable
+                    support system. We partner with industry-leading providers
+                    and adhere to global standards in cloud solutions, ensuring
+                    100% encryption and a 99.9% uptime service level agreement
+                    (SLA). Our goal is to deliver exceptional solutions that
+                    empower your business and enable you to achieve your
+                    objectives with confidence.
                   </Text>
                 </Box>
               </Flex>
+
               <Flex
                 w={["100%", "100%", "100%", "50%"]}
                 m="auto"
@@ -115,7 +123,7 @@ export default function Box1() {
               >
                 <Image
                   maxW="100%"
-                  src="https://desktime.com/static/web/about/team.jpg"
+                  src="https://i.ibb.co/CmkNGVN/Whats-App-Image-2023-06-11-at-10-04-33-PM.jpg"
                 />
               </Flex>
             </Flex>
@@ -181,10 +189,6 @@ export default function Box1() {
             </Box>
           </Box>
         </Box>
-        {/* <Box>
-          <Subscribe />
-        </Box> */}
-        <Box></Box>
       </Box>
     </ChakraProvider>
   );

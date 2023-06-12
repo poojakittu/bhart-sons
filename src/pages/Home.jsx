@@ -13,7 +13,7 @@ import {
   AccordionPanel,
   AccordionIcon,
 } from "@chakra-ui/react";
-
+import "./Hero.css";
 import {
   IoRocketSharp,
   IoCalendarSharp,
@@ -36,85 +36,35 @@ function Home() {
   });
   return (
     <ChakraProvider>
-      <Box>
-        <Box
-          p="130px 0 40px 0"
-          bgSize="cover"
-          bg='url("https://desktime.com/static/web/_common/intro-background.png") no-repeat bottom'
-        >
-          <Flex
-            p="15px 0"
-            justifyContent="center"
-            alignItems="center"
-            textAlign="left"
-            gap="50px"
-            flexDirection={["column", "column", "column", "row"]}
-          >
-            <Stack w={["80%", "80%", "80%", "43%"]} spacing="20px">
-              <Heading as="h1" fontSize="42px" color="#475056">
-                IT & CLOUD SOLUTIONS
-              </Heading>
-              <Text color="#475056" fontSize="18px">
-                The Hardware and Networking Professionals are responsible for
-                identification and troubleshooting of software, hardware and
-                network-related issues.
-              </Text>
-              <Text color="#475056" fontSize="18px">
-                Undertake installation, maintenance and troubleshooting of
-                microcomputers, peripheral equipment, data communications, Local
-                Area Network (LAN) and Wide Area Network (WAN)
-              </Text>
-              <Text color="#475056" fontSize="18px">
-                Examine the requirements of the complex network design and
-                handle configuration and installation of workstations and
-                operating systems of providers like Windows, Macintosh, etc
-              </Text>
-
-              <Box color="#475056">
-                <Text>Try free for 14 days. No credit card required.</Text>
-                <Text>
-                  By signing up, you agree to our{" "}
-                  <Link fontWeight="bold" href="#">
-                    terms
-                  </Link>{" "}
-                  and{" "}
-                  <Link fontWeight="bold" href="#">
-                    privacy policy
-                  </Link>
-                  .
+      <Box p="90px 0 190px 0" className="container">
+        <div id="hero" className="d-grid align-items-center">
+          <Box p={8}>
+            <Flex alignItems="center" width={"80%"} m={"auto"} gap={"40px"}>
+              <Box flex="1" pr={[0, 0, 0, 4]}>
+                <Heading as={"h1"} size="lg" mb={4}>
+                  IT & CLOUD SOLUTIONS
+                </Heading>
+                <Text mb={4}>
+                  The Hardware and Networking Professionals are responsible for
+                  identification and troubleshooting of software, hardware and
+                  network-related issues. Undertake installation, maintenance
+                  and troubleshooting of microcomputers, peripheral equipment,
+                  data communications, Local Area Network (LAN) and Wide Area
+                  Network (WAN)
                 </Text>
               </Box>
-            </Stack>
-            <Box w={["70%", "70%", "70%", "40%"]} h="100%">
-              <img
-                src="https://userguiding.com/wp-content/uploads/2022/05/best-cloud-computing-services.jpg"
-                alt=""
-              />
-            </Box>
-          </Flex>
-          <Flex p="25px 0" justifyContent="center">
-            <Image
-              w="16%"
-              src="https://desktime.com/static/web/clients/customer-sixt-logo-white.svg"
-            />
-            <Image
-              w="16%"
-              src="https://desktime.com/static/web/clients/customer-mapon-logo-white.svg"
-            />
-            <Image
-              w="16%"
-              src="https://desktime.com/static/web/clients/customer-montway-logo-white.svg"
-            />
-            <Image
-              w="16%"
-              src="https://desktime.com/static/web/clients/customer-onthemap-logo-white.svg"
-            />
-            <Image
-              w="158px"
-              src="https://desktime.com/static/web/clients/customer-printful-logo-white.svg"
-            />
-          </Flex>
-        </Box>
+              <Box flex="1" pl={[0, 0, 0, 4]}>
+                <Image
+                  src="hero.png"
+                  className="img-fluid animated"
+                  alt="hero-img"
+                />
+              </Box>
+            </Flex>
+          </Box>
+
+        </div>
+        
 
         <Flex
           p="70px 0"
@@ -199,7 +149,7 @@ function Home() {
               src="https://images.g2crowd.com/uploads/report_medal/image/1003081/medal.svg"
             />
             <Image
-              w="100%"
+              w="60%"
               borderRadius="3px"
               src="https://desktime.com/static/web/new-homepage/boost-productivity/boost-productivity.webp"
             />
@@ -216,6 +166,7 @@ function Home() {
           <Box maxW="538px" borderRadius="3px">
             <Image
               borderRadius="3px"
+              width={"100%"}
               src="https://www.shutterstock.com/image-photo/professional-financial-experts-collaborating-during-260nw-1389400298.jpg"
             />
           </Box>

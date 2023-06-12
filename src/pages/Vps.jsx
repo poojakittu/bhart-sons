@@ -1,9 +1,9 @@
 import { Box, Button, Flex, Image, SimpleGrid, Text } from "@chakra-ui/react";
 import React from "react";
-import GridTopicBox from "../components/vps/GridTopicBox";
+import GridTopicBox1 from "../components/vps/GridTopicBox1";
 import { useMedia } from "../MediaQuery/UseMedia";
 
-/* dummy Data */
+import GridTopicBox from "../components/vps/GridTopicBox";
 import { gridData } from "../components/vps/dummyData";
 import { pfData } from "../components/pricing/data";
 import PriceBox from "../components/pricing/priceBox";
@@ -139,7 +139,7 @@ const Vps = () => {
               requirements.
             </Text> */}
             <Text
-              bgColor="#09ab78"
+              bgColor="#e8c615"
               _hover={{
                 textAlign: "right",
                 background: "#e8c615",
@@ -153,7 +153,7 @@ const Vps = () => {
               Custome option for CPU, RAM, Storage & Bandwidth etc.
             </Text>
             <Text
-              bgColor="#09ab78"
+              bgColor="#e8c615"
               boxShadow={`rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset`}
               _hover={{
                 textAlign: "left",
@@ -169,7 +169,7 @@ const Vps = () => {
             </Text>
             {/* sec */}
             <Text
-              bgColor="#09ab78"
+              bgColor="#e8c615"
               _hover={{
                 textAlign: "right",
                 background: "#e8c615",
@@ -183,7 +183,7 @@ const Vps = () => {
               Choose operating system sutable for business
             </Text>
             <Text
-              bgColor="#09ab78"
+              bgColor="#e8c615"
               boxShadow={`rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset`}
               _hover={{
                 textAlign: "left",
@@ -236,7 +236,7 @@ const Vps = () => {
         <Text fontSize={"2xl"} /* color="blue" */>
           Why choose your Solutions
         </Text>
-        <GridTopicBox data={gridData.gridData2} column={4} />
+        <GridTopicBox1 data={gridData.gridData2} column={4} gap={"10px"} />
       </Box>
     </Box>
   );

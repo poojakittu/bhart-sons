@@ -122,7 +122,7 @@ const Hosting = () => {
           </Box>
           <Box p="1%" w={midBr ? "47%" : "100%"}>
             <Text
-              bgColor="#09ab78"
+              bgColor="#e8c615"
               _hover={{
                 textAlign: "right",
                 background: "#e8c615",
@@ -136,7 +136,7 @@ const Hosting = () => {
               99.9 % uptime
             </Text>
             <Text
-              bgColor="#09ab78"
+              bgColor="#e8c615"
               boxShadow={`rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset`}
               _hover={{
                 textAlign: "left",
@@ -152,7 +152,7 @@ const Hosting = () => {
             </Text>
             {/* sec */}
             <Text
-              bgColor="#09ab78"
+              bgColor="#e8c615"
               _hover={{
                 textAlign: "right",
                 background: "#e8c615",
@@ -166,7 +166,7 @@ const Hosting = () => {
               Pre-installed apps
             </Text>
             <Text
-              bgColor="#09ab78"
+              bgColor="#e8c615"
               boxShadow={`rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset`}
               _hover={{
                 textAlign: "left",

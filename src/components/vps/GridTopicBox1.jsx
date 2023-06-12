@@ -1,8 +1,8 @@
 import { Box, SimpleGrid } from "@chakra-ui/react";
 import { useMedia } from "../../MediaQuery/UseMedia";
-import SingleBox from "./SingleBox";
+import SingleBox1 from "./SingleBox1";
 
-const GridTopicBox = ({ data, column, padding }) => {
+const GridTopicBox1 = ({ data, column, padding }) => {
   const { smallScreen } = useMedia();
   return (
     <Box
@@ -18,10 +18,10 @@ const GridTopicBox = ({ data, column, padding }) => {
         templateColumns="repeat(4, 1fr)"
         gap={6}
       >
-        {data && data.map((el, i) => <SingleBox key={i} {...el} />)}
+        {data && data.map((el, i) => <SingleBox1 key={i} {...el} />)}
       </SimpleGrid>
     </Box>
   );
 };
 
-export default GridTopicBox;
+export default GridTopicBox1;

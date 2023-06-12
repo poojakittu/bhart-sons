@@ -8,8 +8,7 @@ import { gridData } from "../components/vps/dummyData";
 import { pfData2 } from "../components/pricing/data";
 import PriceBox from "../components/pricing/priceBox";
 /* img */
-const firstImg =
-  "https://i.ibb.co/cNJGHdB/dedicated-server-banner.jpg";
+const firstImg = "https://i.ibb.co/cNJGHdB/dedicated-server-banner.jpg";
 
 const Dedicate = () => {
   const { smallScreen, midBr } = useMedia();
@@ -106,7 +105,8 @@ const Dedicate = () => {
           Server resources are not shared. When you choose a dedicated hosting
           provider, you get the full resources & full control of single server.
         </Text>
-        <GridTopicBox data={gridData.gridData3} />
+        <GridTopicBox data={gridData.gridData1} />
+        {/* <GridTopicBox data={gridData.gridData3} /> */}
       </Box>
       {/* third */}
       <Box p="50px 10%" textAlign={"center"}>
@@ -140,7 +140,7 @@ const Dedicate = () => {
               requirements.
             </Text> */}
             <Text
-              bgColor="#09ab78"
+              bgColor="#e8c615"
               _hover={{
                 textAlign: "right",
                 background: "#e8c615",
@@ -155,7 +155,7 @@ const Dedicate = () => {
               hosting
             </Text>
             <Text
-              bgColor="#09ab78"
+              bgColor="#e8c615"
               boxShadow={`rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset`}
               _hover={{
                 textAlign: "left",
@@ -171,7 +171,7 @@ const Dedicate = () => {
             </Text>
             {/* sec */}
             <Text
-              bgColor="#09ab78"
+              bgColor="#e8c615"
               _hover={{
                 textAlign: "right",
                 background: "#e8c615",
@@ -185,7 +185,7 @@ const Dedicate = () => {
               Increased Flexibility, Reduced Costs
             </Text>
             <Text
-              bgColor="#09ab78"
+              bgColor="#e8c615"
               boxShadow={`rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset`}
               _hover={{
                 textAlign: "left",

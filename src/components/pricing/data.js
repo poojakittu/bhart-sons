@@ -1,7 +1,7 @@
 export const pfData = [
   {
     type: "Cloud VPS V4",
-    rs: "₹3500",
+    rs: "₹2950",
     tx: "Basic features:",
     xx: "User / Month",
     ft: [
@@ -17,7 +17,7 @@ export const pfData = [
   },
   {
     type: "Cloud VPS Premium",
-    rs: "₹7500",
+    rs: "₹6000",
     xx: "User / Month",
     tx: "Basic features:",
     ft: [
@@ -34,7 +34,7 @@ export const pfData = [
 
   {
     type: "Cloud VPS V8",
-    rs: "₹15000",
+    rs: "₹11500",
     xx: "User / Month",
     tx: "Basic features:",
     ft: [
@@ -382,7 +382,7 @@ export const pfData4 = [
   {
     server: "Premium Email Hosting",
     type: "Premium Email Hosting",
-    rs: "₹950",
+    rs: "₹850",
     xx: "Email / Year",
     tx: "Basic features:",
     ft: [
@@ -401,7 +401,7 @@ export const pfData4 = [
   {
     server: "Microsoft 365 Business Basic",
     type: "Microsoft 365 Business Basic",
-    rs: "₹1680",
+    rs: "₹1450",
     xx: "Email / Year",
     tx: "Basic features:",
     ft: [
@@ -416,7 +416,7 @@ export const pfData4 = [
   {
     server: "GPU CLOUD SERVER",
     type: "G- Suite Business Starter",
-    rs: "₹1950",
+    rs: "₹1650",
     xx: "Email / Year",
     tx: "Basic features:",
     ft: [
@@ -433,7 +433,7 @@ export const pfData3 = [
   {
     server: "Cloud Backup Solution",
     type: "Cloud Backup Solution",
-    rs: "₹10/GB",
+    rs: "₹8/GB",
     tx: "Basic features:",
     xx: "GB/MONTH",
     ft: [
@@ -451,9 +451,9 @@ export const pfData3 = [
   {
     server: "Premium Cloud Backup Solution",
     type: "Premium Cloud Backup Solution",
-    rs: "₹12/GB",
+    rs: "₹10/GB",
     tx: "Basic features:",
-     xx: "GB/MONTH",
+    xx: "GB/MONTH",
     ft: [
       "Incremental Backup",
       "Drive/File & Entire Machine Backup",
@@ -470,7 +470,7 @@ export const pfData3 = [
   {
     server: "On Premise Backup Solution",
     type: "On Premise Backup Solution",
-    rs: "₹4000",
+    rs: "₹3000",
     tx: "Basic features:",
     xx: "DEVICE/MONTH",
     ft: [
